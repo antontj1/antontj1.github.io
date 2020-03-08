@@ -121,7 +121,7 @@ img {
   background-color: #00c0ff;
   display: inline;
   float: left;
-  height: 140px;
+  height: 40px;
   width: 100%;
 }
 #mu-header .mu-header-area {
@@ -188,10 +188,10 @@ img {
 #mu-menu .navbar-header .navbar-brand {
   color: #333;
   font-family: "Montserrat", sans-serif;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 20px;
+  padding-top: 5px;
   letter-spacing: 0.5px;
 }
 #mu-menu .navbar-header .navbar-brand i {
@@ -2173,11 +2173,11 @@ img {
 }
 @media (max-width: 767px) {
   .navbar-header {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   #mu-menu .navbar-header .navbar-brand {
-    padding-top: 10px;
+    padding-top: 0px;
   }
 
   #mu-search-icon {
