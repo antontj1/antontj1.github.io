@@ -671,7 +671,7 @@ img {
  LATEST COURSES SECTION
 ====================*/
 #mu-latest-courses {
-  background-color: #333;
+  background-color: #00c0ff;
   display: inline;
   float: left;
   padding: 100px 0;
@@ -904,7 +904,7 @@ img {
 ====================*/
 #mu-testimonial {
   background-attachment: fixed;
-  background-image: url("../img/testimonial-bg.jpg");
+  background-image: url("../../images/ITBfull.gif");
   background-position: center center;
   background-size: cover;
   display: inline;
