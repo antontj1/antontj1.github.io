@@ -62,11 +62,11 @@
   <header id="mu-header">
     <div class="container">
       <form style="float:right;display:inline-block;line-height:12px;padding-top:15px;padding-right:14px;padding-bottom:14px;">
-        <a href="https://www.itb.ac.id"><font color="White">ITB Official&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
-        <a href="https://fmipa.itb.ac.id"><font color="White">FMIPA&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
-        <a href="https://bosscha.itb.ac.id"><font color="White">Observatorium Bosscha&nbsp;&nbsp;&nbsp;&nbsp;</font></a>
-        <a title="Indonesia" href="index-id.html"><img src="../images/id.png" alt="Indonesia" />&nbsp;&nbsp;</a>
-        <a title="English" href="../index.html"><img src="../images/eng.png" alt="English" />&nbsp;&nbsp;</a>
+        <a href="https://www.itb.ac.id"><font color="White">ITB &nbsp;</font></a>
+        <a href="https://fmipa.itb.ac.id"><font color="White">FMIPA &nbsp;</font></a>
+        <a href="https://bosscha.itb.ac.id"><font color="White">Bosscha &nbsp;</font></a>
+        <a title="Indonesia" href="index-id.html"><img src="../images/id.png" alt="Indonesia" />&nbsp;</a>
+        <a title="English" href="../index.html"><img src="../images/eng.png" alt="English" />&nbsp;</a>
         <a href="https://www.as.itb.ac.id/wp-admin/"><font color="White">Masuk</font></a>
       </form>
     </div>
@@ -199,121 +199,126 @@
  </section>
  <!-- End breadcrumb -->
 
- <section id="mu-course-content">
+<section id="mu-course-content">
    <div class="container">
      <div class="row">
        <div class="col-md-12">
          <div class="mu-course-content-area">
-            <a href="Kolokium.html"><font color="Gray"><h4>Kolokium Selanjutnya</h4></font></a>
-            <a href="Kolokium_arsip.html"><font color="Blue"><h4>Arsip Kolokium (2019 - ...)</h4></font></a>
-            <br>
-            <br>
-            <table class="js-sort-table table table-striped" id="demo1" border=1 frame=hsides rules=rows>
+          <a href="Kolokium.html"><font color="Gray"><h4>Kolokium 2020</h4></font></a>
+          <a href="Kolokium_arsip.html"><font color="Blue"><h4>Arsip Kolokium (2019 - ...)</h4></font></a>
+          <br>
+          <br>
+          <div class="container">
+            <div class="header_wrap">
+              <div class="num_rows">
+                <div class="form-group">  <!--    Show Numbers Of Rows    -->
+                  <select class  ="form-control" name="state" id="maxRows">
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="70">75</option>
+                    <option value="100">100</option>
+                    <option value="5000">Show ALL Rows</option>
+                  </select>
+                </div>
+              </div>
+            <div class="tb_search">
+            <input type="text" id="search_input_all" onkeyup="FilterkeyWord_all_table()" placeholder="Search.." class="form-control">
+            </div>
+          </div>
+          <table class="js-sort-table table table-striped" id= "table-id">
+            <thead>
+              <tr>
+                <th>Kolokium</th>
+                <th>Abstrak</th>
+              </tr>
+            </thead>
+            <tbody>
               <tr style="text-align:left;">
-                <td height="250" style="width:10px"></td>
-                <td height="250" style="width:300px">
+                <td height="250" style="width:35%">
                   <a name="AC-030420"></a>
-                  <h3>Kolokium Astro</h3>
                   <p><i>"From Cracking the Mysterious Diffuse Interstellar Bands to Galaxy Map"</i></p>
                   <p>Speaker: Dr. Lucky Puspitarini</p>
-                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, Apr 03, 2020, 13.00 – 14.00 WIB</p>
-                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                  <p>Date: Fri, Apr 03, 2020, 13.00 – 14.00 WIB</p>
+                  <p>Place: CAS Building, 6<sup>th</sup> Floor</p>
                 </td>
-                <td height="250" style="width:30px"></td>
-                <td height="250" style="width:500px">
-                    <p><i>Abstract:</i></p>
-                    <p>None.</p>
+                <td height="250" style="width:60%">
+                  <p>None.</p>
                 </td>
               </tr>
               <tr style="text-align:left;">
-                <td height="250" style="width:10px"></td>
-                <td height="250" style="width:300px">
+                <td height="250" style="width:35%">
                   <a name="AC-270320"></a>
-                  <h3>Kolokium Astro</h3>
                   <p><i>"Study Eclipsing Binaries: An Appeal for Closer Collaboration in Stellar Astrophysics"</i></p>
                   <p>Speaker: Dr. Hakim L. Malasan</p>
-                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, Mar 27, 2020, 13.00 – 14.00 WIB</p>
-                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                  <p>Date: Fri, Mar 27, 2020, 13.00 – 14.00 WIB</p>
+                  <p>Place: CAS Building, 6<sup>th</sup> Floor</p>
                 </td>
-                <td height="250" style="width:30px"></td>
-                <td height="250" style="width:500px">
-                    <p><i>Abstract:</i></p>
-                    <p>None.</p>
+                <td height="250" style="width:60%">
+                  <p>None.</p>
                 </td>
               </tr>
               <tr style="text-align:left;">
-                <td height="250" style="width:10px"></td>
-                <td height="250" style="width:300px">
+                <td height="250" style="width:35%">
                   <a name="AC-200320"></a>
-                  <h3>Kolokium Astro</h3>
                   <p><i>"Scaling-Coupling Dark Energy to Dark Matter and Cosmology Problems"</i></p>
                   <p>Speaker: Fargiza A. M. Mulki, M.Si.</p>
-                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, Mar 20, 2020, 13.00 – 14.00 WIB</p>
-                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                  <p>Date: Fri, Mar 20, 2020, 13.00 – 14.00 WIB</p>
+                  <p>Place: CAS Building, 6<sup>th</sup> Floor</p>
                 </td>
-                <td height="250" style="width:30px"></td>
-                <td height="250" style="width:500px">
-                    <p><i>Abstract:</i></p>
-                    <p>None.</p>
+                <td height="250" style="width:60%">
+                  <p>None.</p>
                 </td>
               </tr>
-            </table>
-            <br>
-            <br>
-
-            <h4>Colloquia Archive (2020)</h4>
-            <br>
-            <table class="js-sort-table table table-striped" id="demo1" border=1 frame=hsides rules=rows>
               <tr style="text-align:left;">
-                <td height="250" style="width:10px"></td>
-                <td height="250" style="width:300px">
+                <td height="250" style="width:35%">
                   <a name="AC-030420"></a>
-                  <h3>Kolokium Astro</h3>
                   <p><i>"Spatiotemporal Analysis of Light Pollution Distribution Patterns Around Observatories in Indonesia"</i></p>
                   <p>Speaker: Hendra Agus Prastyo, S.Si., M.Si.</p>
-                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, Jan 31, 2020, 13.00 – 14.00 WIB</p>
-                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                  <p>Date: Fri, Jan 31, 2020, 13.00 – 14.00 WIB</p>
+                  <p>Place: CAS Building, 6<sup>th</sup> Floor</p>
                 </td>
-                <td height="250" style="width:30px"></td>
-                <td height="250" style="width:500px">
-                    <p><i>Abstract:</i></p>
-                    <p>None.</p>
+                <td height="250" style="width:60%">
+                  <p>None.</p>
                 </td>
               </tr>
               <tr style="text-align:left;">
-                <td height="250" style="width:10px"></td>
-                <td height="250" style="width:300px">
+                <td height="250" style="width:35%">
                   <a name="AC-270320"></a>
-                  <h3>Kolokium Astro</h3>
                   <p><i>"The International School for Young Astronomers, Topik Khusus: Kosmologi dan Peluang Karir di Astronomi"</i></p>
                   <p>Speaker: Ni Putu Audita Placida Emas, S.Si., M.Si.</p>
-                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, Jan 24, 2020, 13.00 – 14.00 WIB</p>
-                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                  <p>Date: Fri, Jan 24, 2020, 13.00 – 14.00 WIB</p>
+                  <p>Place: CAS Building, 6<sup>th</sup> Floor</p>
                 </td>
-                <td height="250" style="width:30px"></td>
-                <td height="250" style="width:500px">
-                    <p><i>Abstract:</i></p>
-                    <p>None.</p>
+                <td height="250" style="width:60%">
+                  <p>None.</p>
                 </td>
               </tr>
               </tr>
               <tr style="text-align:left;">
-                <td height="250" style="width:10px"></td>
-                <td height="250" style="width:300px">
+                <td height="250" style="width:35%">
                   <a name="AC-270320"></a>
-                  <h3>Kolokium Astro</h3>
                   <p><i>"Strong Gravitational Lensing: Legacy and Future"</i></p>
                   <p>Speaker: Dr. Anton T. Jaelani (Kindai University)</p>
-                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, Jan 17, 2020, 13.00 – 14.00 WIB</p>
-                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                  <p>Date: Fri, Jan 17, 2020, 13.00 – 14.00 WIB</p>
+                  <p>Place: CAS Building, 6<sup>th</sup> Floor</p>
                 </td>
-                <td height="250" style="width:30px"></td>
-                <td height="250" style="width:500px">
-                    <p><i>Abstract:</i></p>
-                    <p>Strong gravitational lensing is one of the legacies of Einstein’s theory that producing multiple images of a distant background source appears on the sky due to light rays being deflected by a massive compact object in between the source and an observer. These phenomena appear as a powerful probe of the dark matter structure of small structures in the Universe, as well as an independent tool for constraining cosmological parameters, and new observational tests of dark matter scenarios. Rapid progress in current and ongoing large galaxy surveys makes it possible to detect numerous and various types of gravitational lenses. Recently, we have observed the first discoveries of strongly lensed supernovae, and strong lensing events of gravitational waves from compact binary mergers are expected to be observed soon. In this seminar, I summarize the current state of research on strong gravitational lensing and discuss future prospects.</p>
+                <td height="250" style="width:60%">
+                  <p>Strong gravitational lensing is one of the legacies of Einstein’s theory that producing multiple images of a distant background source appears on the sky due to light rays being deflected by a massive compact object in between the source and an observer. These phenomena appear as a powerful probe of the dark matter structure of small structures in the Universe, as well as an independent tool for constraining cosmological parameters, and new observational tests of dark matter scenarios. Rapid progress in current and ongoing large galaxy surveys makes it possible to detect numerous and various types of gravitational lenses. Recently, we have observed the first discoveries of strongly lensed supernovae, and strong lensing events of gravitational waves from compact binary mergers are expected to be observed soon. In this seminar, I summarize the current state of research on strong gravitational lensing and discuss future prospects.</p>
                 </td>
-              </tr>
-            </table>
+              </tr> 
+            <tbody>
+          </table>
+<!--    Start Pagination -->
+          <div class='pagination-container'>
+            <nav>
+              <ul class="pagination">
+              <!-- Here the JS Function Will Add the Rows -->
+              </ul>
+            </nav>
+          </div>
+          <div class="rows_count">Showing 11 to 20 of 91 entries</div>
+          </div> <!--     End of Container -->
          </div>
        </div>
      </div>
