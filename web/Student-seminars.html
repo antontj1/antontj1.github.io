@@ -22,7 +22,8 @@
     <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">          
 
     <!-- Main style sheet -->
-    <link href="assets/css/style.css" rel="stylesheet">    
+    <link href="assets/css/style.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/hexagons.css">   
 
    
     <!-- Google Fonts -->
@@ -94,7 +95,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li><a href="index.html">Home</a></li>            
+            <li><a href="index.html">Home</a></li>          
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -106,7 +107,7 @@
                 <li><a href="Contact.html">Contact</a></li>             
               </ul>
             </li>  
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">News & Events <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="Top-news.html">Top News</a></li>    
@@ -133,7 +134,7 @@
                 <li><a href="Publications.html">Publications</a></li>        
               </ul>
             </li>    
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <span class="fa fa-angle-down"></span></a>
               <ul class="dropdown-menu" role="menu">           
                 <li><a href="Faculty.html">Faculty</a></li>      
@@ -188,10 +189,10 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Alumni</h2>
+           <h2>Student Seminars</h2>
            <ol class="breadcrumb">
-            <li><a href="#">Home / People</a></li>            
-            <li class="active">Alumni</li>
+            <li><a href="#">Home / News & Events</a></li>            
+            <li class="active">Student Seminars</li>
           </ol>
          </div>
        </div>
@@ -200,36 +201,42 @@
  </section>
  <!-- End breadcrumb -->
 
-<!-- Start our teacher -->
-  <section id="mu-our-teacher">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-our-teacher-area">
-            <!-- begain title -->
-            <div class="mu-title">
-                  <p>You can find information about our postdoctoral members below. Click on a name to go to an individual&#8217;s profile page.</p>
-            </div>
-            <!-- end title -->
-            <!-- begain our teacher content -->
-            <div class="mu-our-teacher-content">
-              <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <div class="mu-our-teacher-single">
-                    <figure class="mu-our-teacher-img">
-                      <img src="Researcher/None.png" alt="teacher img">
-                    </figure>                    
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End our teacher -->
+ <section id="mu-course-content">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+         <div class="mu-course-content-area">
+            <a href="Student-seminars.html"><font color="Gray"><h4>Upcoming Thesis Defense</h4></font></a>
+            <a href="Student-seminars_archive.html"><font color="Blue"><h4>Thesis Defense Archive (2009 - ...)</h4></font></a>
+            <br>
+            <br>
+            <a href="Student-seminars_Astro.html"><font color="Blue"><h4>Upcoming Astronomical Seminar</h4></font></a>
+            <a href="Student-seminars_Astro_archive.html"><font color="Blue"><h4>Astronomical Seminar Archive (2009 - ...)</h4></font></a>
+            <br>
+            <br>
+            <table class="js-sort-table table table-striped" id="demo1" border=1 frame=hsides rules=rows>
+              <tr style="text-align:left;">
+                <td height="250" style="width:10px"></td>
+                <td height="250" style="width:300px">
+                  <h3>Thesis Defense</h3>
+                  <p><i>""</i></p>
+                  <p>Speaker: </p>
+                  <p>Advisor: </p>
+                  <p>Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Fri, , 20XX, 13.00 – 14.00 WIB</p>
+                  <p>Place&nbsp;&nbsp;&nbsp;&nbsp;: CAS Building, 6<sup>th</sup> Floor</p>
+                </td>
+                <td height="250" style="width:30px"></td>
+                <td height="250" style="width:500px">
+                    <p><i>Abstract:</i></p>
+                    <p>None.</p>
+                </td>
+              </tr>
+            </table>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
 
   <!-- Start footer -->
   <footer id="mu-footer">
