@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>CosmoLens</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+	
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-eye-slash"></i> <span>CosmoLens</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/ANTON2.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Anton T. Jaelani</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Home </a>
+                  </li>
+                  <li><a href="profile.html"><i class="fa fa-user"></i> About me </a>
+                  </li>
+                  <li><a><i class="fa fa-line-chart"></i> Research <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="team.html">Team</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-graduation-cap"></i> Teaching & Mentoring <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="students.html">Students</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-youtube-play"></i> Public Outreach </a>
+                  </li>
+                  <li><a href="Publications.html"><i class="fa fa-book"></i> Publications </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu_section">
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-crosshairs"></i><strong>Office address</strong></a>
+                  </li>
+                </ul>
+                <ul class="tabcontent">
+                  <a><i></i><strong>31<sup>th</sup> Building, 5th floor,</strong></a>
+                  <br>
+                  <a><i></i><strong>Advanced Physics Lab.</strong></a>
+                  <br>
+                  <a><i></i><strong>3-4-1 Kowakae, Higashi Osaka city,</strong></a>
+                  <br>
+                  <a><i></i><strong>Osaka 577-8502, Japan</strong></a>
+                </ul>
+
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-phone"></i><strong>Phone</strong></a>
+                  </li>
+                </ul>
+                <ul class="tabcontent">
+                  <a><i></i><strong>+81-6-6721-2332 Ext. 4072</strong>
+                </ul>
+
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-envelope-square"></i><strong>Emails</strong></a>
+                  </li>
+                </ul>
+
+                <ul class="tabcontent">
+                  <a><i></i><strong>anton@phys.kindai.ac.jp</strong></a>
+
+                  <a><i></i><strong>antontj@as.itb.ac.id</strong></a>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h3>Publication record <small>Citations</small></h3>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="col-md-9 col-sm-12 ">
+                      <div class="demo-container" style="height:280px">
+                        <div class="x_content">
+                          <canvas id="mybarChart"></canvas>
+                        </div>
+                      </div>
+                      
+                      <div class="tiles">
+                        <div class="col-md-4 tile">
+                          <span>Number of Publication</span>
+                          <h2>20 (ADS)</h2>
+                          <span class="sparkline11 graph" style="height: 160px;">
+                               <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                          </span>
+                        </div>
+                        <div class="col-md-4 tile">
+                          <span>h index</span>
+                          <h2>6 (ADS)</h2>
+                          <span class="sparkline22 graph" style="height: 160px;">
+                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                          </span>
+                        </div>
+                        <div class="col-md-4 tile">
+                          <span>i10 index</span>
+                          <h2>6 (ADS)</h2>
+                          <span class="sparkline33 graph" style="height: 160px;">
+                                 <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                          </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 ">
+                      <div>
+                        <div class="x_title">
+                          <h2>Platform</h2>
+                          <div class="clearfix"></div>
+                        </div>
+                        <ul class="list-unstyled top_profiles scroll-view">
+                          <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                              <i class="fa fa-user blue"></i>
+                            </a>
+                            <div class="media-body">
+                              <a class="title" href="https://ui.adsabs.harvard.edu/search/p_=0&q=-docs(0123372557519a30843f6cc75389d816)%20pubdate%3A%5B2012-01%20TO%202090-12%5D%20author%3A(%22Jaelani%2C%20Anton%22%20OR%20%22Jelani%2C%20Anton%22%20OR%20%22Timur%20Jaelani%2C%20Anton%22)&sort=date%20desc%2C%20bibcode%20desc">ADS</a>
+                              <p>Number of Publications : 20</p>
+                              <p>Number of Citations : 596</p>
+                              <p>h index : 6</p>
+                              <p>i10 index : 6
+                              </p>
+                            </div>
+                          </li>
+                          <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                              <i class="fa fa-user aero"></i>
+                            </a>
+                            <div class="media-body">
+                              <a class="title" href="https://scholar.google.co.id/citations?hl=id&user=0XYGYv4AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
+                              <p>Number of Publications : 23</p>
+                              <p>Number of Citations : 579</p>
+                              <p>h index : 7</p>
+                              <p>i10 index : 6
+                              </p>
+                            </div>
+                          </li>
+                          <li class="media event">
+                            <a class="pull-left border-blue profile_thumb">
+                              <i class="fa fa-user orange"></i>
+                            </a>
+                            <div class="media-body">
+                              <a class="title" href="https://www2.scopus.com/authid/detail.uri?authorId=55991348300">Scopus</a>
+                              <p>Number of Publications : 14</p>
+                              <p>Number of Citations : 332</p>
+                              <p>h index : 6</p>
+                              <p>i10 index : 3
+                              </p>
+                            </div>
+                          </li>
+                          <li class="media event">
+                            <a class="pull-left border-aero profile_thumb">
+                              <i class="fa fa-user aero"></i>
+                            </a>
+                            <div class="media-body">
+                              <a class="title" href="https://publons.com/researcher/2942061/anton-t-jaelani">Publons (WOS)</a>
+                              <p>Number of Publications : 20 (13)</p>
+                              <p>Number of Citations : 347</p>
+                              <p>h index : 5</p>
+                              <p>i10 index : 3
+                              </p>
+                            </div>
+                          </li>
+                          <li class="media event">
+                            <a class="pull-left border-green profile_thumb">
+                              <i class="fa fa-user green"></i>
+                            </a>
+                            <div class="media-body">
+                              <a class="title" href="https://www.researchgate.net/profile/Anton_Timur_Jaelani2">ResearchGate</a>
+                              <p>Number of Publications : 31</p>
+                              <p>Number of Citations : 324</p>
+                              <p>h index : 6</p>
+                              <p>i10 index : 3
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div class="row">
+
+                <div class="col-md-12 col-sm-12 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Network Collaborations <small></small></h2>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="dashboard-widget-content">
+                        <div class="col-md-4 hidden-small">
+                          <h2 class="line_30">125.7k Views from 60 countries</h2>
+
+                          <table class="countries_list">
+                            <tbody>
+                              <tr>
+                                <td>United States</td>
+                                <td class="fs15 fw700 text-right">33%</td>
+                              </tr>
+                              <tr>
+                                <td>France</td>
+                                <td class="fs15 fw700 text-right">27%</td>
+                              </tr>
+                              <tr>
+                                <td>Germany</td>
+                                <td class="fs15 fw700 text-right">16%</td>
+                              </tr>
+                              <tr>
+                                <td>Spain</td>
+                                <td class="fs15 fw700 text-right">11%</td>
+                              </tr>
+                              <tr>
+                                <td>Britain</td>
+                                <td class="fs15 fw700 text-right">10%</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div id="world-map-gdp" class="col-md-8 col-sm-12 " style="height:230px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Miscellaneous <small>Activities</small></h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+                    <div class="row" style="border-bottom: 1px solid #E0E0E0; padding-bottom: 5px; margin-bottom: 5px;">
+                      
+
+                      <div class="col-md-5">
+                        <div class="row" style="text-align: center;">
+                          <div class="col-md-4">
+                            <canvas class="canvasDoughnut" height="110" width="110" style="margin: 5px 10px 10px 0"></canvas>
+                            <h4 style="margin:0">Research Fields</h4>
+                          </div>
+                          <div class="col-md-4">
+                            <canvas class="canvasDoughnut" height="110" width="110" style="margin: 5px 10px 10px 0"></canvas>
+                            <h4 style="margin:0">Observation</h4>
+                          </div>
+                          <div class="col-md-4">
+                            <canvas class="canvasDoughnut" height="110" width="110" style="margin: 5px 10px 10px 0"></canvas>
+                            <h4 style="margin:0">Teaching</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-4 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Recent Publications <small>Journals</small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Settings 1</a>
+                          <a class="dropdown-item" href="#">Settings 2</a>
+                        </div>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <div class="dashboard-widget-content">
+
+                    <ul class="list-unstyled timeline widget">
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Survey of Gravitationally-lensed Objects in HSC Imaging (SuGOHI). VI. Crowdsourced lens finding with Space Warps</a>
+                            </h2>
+                            <div class="byline">
+                              <span>01 April 2020 </span> by <a> Sonnenfeld et al. (Submitted)</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> Strong lenses are extremely useful probes of the distribution of matter on galaxy and cluster scales at cosmological distances, but are rare and difficult to find. The number of currently known lenses is on the order of 1,000. We wish to use crowdsourcing to carry out a lens search targeting massive galaxies selected from over 442 square degrees of photometric data from the Hyper Suprime-Cam (HSC) survey. We selected a sample of ∼300,000 galaxies with photometric redshifts in the range 0.2< zphot < 1.2 and photometrically inferred stellar masses logM∗>11.2. We crowdsourced lens finding on this sample of galaxies on the Zooniverse platform, as part of the Space Warps project. The sample was complemented by a large set of simulated lenses and visually selected non-lenses, for training purposes. Nearly 6,000 citizen volunteers participated in the experiment. In parallel, we used YattaLens, an automated lens finding algorithm, to look for lenses in the same sample of galaxies. Based on a statistical analysis of classification data from the volunteers, we selected a sample of the most promising ∼1,500 candidates which we then visually inspected: half of them turned out to be possible (grade C) lenses or better. Including lenses found by YattaLens or serendipitously noticed in the discussion section of the Space Warps website, we were able to find 14 definite lenses, 129 probable lenses and 581 possible lenses. YattaLens found half the number of lenses discovered via crowdsourcing. Crowdsourcing is able to produce samples of lens candidates with high completeness and purity, compared to currently available automated algorithms. A hybrid approach, in which the visual inspection of samples of lens candidates pre-selected by discovery algorithms and/or coupled to machine learning is crowdsourced, will be a viable option for lens finding in the 2020s.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Lensed quasar search via time variability with the HSC transient survey</a>
+                            </h2>
+                            <div class="byline">
+                              <span> 02 October 2019</span> by <a> Chao et al. (Submitted)</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> Gravitatonally lensed quasars are useful for studying astrophysics and cosmology, and enlarging the sample size of lensed quasars is important for multiple studies. In this work, we develop a lens search algorithm for four-image (quad) lensed quasars based on their time variability. In the development of the lens search algorithm, we construct a pipeline simulating multi-epoch images of lensed quasars in cadenced surveys, accounting for quasar variabilities, quasar hosts, lens galaxies, and the PSF variation. Applying the simulation pipeline to the Hyper-Suprime Cam (HSC) transient survey, we generate HSC-like difference images of the mock lensed quasars from Oguri & Marshall's lens catalog. We further develop a lens search algorithm that picks out variable objects as lensed quasar candidates based on their spatial extent in the difference images. We test our lens search algorithm with the mock lensed quasars and variable objects from the HSC transient survey. Using difference images from multiple epochs, our lens search algorithm achieves a high true-positive rate (TPR) of 90.1% and a low false-positive rate (FPR) of 2.3% for the bright quads with wide separation. With a preselection on the number of blobs in the difference image, we obtain a TPR of 97.6% and a FPR of 2.6% for the bright quads with wide separation. Even when difference images are only available in one single epoch, our lens search algorithm could still detect the bright quads with wide separation at high TPR of 97.6% and low FPR of 2.4% in the optimal seeing scenario, and at TPR of ∼94 and FPR of ∼5 in typical scenarios. Therefore, our lens search algorithm is promising and could find new lensed quasars in ongoing and upcoming cadenced surveys, such as the HSC transient survey and the Large Synoptic Survey Telescope.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Survey of Gravitationally-lensed Objects in HSC Imaging (SuGOHI). IV. Lensed quasar search in the HSC survey</a>
+                            </h2>
+                            <div class="byline">
+                              <span>24 April 2020</span> by <a> Chan et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> Strong gravitationally lensed quasars provide a powerful means to study galaxy evolution and cosmology. We use CHITAH, which is an algorithm used to hunt for new lens systems, particularly lensed quasars, in the Hyper Suprime-Cam Subaru Strategic Program (HSC SSP) S16A. We present 46 lens candidates, of which 3 are previously known. We select four high-grade candidates from CHITAH for spectroscopic follow-up observations, and include two additional lenses found by YATTALENS, an algorithm used to classify lensed galaxies. We obtain X-shooter spectra of these six promising candidates for lens confirmation and redshift measurements. We report new spectroscopic redshift measurements for both the lens and source galaxies in four lens systems. We apply the lens modeling software GLEE to model our six X-shooter lenses uniformly. Through our analysis of the HSC images, we find that HSCJ022622−042522, HSCJ115252+004733, and HSCJ141136−010216 have point-like lensed images, and that the lens light distribution is well aligned with the lens mass distribution within 6 deg. We estimate the fluxes of the lensed source emission lines using X-shooter spectra, and use line ratio as a diagnostic on the Baldwin-Phillips-Terlevich (BPT) diagram. As a result, we find that HSCJ022622−042522 has a probable quasar source based on the upper limit of the [N II] flux intensity. We also measure the FWHM of Lyα emission of HSCJ141136−010216 to be ∼233 km s<sup>−1</sup>, showing that it is a probable Lyman-α emitter.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Survey of Gravitationally-lensed Objects in HSC Imaging (SuGOHI). V. Group-to-cluster scale lens search from the HSC-SSP Survey</a>
+                            </h2>
+                            <div class="byline">
+                              <span>21 April 2020</span> by <a> Jaelani et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> We report the largest sample of candidate strong gravitational lenses belonging to the Survey of Gravitationally-lensed Objects in HSC Imaging for group-to-cluster scale (SuGOHI-c) systems. These candidates are compiled from the S18A data release of the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. We visually inspect ∼39, 500 galaxy clusters, selected from several catalogs, overlapping with the Wide, Deep, and UltraDeep fields, spanning the cluster redshift range 0.05 < z<sub>cl</sub> < 1.38. We discover 641 candidate lens systems, of which 536 are new. From the full sample, 47 are almost certainly bonafide lenses, 181 of them are highly probable lenses and 413 are possible lens systems. Additionally, we present 131 lens candidates at galaxy-scale serendipitously discovered during the inspection. We obtained spectroscopic follow-up of 10 candidates using the X-shooter. With this follow-up, we confirm 8 systems as strong gravitational lenses. Of the remaining two, one of the sources is too faint to detect any emission, and the other has a tentative redshift close to the lens redshift, but additional arcs in this system are yet to be observed spectroscopically. Since the HSC-SSP is an ongoing survey, we expect to find ∼600 definite or probable lenses using this procedure and even more if combined with other lens finding methods.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <details>
+                      <summary>More publications</summary>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Discovery of an unusually compact lensed Lyman-break galaxy from the Hyper Suprime-Cam Survey</a>
+                            </h2>
+                            <div class="byline">
+                              <span>28 February 2020</span> by <a> Jaelani et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> We report the serendipitous discovery of HSC J0904–0102, a quadruply lensed Lyman-break galaxy (LBG) in the Survey of Gravitationally-lensed Objects in Hyper Suprime-Cam Imaging (SuGOHI). Owing to its point-like appearance, the source was thought to be a lensed active galactic nucleus. We obtained follow-up spectroscopic data with the Gemini Multi-Object Spectrographs on the Gemini South Telescope, which confirmed this to be a lens system. The deflecting foreground galaxy is a typical early-type galaxy at a high redshift of zℓ=0.957 with stellar velocity dispersion σv=259±56 km s<sup>−1</sup>. The lensed source is identified as an LBG at zs=3.403⁠, based on the sharp drop bluewards of Lyα and other absorption features. A simple lens mass model for the system, assuming a singular isothermal ellipsoid, yields an Einstein radius of θEin=1.23 arcsec and a total mass within the Einstein radius of MEin=(5.55±0.24)×10<sup>11</sup>M⊙ corresponding to a velocity dispersion of σSIE=283±3 km s<sup>−1</sup>, which is in good agreement with the value derived spectroscopically. The most isolated lensed LBG image has a magnification of ∼6.5⁠. In comparison with other lensed LBGs and typical z∼4 LBG populations, HSC J0904–0102 is unusually compact, an outlier at >2σ confidence. Together with a previously discovered SuGOHI lens, HSC J1152+0047, which is similarly compact, we believe that the HSC survey is extending LBG studies down to smaller galaxy sizes.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>X-ray study of the double source plane gravitational lens system Eye of Horus observed with XMM-Newton</a>
+                            </h2>
+                            <div class="byline">
+                              <span>15 November 2019</span> by <a>Tanaka et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> A double source plane (DSP) system is a precious probe for the density profile of distant galaxies and cosmological parameters. However, these measurements could be affected by the surrounding environment of the lens galaxy. Thus, it is important to evaluate the cluster-scale mass for detailed mass modelling. We observed the Eye of Horus, a DSP system discovered by the Hyper Suprime-Cam Subaru Strategic Survey (HSC–SSP), with XMM–Newton. We detected two X-ray extended emissions, originating from two clusters, one centred at the Eye of Horus, and the other located ∼100 arcsec north-east to the Eye of Horus. We determined the dynamical mass assuming hydrostatic equilibrium, and evaluated their contributions to the lens mass interior of the Einstein radius. The contribution of the former cluster is 1.1<sup>+1.2</sup><sub>−0.5</sub>×10<sup>12</sup>M⊙⁠, which is 21−76 per cent of the total mass within the Einstein radius. The discrepancy is likely due to the complex gravitational structure along the line of sight. On the other hand, the contribution of the latter cluster is only ∼2 per cent on the Eye of Horus. Therefore, the influence associated with this cluster can be ignored.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Second Data Release of the Hyper Suprime-Cam Subaru Strategic Program</a>
+                            </h2>
+                            <div class="byline">
+                              <span>22 October 2019 </span> by <a> Aihara et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> This paper presents the second data release of the Hyper Suprime-Cam Subaru Strategic Program, a wide-field optical imaging survey using the 8.2 m Subaru Telescope. The release includes data from 174 nights of observation through 2018 January. The Wide layer data cover about 300 deg<sup>2</sup> in all five broad-band filters (⁠grizy⁠) to the nominal survey exposure (10 min in gr and 20 min in izy⁠). Partially observed areas are also included in the release; about 1100 deg<sup>2</sup> is observed in at least one filter and one exposure. The median seeing in the i-band is 0′′.6⁠, demonstrating the superb image quality of the survey. The Deep (26 deg2⁠) and UltraDeep (4 deg<sup>2</sup>) data are jointly processed and the UltraDeep-COSMOS field reaches an unprecedented depth of i∼28 at 5σ for point sources. In addition to the broad-band data, narrow-band data are also available in the Deep and UltraDeep fields. This release includes a major update to the processing pipeline, including improved sky subtraction, PSF modeling, object detection, and artifact rejection. The overall data quality has been improved, but this release is not without problems; there is a persistent deblender problem as well as new issues with masks around bright stars. The user is encouraged to review the issue list before utilizing the data for scientific explorations. All the image products as well as catalog products are available for download. The catalogs are also loaded into a database, which provides an easy interface for users to retrieve data for objects of interest. In addition to these main data products, detailed galaxy shape measurements withheld from Public Data Release 1 (PDR1) are now available to the community. The shape catalog is drawn from the S16A internal release, which has a larger area than PDR1 (160 deg2⁠). All products are available at the data release site, <a href="https://hsc-release.mtk.nao.ac.jp/">https://hsc-release.mtk.nao.ac.jp/</a>
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Survey of gravitationally-lensed objects in HSC imaging (SuGOHI). III. Statistical strong lensing constraints on the stellar IMF of CMASS galaxies</a>
+                            </h2>
+                            <div class="byline">
+                              <span>23 September 2019</span> by <a> Sonnenfeld et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">Context. The determination of the stellar initial mass function (IMF) of massive galaxies is one of the open problems in cosmology. Strong gravitational lensing is one of the few methods that allow us to constrain the IMF outside of the Local Group.<br>
+
+                            Aims. The goal of this study is to statistically constrain the distribution in the IMF mismatch parameter, defined as the ratio between the true stellar mass of a galaxy and that inferred assuming a reference IMF, of massive galaxies from the Baryon Oscillation Spectroscopic Survey (BOSS) constant mass (CMASS) sample.<br>
+
+                            Methods. We took 23 strong lenses drawn from the CMASS sample, measured their Einstein radii and stellar masses using multi-band photometry from the Hyper Suprime-Cam survey, then fitted a model distribution for the IMF mismatch parameter and dark matter halo mass to the whole sample. We used a prior on halo mass from weak lensing measurements and accounted for strong lensing selection effects in our model.<br>
+
+                            Results. Assuming a Navarro Frenk and White density profile for the dark matter distribution, we infer a value μIMF = −0.04 ± 0.11 for the average base-10 logarithm of the IMF mismatch parameter, defined with respect to a Chabrier IMF. A Salpeter IMF is in tension with our measurements.<br>
+
+                            Conclusions. Our results are consistent with a scenario in which the region of massive galaxies where the IMF normalisation is significantly heavier than that of the Milky Way is much smaller than the scales 5 − 10 kpc probed by the Einstein radius of the lenses in our sample, as recent spatially-resolved studies of the IMF in massive galaxies suggest.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Survey of Gravitationally Lensed Objects in HSC Imaging (SuGOHI). II. Environments and Line-of-Sight Structure of Strong Gravitational Lens Galaxies to z ∼ 0.8</a>
+                            </h2>
+                            <div class="byline">
+                              <span>05 November 2018</span> by <a> Wong et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">We investigate the local and line-of-sight (LOS) overdensities of strong gravitational lens galaxies using wide-area multiband imaging from the Hyper Suprime-Cam Subaru Strategic Program. We present 41 new definite or probable lens candidates discovered in Data Release 2 of the survey. Using a combined sample of 87 galaxy-scale lenses out to a lens redshift of z L ~ 0.8, we compare galaxy number counts in LOSs toward known and newly discovered lenses in the survey to those of a control sample consisting of random LOSs. We also compare the local overdensity of lens galaxies to a sample of "twin" galaxies that have similar redshift and velocity dispersion to test whether lenses lie in different environments from similar nonlens galaxies. We find that lens fields contain higher number counts of galaxies compared to the control fields, but this effect arises from the local environment of the lens. Once galaxies in the lens plane are removed, the lens LOSs are consistent with the control sample. The local environments of the lenses are overdense compared to the control sample, and are slightly overdense compared to those of the twin sample, although the significance is marginal. There is no significant evidence of the evolution of the local overdensity of lens environments with redshift. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Statistical improvement in detection level of gravitational microlensing events from their light curves</a>
+                            </h2>
+                            <div class="byline">
+                              <span>01 April 2018</span> by <a> Ibrahim et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">In astronomy, the brightness of a source is typically expressed in terms of magnitude. Conventionally, the magnitude is defined by the logarithm of received flux. This relationship is known as the Pogson formula. For received flux with a small signal to noise ratio (S/N), however, the formula gives a large magnitude error. We investigate whether the use of Inverse Hyperbolic Sine function (hereafter referred to as the Asinh magnitude) in the modified formulae could allow for an alternative calculation of magnitudes for small S/N flux, and whether the new approach is better for representing the brightness of that region. We study the possibility of increasing the detection level of gravitational microlensing using 40 selected microlensing light curves from the 2013 and 2014 seasons and by using the Asinh magnitude. Photometric data of the selected events are obtained from the Optical Gravitational Lensing Experiment (OGLE). We found that utilization of the Asinh magnitude makes the events brighter compared to using the logarithmic magnitude, with an average of about 3.42 × 10<sup>−2</sup> magnitude and an average in the difference of error between the logarithmic and the Asinh magnitude of about 2.21 × 10<sup>−2</sup> magnitude. The microlensing events OB140847 and OB140885 are found to have the largest difference values among the selected events. Using a Gaussian fit to find the peak for OB140847 and OB140885, we conclude statistically that the Asinh magnitude gives better mean squared values of the regression and narrower residual histograms than the Pogson magnitude. Based on these results, we also attempt to propose a limit in magnitude value for which use of the Asinh magnitude is optimal with small S/N data. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>First data release of the Hyper Suprime-Cam Subaru Strategic Program</a>
+                            </h2>
+                            <div class="byline">
+                              <span>12 October 2017 </span> by <a> Aihara et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">The Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) is a three-layered imaging survey aimed at addressing some of the most important outstanding questions in astronomy today, including the nature of dark matter and dark energy. The survey has been awarded 300 nights of observing time at the Subaru Telescope, and it started in 2014 March. This paper presents the first public data release of HSC-SSP. This release includes data taken in the first 1.7 yr of observations (61.5 nights), and each of the Wide, Deep, and UltraDeep layers covers about 108, 26, and 4 square degrees down to depths of i ∼ 26.4, ∼26.5, and ∼27.0 mag, respectively (5 σ for point sources). All the layers are observed in five broad bands (grizy), and the Deep and UltraDeep layers are observed in narrow bands as well. We achieve an impressive image quality of 0′′.6 in the i band in the Wide layer. We show that we achieve 1%–2% point spread function (PSF) photometry (root mean square) both internally and externally (against Pan-STARRS1), and ∼10 mas and 40 mas internal and external astrometric accuracy, respectively. Both the calibrated images and catalogs are made available to the community through dedicated user interfaces and database servers. In addition to the pipeline products, we also provide value-added products such as photometric redshifts and a collection of public spectroscopic redshifts. Detailed descriptions of all the data can be found online. The data release website is <a href="https://hsc-release.mtk.nao.ac.jp">https://hsc-release.mtk.nao.ac.jp</a>. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>The Hyper Suprime-Cam SSP Survey: Overview and survey design</a>
+                            </h2>
+                            <div class="byline">
+                              <span>04 September 2017 </span> by <a> Aihara et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> Hyper Suprime-Cam (HSC) is a wide-field imaging camera on the prime focus of the 8.2-m Subaru telescope on the summit of Mauna Kea in Hawaii. A team of scientists from Japan, Taiwan, and Princeton University is using HSC to carry out a 300-night multi-band imaging survey of the high-latitude sky. The survey includes three layers: the Wide layer will cover 1400 deg2 in five broad bands (grizy), with a 5 σ point-source depth of r ≈ 26. The Deep layer covers a total of 26 deg2 in four fields, going roughly a magnitude fainter, while the UltraDeep layer goes almost a magnitude fainter still in two pointings of HSC (a total of 3.5 deg2). Here we describe the instrument, the science goals of the survey, and the survey strategy and data processing. This paper serves as an introduction to a special issue of the Publications of the Astronomical Society of Japan, which includes a large number of technical and scientific papers describing results from the early phases of this survey.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Survey of Gravitationally -lensed Objects in HSC Imaging (SuGOHI). I. Automatic search for galaxy-scale strong lenses</a>
+                            </h2>
+                            <div class="byline">
+                              <span> 01 September 2017</span> by <a> Sonnenfeld et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> The Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) is an excellent survey for the search for strong lenses, thanks to its area, image quality, and depth. We use three different methods to look for lenses among 43000 luminous red galaxies from the Baryon Oscillation Spectroscopic Survey (BOSS) sample with photometry from the S16A internal data release of the HSC-SSP. The first method is a newly developed algorithm, named YattaLens, which looks for arc-like features around massive galaxies and then estimates the likelihood of an object being a lens by performing a lens model fit. The second method, Chitah, is a modeling-based algorithm originally developed to look for lensed quasars. The third method makes use of spectroscopic data to look for emission lines from objects at a different redshift from that of the main galaxy. We find 15 definite lenses, 36 highly probable lenses, and 282 possible lenses. Among the three methods, YattaLens, which was developed specifically for this study, performs best in terms of both completeness and purity. Nevertheless, five highly probable lenses were missed by YattaLens but found by the other two methods, indicating that the three methods are highly complementary. Based on these numbers, we expect to find ∼300 definite or probable lenses by the end of the HSC-SSP.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Detection Level Enhancements of Gravitational Microlensing Events from Light Curves: the Simulation</a>
+                            </h2>
+                            <div class="byline">
+                              <span>03 September 2015</span> by <a> Ibrahim et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">Microlensing can be seen as a version of strong gravitation lensing where the separation angle of the image formed by light deflection by a massive object is too small to be seen by a ground based optical telescope. As a result, what can be observed is the change in light intensity as function of time; the light curve. Conventionally, the intensity of the source is expressed in magnitudes, which uses a logarithmic function of the apparent flux, known as the Pogson formulae. In this work, we compare the magnitudes from the Pogson formulae with magnitudes from the Asinh formulae (Lupton et al. 1999). We found for small fluxes, Asinh magnitudes give smaller deviations, about 0.01 magnitudes smalller than Pogson magnitudes. This result is expected to give significant improvement in detection level of microlensing light curves.  
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Radio frequency interference measurements in Indonesia. A survey to establish a radio astronomy observatory</a>
+                            </h2>
+                            <div class="byline">
+                              <span>14 January 2014</span> by <a> Hidayat et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">We report the first measurements of radio frequency spectrum occupancy performed at sites aimed to host the future radio astronomy observatory in Indonesia. The survey is intended to obtain the radio frequency interference (RFI) environment in a spectral range from low frequency 10 MHz up to 8 GHz. The measurements permit the identification of the spectral occupancy over those selected sites in reference to the allocated radio spectrum in Indonesia. The sites are in close proximity to Australia, the future host of Square Kilometre Array (SKA) at low frequency. Therefore, the survey was deliberately made to approximately adhere the SKA protocol for RFI measurements, but with lower sensitivity. The RFI environment at Bosscha Observatory in Lembang was also measured for comparison. Within the sensitivity limit of the measurement equipment, it is found that a location called Fatumonas in the surrounding of Mount Timau in West Timor has very low level of RFI, with a total spectrum occupancy in this measured frequency range being about 1 %, mostly found at low frequency below 20 MHz. More detailed measurements as well as a strategy for a radio quiet zone must be implemented in the near future. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                    </details>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-4 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Recent Publications <small>Journals and Proceedings</small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Settings 1</a>
+                          <a class="dropdown-item" href="#">Settings 2</a>
+                        </div>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <div class="dashboard-widget-content">
+
+                    <ul class="list-unstyled timeline widget">
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Constraints on Dark Energy Models in Cosmology from Double-Source Plane Strong Lensing System</a>
+                            </h2>
+                            <div class="byline">
+                              <span>01 August 2019</span> by <a>Jaelani et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">We performed an investigation of the possibility of constraining the dark energy models such as w-cold dark matter, holographic dark energy, and Ricci dark energy, using a special type of Einstein ring system, called as double-source plane (DSP) lensing system. We found that DSP lensing system only gives a good constraint of the model parameters. We also found that the method highly complimentary to cosmic microwave background measurement for each model. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Khazanah Arkeoastronomi di Balik Situs Megalitikum: Studi Kasus Gunung Padang</a>
+                            </h2>
+                            <div class="byline">
+                              <span>--</span> by <a>Husnindriani et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> Gunung Padang megalithic site is an ancient cultural heritage that lies in Gunung Padang, Cianjur, West Java (6º59,522'S and 107º03,363'E). While most of Indonesian megalithic sites were built as a cemetery, Gunung Padang site was presumed to be a sacred place of worshippers where religious activities commonly involved. This presumption is reinforced by the outcome of research revealing levelled terraces which are more appropriate to be an evidence of worshipping place instead of burial practice. This study presents observation results from two expeditions focusing on the site's position, orientation, and dimension. Furthermore, we performed the simulation of 21 bright stars positions back to the early days of the site establishment. Conclusively, this paper briefly explains the research activities conducted during the expeditions together with the description of the results from measurements and the initial hypothesis about any astronomical purpose of the site.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Stellar background observation during Total Solar Eclipse March 9<sup>th</sup> 2016</a>
+                            </h2>
+                            <div class="byline">
+                              <span>01 November 2016</span> by <a>Mumtahana et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> We report observation and an early analysis of stellar background from total solar eclipse in Ternate, Indonesia. The eclipse phenomena which occurred on March, 9th 2016 was observed with certain portable instruments in order to obtain the stars behind the Sun in particular field of view and resolution. From our observation site in Ternate city, solar eclipse occurred in the late morning when the weather was unfortunately cloudy. However, during the darkness of totality, we obtained several point source objects between the gaps of the moving clouds and we suspected them as very faint stars due to their appearance in several frames. Those so called stars have been identified and measured with respect to their positions toward the center of the Sun. The main purpose of this research is to revisit strong lensing calculation of the Sun during total solar eclipse by measuring the deflection angle of the background stars as it had been calculated by Einstein and proved by Eddington at a total solar eclipse in 1919. To accomplish this aim, we need to conduct another observation to measure position of the same stars in the next period when those stars appear in the night sky.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Mass reconstruction of galaxies clusters: Abell 2219, RXC J2248.7-4431, and SDSS J1004+4112 using strong gravitational lensing</a>
+                            </h2>
+                            <div class="byline">
+                              <span>30 September 2015</span> by <a>Jaelani et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">This work presents mass reconstruction of galaxies cluster from strong lens analysis for Abell 2219 (z = 0.225), RXC J2248,7-4431 (z = 0.348), and SDSS J1004+4112 (z = 0.68) using parametric model sofware for strong gravitational lensing, glafic (Oguri 2010). We use assumptions of point source and source-plane approximation for minimization. We find that our parametric model well reproduces the positions of multiply imaged galaxies and quasars and time delays between quasar images. We find that the best-fit centroid of the dark halo (NFW) is quite consistent with the distribution of gas from observed X-ray. Radius enclosed mass profile and mass profile from hidrostatic assumption on distribution of gas from X-ray agree quite well with each other, including the radial slopes of the profiles with average discrepancies, M<sub>lens</sub>/M<sub>X</sub>= 1.52 on the outer radius of images. Existence of dominant galaxy associate with compactness of cluster as lens. We find increasing of fraction of galaxies morphology from distribution of cluster members increase with redshift. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <details>
+                      <summary>More publications</summary>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>Radio frequency interference measurement in site testing programs for the future multiwavelength observatory in Indonesia</a>
+                            </h2>
+                            <div class="byline">
+                              <span>30 September 2015</span> by <a>Hidayat et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt"> A new multi-wavelength astronomical observatory in Indonesia is currently under preparation. To pave the way the presence of radio astronomical facilities in the planned observatory, we conduct a series of radio frequency interference (RFI) measurements as part of its site testing programs. The corresponding sites, instruments as well as its measurement set up must be selected, planned, and implemented accordingly. This work presents our preparation set up and considers the RFI measurement at meter and centimeter wavelengths (or frequencies from 50 MHz up to 6 GHz). In this frequency range, it is relevant to adopt the Square Kilometre Array (SKA) Protocol as our measurement method. The first results using the Mode 1 of the SKA Protocol are used as reference in this work. Preparation of the Mode 2 is currently undertaken and its preliminary results are presented.
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="block">
+                          <div class="block_content">
+                            <h2 class="title">
+                              <a>The Hubble constant estimation using 18 gravitational lensing time delays</a>
+                            </h2>
+                            <div class="byline">
+                              <span>17 February 2015</span> by <a>Jaelani et al.</a>
+                            </div>
+                            <details> 
+                            <summary>Abstract</summary>
+                            <p class="excerpt">Gravitational lens time delay method has been used to estimate the rate of cosmological expansion, called the Hubble constant, H<sub>0</sub>, independently of the standard candle method. This gravitational lensing method requires a good knowledge of the lens mass distribution, reconstructed using the lens image properties. The observed positions of the images, and the redshifts of the lens and the images serve as strong constraints to the lens equations, which are then solved as a set of simultaneous linear equations. Here we made use of a non-parametric technique to reconstruct the lens mass distribution, which is manifested in a linear equations solver named PixeLens. Input for the calculation is chosen based on prior known parameters obtained from analyzed result of the lens case observations, including time-delay, position angles of the images and the lens, and their redshifts. In this project, 18 fairly well studied lens cases are further grouped according to a number of common properties to examine how each property affects the character of the data, and therefore affects the calculation of H<sub>0</sub>. The considered lens case properties are lens morphology, number of image, completeness of time delays, and symmetry of lens mass distribution. Analysis of simulation shows that paucity of constraints on mass distribution of a lens yields wide range value of H<sub>0</sub>, which reflects the uniqueness of each lens system. Nonetheless, gravitational lens method still yields H<sub>0</sub> within an acceptable range of value when compared to those determined by many other methods. Grouping the cases in the above manner allowed us to assess the robustness of PixeLens and thereby use it selectively. In addition, we use glafic, a parametric mass reconstruction solver, to refine the mass distribution of one lens case, as a comparison. 
+                            </p>
+                            </details>
+                          </div>
+                        </div>
+                      </li>
+                    </details>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 ">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>Public Outreach<small>Medhok Sains</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Settings 1</a>
+                              <a class="dropdown-item" href="#">Settings 2</a>
+                            </div>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+                      <div class="">
+                        <ul class="to_do">
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="">Ep. 20: Coming Soon</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=yAQmbBTwMcE">Ep. 19: Siklus Hidup Bintang-Bintang di Alam Semesta</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=We9Y33Xe95E">Ep. 18: Model Penyebaran Covid-19 dari Perspektif Pemodelan Matematika</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=IqReTeuTiE4&t=4s">Ep. 17: SARS-COV-2 & COVID-19: Apa dan Bagaimanakah Penyebarannya?</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=ea_UmUly8vY">Ep. 16: Mencari Dunia Lain</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=KXigDINmRyI">Ep. 15: Mengenal Jejaring Observatorium dan Planetarium Indonesia</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=yC58UH3UcSk">ASTROLOGI vs ASTRONOMI --- Medhok Bicara</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=3jPqBA_8U38">Ep. 14: Sepak Terjang Pegiat Sains Tanah Air</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=cpfiBYl10Dw&t=5s">Ep. 13: Science in Halal Products: Friend or Foe?</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=FpOQwFmqdPw&t=144s">Ep. 12: Gigi dan Mulut: Ujung Tombak Pertahanan Diri</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=Fq_9ww6wLTU">Ep. 11: Haruskah Kehilangan Hutan Demi Percepatan Pembangunan?</a> </p>
+                          </li>
+                          <details>
+                          <summary>More episodes</summary>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=PzIdLiWL7nA&t=4s">Ep. 10: Cognitive Neuroscience: Hoax vs Neuromarketing</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=fzDFK2xswLI&t=3s">Ep. 09: Menelisik Cuaca Ekstrem di Penjuru Nusantara</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=Zj8ng2FiXWg&t=668s">Ep. 08: Komunikasi Sains: Jembatan Antara Ilmu Pengetahuan dan Masyarakat</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=VZHVHfrE2HM&t=2s">Ep. 07: Imbas Cuaca Antariksa Bagi Kehidupan</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=of13UIVbQtw&t=6s">Ep. 06: Taktik dan Teknik Membidik Si Sabit Muda (Bagian 2)</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=WvlB2Pv-y_g">Ep. 06: Taktik dan Teknik Membidik Si Sabit Muda (Bagian 1)</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=5CF6QNp-NjY"> </a>Ep. 05: Mengintai Si Lubang Hitam via Jendela Sinar-X</p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=eZHWhk7eTiY">Ep. 04: Kontroversi Penetapan Hilal dalam Perspektif Astronomi</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=HpsEUcX3Ejs&t=3s">Ep. 03: Astrowisata: Saat Fenomena Langit Jadi Pilihan Tujuan Wisata di Indonesia</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=-Okx1pusSgs&t=1s">Ep. 02: Serba-serbi Astronom Muda di Mancanegara</a> </p>
+                          </li>
+                          <li>
+                            <p>
+                              <input type="checkbox" class="flat"> <a href="https://www.youtube.com/watch?v=YJSRWUSr2Zg&t=30s">Ep. 01: Relativitas Umum dalam Astronomi</a> </p>
+                          </li>
+                          </details>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            &copy; 2020, Anton T. Jaelani. Design: <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- jQuery Sparklines -->
+    <script src="vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- Flot -->
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- JQVMap -->
+    <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/date.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="vendors/moment/min/moment.min.js"></script>
+    <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+  </body>
+</html>
