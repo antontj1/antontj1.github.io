@@ -6,7 +6,7 @@ kramdown:
   auto_ids:     true
 
 # Permalinks
-permalink:      /home/
+permalink:      none
 
 # Server
 source:         "site"
