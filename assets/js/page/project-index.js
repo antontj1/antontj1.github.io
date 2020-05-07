@@ -18,38 +18,41 @@ $(function() {
             data: {
                 columns: [
                     // each columns data
-                    ['data1', 1,2,4,9,6,3,2,5,8,7],
-                    ['data2', 7,5,2,1,6,4,9,8,3,2],
-                    ['data3', 7,5,3,1,5,9,8,5,2,6],
-                    ['data4', 1,2,3,5,4,8,5,2,6,1],
+                    ['data1', 0,1,1,34,197,212,151],
+                    ['data2', 4,2,0,8,187,246,132],
+                    ['data3', 0,1,0,0,142,158,30],
+                    ['data4', 0,1,1,3,143,145,55],
+                    ['data5', 2,0,0,12,66,190,56],
                 ],
                 type: 'bar', // default type of chart
-                types: {
-                    'data2': "line",
-                    'data3': "spline",
-                },
-                groups: [
-                    [ 'data1', 'data4']
-                ],
+                //types: {
+                //    'data2': "line",
+                //    'data3': "spline",
+                //},
+                //groups: [
+                //    [ 'data1', 'data4']
+                //],
                 colors: {
-                    'data1': '#5a5278',
-                    'data2': '#F2B335',
-                    'data3': '#F2B335',
-                    'data4': '#E74C3C'
+                    'data1': '#1d37c9',
+                    'data2': '#00a1e6',
+                    'data3': '#e6a400',
+                    'data4': '#7595ff',
+                    'data5': '#18dcab'
                 },
                 names: {
                     // name of each serie
-                    'data1': 'Development',
-                    'data2': 'Marketing',
-                    'data3': 'Design',
-                    'data4': 'Sales'
+                    'data1': 'ADS',
+                    'data2': 'GoogleScholar',
+                    'data3': 'Scopus',
+                    'data4': 'Publons',
+                    'data5': 'ResearchGate'
                 }
             },
             axis: {
                 x: {
                     type: 'category',
                     // name of each category
-                    categories: ['Jun 1','Jun 2','Jun 3','Jun 4','Jun 5','Jun 6','Jun 7','Jun 8','Jun 9','Jun 10']
+                    categories: ['2014','2015','2016','2017','2018','2019','2020']
                 },
             },
             bar: {
