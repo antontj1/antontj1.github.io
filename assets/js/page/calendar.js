@@ -71,49 +71,53 @@ $(function() {
         eventLimit: true, // allow "more" link when too many events
         selectable: true,
         events: [{
-                title: 'Birthday Party',
-                start: current + '01',
+                title: 'Meet your agenda!',
+                start: today,
                 className: 'bg-info'
-            },{
-                title: 'Conference',
-                start: current + '05',
-                end: '2019-09-06',
-                className: 'bg-warning'
-            },{
-                title: 'Meeting',
-                start: current + '09T12:30:00',
-                allDay: false, // will make the time show
-                className: 'bg-success',
-            },{
-                title: 'Meeting',
-                start: current + '09T18:30:00',
-                allDay: false, // will make the time show
-                className: 'bg-info',
-            },{
-                title: 'BOD Event',
-                start: '2019-09-16',
-                end: '2019-09-16',
-                className: 'bg-indigo'
-            },{
+            },{            
+//                title: 'Birthday Party',
+//                start: current + '01',
+//                className: 'bg-info'
+//            },{
+//                title: 'Conference',
+//                start: current + '05',
+//                end: '2019-09-06',
+//                className: 'bg-warning'
+//            },{
+//                title: 'Meeting',
+//                start: current + '09T12:30:00',
+//                allDay: false, // will make the time show
+//                className: 'bg-success',
+//            },{
+//                title: 'Meeting',
+//                start: current + '09T18:30:00',
+//                allDay: false, // will make the time show
+//                className: 'bg-info',
+//            },{
+//                title: 'BOD Event',
+//                start: '2019-09-16',
+//                end: '2019-09-16',
+//                className: 'bg-indigo'
+//            },{
                 title: 'June Challenge',
                 start: '2019-09-10',
                 end: '2019-09-12',
                 className: 'bg-gray'
-            },{
-                title: 'Earthcon Exhibition',
-                start: '2019-09-18',
-                end: '2019-09-22',
-                className: 'bg-red'
-            },{
-                title: 'Toastmasters Meeting #3',
-                start: '2019-09-26',
-                end: '2019-09-26',
-                className: 'bg-orange'
-            },{
-                title: 'Salary',
-                start: '2019-09-07',
-                end: '2019-09-07',
-                className: 'bg-pink'
+//            },{
+//                title: 'Earthcon Exhibition',
+//                start: '2019-09-18',
+//                end: '2019-09-22',
+//                className: 'bg-red'
+//            },{
+//                title: 'Toastmasters Meeting #3',
+//                start: '2019-09-26',
+//                end: '2019-09-26',
+//                className: 'bg-orange'
+//            },{
+//                title: 'Salary',
+//                start: '2019-09-07',
+//                end: '2019-09-07',
+//                className: 'bg-pink'
             }
 
         ],
