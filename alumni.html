@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<!-- soccer/project/app-contact.html  07 Jan 2020 03:40:20 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="icon" href="j0904.ico" type="image/x-icon"/>
+
+<title>CosmoLens</title>
+
+<!-- Bootstrap Core and vandor -->
+<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css"/>
+<link rel="stylesheet" href="assets/plugins/dropify/css/dropify.min.css">
+
+<!-- Core css -->
+<link rel="stylesheet" href="assets/css/main.css"/>
+<link rel="stylesheet" href="assets/css/theme1.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="font-montserrat">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+<!-- Overlay For Sidebars -->
+
+<div id="main_content">
+
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="index.html"><i class="fa fa-grav brand-logo"></i></a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/ANTON3.jpeg" alt="" data-toggle="tooltip" data-placement="right" title="User Menu"/></a>
+                </div>
+            </div>
+            <div class="hright">
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <div id="rightsidebar" class="right_sidebar">
+        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
+        <div class="p-4">
+            <div class="mb-4">
+                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
+                <div class="custom-controls-stacked font_setting">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
+                        <span class="custom-control-label">Open Sans Font</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
+                        <span class="custom-control-label">Montserrat Google Font</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
+                        <span class="custom-control-label">Robot Google Font</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div class="mb-4">
+                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
+                <div class="custom-controls-stacked arrow_option">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
+                        <span class="custom-control-label">A</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
+                        <span class="custom-control-label">B</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
+                        <span class="custom-control-label">C</span>
+                    </label>
+                </div>
+                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
+                <div class="custom-controls-stacked list_option">
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
+                        <span class="custom-control-label">A</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
+                        <span class="custom-control-label">B</span>
+                    </label>
+                    <label class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
+                        <span class="custom-control-label">C</span>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
+                <ul class="setting-list list-unstyled mt-1 setting_switch">
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Night Mode</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Fix Navbar top</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Header Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader" checked="">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Min Sidebar Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Sidebar Dark</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Icon Color</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Gradient Color</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Box Shadow</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">RTL Support</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-switch">
+                            <span class="custom-switch-description">Box Layout</span>
+                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
+                            <span class="custom-switch-indicator"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="user_div">
+        <h5 class="brand-name mb-4">CosmoLens<a href="javascript:void(0)" class="user_btn"><i class="fa fa-arrow-left"></i></a></h5>
+        <div class="card-body">
+            <a href="index.html"><img class="card-profile-img" src="assets/images/ANTON2.jpg" alt=""></a>
+            <h6 class="mb-0">Anton T. Jaelani</h6>
+            <span>antontj@as.itb.ac.id</span>
+            <span>anton@phys.kindai.ac.jp</span>
+            <span>jaelani.at@gmail.com</span>
+            <div class="d-flex align-items-baseline mt-3">
+                <h3 class="mb-0 mr-2">007</h3>
+                <p class="mb-0"><span class="text-success">1.6% <i class="fa fa-arrow-up"></i></span></p>
+            </div>
+            <div class="progress progress-xs">
+                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-orange" role="progressbar" style="width: 5%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-indigo" role="progressbar" style="width: 13%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <hr>
+            <p>Employment</p>
+            <ul class="new_timeline">
+                <li>
+                    <div class="bullet blue"></div>
+                    <div class="time">2020 - now</div>
+                    <div class="desc">
+                        <h3>Lecturer</h3>
+                        <h4>Astronomy Study Program
+                        <br>Institut Teknologi Bandung</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet blue"></div>
+                    <div class="time">2018 - 2021</div>
+                    <div class="desc">
+                        <h3>Postdoctoral</h3>
+                        <h4>Department of Physics
+                        <br>Kindai University</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet blue"></div>
+                    <div class="time">2018</div>
+                    <div class="desc">
+                        <h3>Researcher</h3>
+                        <h4>Bosscha Observatory
+                        <br>Institut Teknologi Bandung</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet orange"></div>
+                    <div class="time">2017 - 2018</div>
+                    <div class="desc">
+                        <h3>Research Assistant</h3>
+                        <h4>Astronomical Institute
+                        <br>Tohoku University</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet orange"></div>
+                    <div class="time">2012 - 2014</div>
+                    <div class="desc">
+                        <h3>Research Assistant</h3>
+                        <h4>Astronomy Study Program
+                        <br>Institut Teknologi Bandung</h4>
+                    </div>
+                </li>
+            </ul>
+            <p>Education</p>
+            <ul class="new_timeline">
+                <li>
+                    <div class="bullet green"></div>
+                    <div class="time">2014 - 2018</div>
+                    <div class="desc">
+                        <h3>Ph. D. in Astrophysics</h3>
+                        <h4>Astronomical Institute
+                        <br>Tohoku University</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet green"></div>
+                    <div class="time">2012 - 2014</div>
+                    <div class="desc">
+                        <h3>M. Sc. in Astrophysics</h3>
+                        <h4>Astronomy Study Program
+                        <br>Institut Teknologi Bandung</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet green"></div>
+                    <div class="time">2008 - 2012</div>
+                    <div class="desc">
+                        <h3>B. Sc. in Astrophysics</h3>
+                        <h4>Astronomy Study Program
+                        <br>Institut Teknologi Bandung</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet pink"></div>
+                    <div class="time">2005 - 2008</div>
+                    <div class="desc">
+                        <h3>Senior High School</h3>
+                        <h4>SMA Negeri 1 Banjar</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet pink"></div>
+                    <div class="time">2002 - 2005</div>
+                    <div class="desc">
+                        <h3>Junior High School</h3>
+                        <h4>SMP Negeri 3 Banjar</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="bullet pink"></div>
+                    <div class="time">1996 - 2002</div>
+                    <div class="desc">
+                        <h3>Elementary School</h3>
+                        <h4>MI Banjar 2</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="left-sidebar" class="sidebar ">
+        <h5 class="brand-name">CosmoLens<a href="javascript:void(0)" class="menu_option float-right"><i class="fa fa-th" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul class="metismenu">
+                <li class="g_heading"></li>
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
+                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="project-list.html">Projects</a></li>
+                        <li><a href="result.html">Results</a></li>
+                        <li><a href="team.html">Team</a></li>   
+                    </ul>
+                </li>
+                <li class="active"><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-graduation-cap"></i><span>Teaching</span></a>
+                    <ul>
+                        <li><a href="#">Lecture</a></li>
+                        <li><a href="students.html">Students</a></li>
+                        <li class="active"><a href="alumni.html">Alumni</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-youtube-play"></i><span>Public Outreach</span></a>
+                    <ul>
+                        <li><a href="medhoksains.html">Medhok Sains</a></li>
+                    </ul>
+                </li>
+                <li><a href="publications.html"><i class="fa fa-book"></i><span>Publications</span></a></li>
+                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
+                <li><a href="page-gallery.html"><i class="fa fa-image"></i><span>Gallery</span></a></li>
+            </ul>
+
+            <br>
+            <a><i class="fa fa-crosshairs"></i> Office address</a>
+            <br><small>31<sup>th</sup> Building, 5th floor,
+            <br>Advanced Physics Lab.
+            <br>3-4-1 Kowakae, Higashi Osaka, Osaka
+            <br>577-8502, Japan</small>
+
+            <br>
+            <br>
+            <a><i class="fa fa-phone"></i> Phone</a>
+            <br><small>+81-6-6721-2332 Ext. 4072</small>
+
+            <br>
+            <br>
+            <a><i class="fa fa-envelope-square"></i> Emails</a>
+            <small>anton@phys.kindai.ac.jp
+            <br>antontj@as.itb.ac.id 
+            <br>jaelani.at@gmail.com</small>            
+        </nav>     
+    </div>
+
+    <div class="page">
+        <div id="page_top" class="section-body top_dark">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
+                        <h1 class="page-title">Alumni</h1>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-3">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex justify-content-between">
+                                    <ul class="nav nav-tabs b-none">
+                                        <li class="nav-item"><a class="nav-link active" id="list-tab" data-toggle="tab" href="#list"><i class="fa fa-list-ul"></i> List</a></li>
+                                        <li class="nav-item"><a class="nav-link" id="grid-tab" data-toggle="tab" href="#grid"><i class="fa fa-th"></i> Grid</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="list" role="tabpanel">
+                        <div class="row clearfix">
+                            <div class="col-lg-12">
+                                <div class="table-responsive" id="users">
+                                    <table class="table table-hover table-vcenter text-nowrap table_custom border-style list">
+                                        <tbody>
+                                            <tr class="">
+                                                <td class="width35 hidden-xs">
+                                                    <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
+                                                </td>
+                                                <td class="text-center width40">
+                                                    <div class="avatar d-block">
+                                                        <img class="avatar" src="assets/images/user.png" alt="avatar">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div><a href="javascript:void(0);">Name</a></div>
+                                                    <div class="text-muted">phone</div>
+                                                </td>
+                                                <td class="hidden-xs">
+                                                    <div class="text-muted">email</div>
+                                                </td>
+                                                <td class="hidden-sm">
+                                                    <div class="text-muted">address</div>                                                
+                                                </td>
+                                                <td class="text-right">
+                                                    <a class="btn btn-sm btn-link" href="javascript:void(0)" data-toggle="tooltip" title="Mail"><i class="fa fa-envelope"></i></a>
+                                                </td>
+                                            </tr>                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="grid" role="tabpanel">
+                        <div class="row row-deck">
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="card " >
+                                    <div class="card-body">
+                                        <div class="card-status bg-blue"></div>
+                                        <div class="mb-3"> <img src="assets/images/user.png" class="rounded-circle w100" alt=""> </div>
+                                        <div class="mb-2">
+                                            <h5 class="mb-0">Name</h5>
+                                            <p class="text-muted">email</p>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam deleniti fugit incidunt</span>
+                                        </div>
+                                        <span class="font-12 text-muted">Common Contact</span>
+                                        <ul class="list-unstyled team-info margin-0 pt-2">
+                                            <li><img src="assets/images/user.png" alt="Avatar"></li>
+                                            <li><img src="assets/images/user.png" alt="Avatar"></li>
+                                            <li><img src="assets/images/user.png" alt="Avatar"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            &copy; 2020, Anton T. Jaelani. Design: <a href="templateshub.net">Templates Hub</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/bundles/lib.vendor.bundle.js"></script>
+
+<script src="assets/bundles/sweetalert.bundle.js"></script>
+<script src="assets/plugins/dropify/js/dropify.min.js"></script>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/page/sweetalert.js"></script>
+<script>
+$(function() {
+    "use strict";
+    
+    $('.dropify').dropify();
+
+    var drEvent = $('#dropify-event').dropify();
+    drEvent.on('dropify.beforeClear', function(event, element) {
+        return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+    });
+
+    drEvent.on('dropify.afterClear', function(event, element) {
+        alert('File deleted');
+    });
+
+    $('.dropify-fr').dropify({
+        messages: {
+            default: 'Glissez-déposez un fichier ici ou cliquez',
+            replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+            remove: 'Supprimer',
+            error: 'Désolé, le fichier trop volumineux'
+        }
+    });
+});
+</script>
+</body>
+
+<!-- soccer/project/app-contact.html  07 Jan 2020 03:40:35 GMT -->
+</html>
