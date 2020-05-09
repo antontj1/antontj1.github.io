@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+<!-- soccer/project/project-list.html  07 Jan 2020 03:41:01 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,14 +14,9 @@
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
 
-<!-- Plugins css -->
-<link rel="stylesheet" href="assets/plugins/charts-c3/c3.min.css"/>
-
 <!-- Core css -->
 <link rel="stylesheet" href="assets/css/main.css"/>
 <link rel="stylesheet" href="assets/css/theme1.css"/>
-<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -181,6 +176,13 @@
                 </ul>
             </div>
             <hr>
+            <div class="form-group">
+                <label class="d-block">Storage <span class="float-right">77%</span></label>
+                <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+                </div>
+                <button type="button" class="btn btn-primary btn-block mt-3">Upgrade Storage</button>
+            </div>
         </div>
     </div>
 
@@ -315,7 +317,7 @@
             <ul class="metismenu">
                 <li class="g_heading"></li>
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li class="active"><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
                 <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
                     <ul>
                         <li><a href="overview.html">Overview</a></li>
@@ -324,9 +326,9 @@
                         <li><a href="team.html">Team</a></li>   
                     </ul>
                 </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-graduation-cap"></i><span>Teaching</span></a>
+                <li class="active"><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-graduation-cap"></i><span>Teaching</span></a>
                     <ul>
-                        <li><a href="Lecture.html">Lecture</a></li>
+                        <li class="active"><a href="Lecture.html">Lecture</a></li>
                         <li><a href="students.html">Students</a></li>
                         <li><a href="alumni.html">Alumni</a></li>
                     </ul>
@@ -368,299 +370,167 @@
                 <div class="page-header">
                     <div class="left">
                         <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Dashboard</h1>                        
+                        <h1 class="page-title">Lecture</h1>                        
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <ul class="nav nav-tabs page-header-tab">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Lecture-Cosmo">Cosmology</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Lecture-ObsCos">Obervational Cosmology</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section-body mt-3">
             <div class="container-fluid">
-                <div class="row clearfix">
-                </div>
-                <div class="row clearfix row-deck">
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title"><a class="ai ai-ads-square" href="https://ui.adsabs.harvard.edu/search/p_=0&q=-docs(0123372557519a30843f6cc75389d816)%20pubdate%3A%5B2012-01%20TO%202090-12%5D%20author%3A(%22Jaelani%2C%20Anton%22%20OR%20%22Jelani%2C%20Anton%22%20OR%20%22Timur%20Jaelani%2C%20Anton%22)&sort=date%20desc%2C%20bibcode%20desc"> ADS</a></h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="number mb-0 font-32 counter">602</h5>
-                                <span class="font-12">Document:
-                                    <br>h index: 6
-                                    <br>i10 index: 6
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title"><a class="ai ai-google-scholar-square" href="https://scholar.google.co.id/citations?hl=id&user=0XYGYv4AAAAJ&view_op=list_works&sortby=pubdate"> GoogleScholar</a></h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="number mb-0 font-32 counter">583</h5>
-                                <span class="font-12">Document:
-                                    <br>h index: 7
-                                    <br>i10 index: 6
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title"><img src="assets/images/Scopus.png" alt="" style="width:15px"><a href="https://www2.scopus.com/authid/detail.uri?authorId=55991348300"> Scopus</a></h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="number mb-0 font-32 counter">334</h5>
-                                <span class="font-12">Document:
-                                    <br>h index: 6
-                                    <br>i10 index: 3
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title"><a id="badgeCont278"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont278&rid=P-2841-2019&size=small"></script></a><a href="https://publons.com/researcher/2942061/anton-t-jaelani/"> Publons</a></h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="number mb-0 font-32 counter">349</h5>
-                                <span class="font-12">Document:
-                                    <br>h index: 5
-                                    <br>i10 index: 3
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title"><a class="ai ai-researchgate-square" href="https://www.researchgate.net/profile/Anton_Timur_Jaelani2"> ResearchGate</a></h3>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="number mb-0 font-32 counter">328</h5>
-                                <span class="font-12">Document:
-                                    <br>h index: 6
-                                    <br>i10 index: 3
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title"><a href="http://sinta2.ristekdikti.go.id/authors/detail?id=6719695&view=overview"><img src="assets/images/sinta_logo.png" alt="Sinta" style="width:55px"></a></h3>
-                            </div>
-                            <div class="card-body">
-                                <h6>Rank</h6>
-                                <span class="font-12">in Nat.: 1581
-                                    <br>3 years in Nat.: 173
-                                    <br>in Aff.: 87
-                                    <br>3 years in Aff.: 6
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row clearfix row-deck">
-                    <div class="col-xl-8 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Citations History</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-sm-flex justify-content-between">
-                                    <div class="font-12">2014 - now</div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="Lecture-Cosmo" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Master Course</h3>
+                                        <div class="card-options">
+                                            <label class="custom-switch m-0">
+                                                <input type="checkbox" value="1" class="custom-switch-input" checked>
+                                                <span class="custom-switch-indicator"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="tag tag-blue mb-3">Online lecture I</span>
+                                        
+                                        <div class="row">
+                                            <div class="col-5 py-1"><strong>Date:</strong></div>
+                                            <div class="col-7 py-1">17 Sep 2019</div>
+                                            <div class="col-5 py-1"><strong>Title:</strong></div>
+                                            <div class="col-7 py-1">A new measurement of the Hubble Constant from gravitationally lensed quasars: increasing tension between early and late universe probes</div>
+                                            <div class="col-5 py-1"><strong>Participant:</strong></div>
+                                            <div class="col-7 py-1"><strong>13</strong></div>
+                                            <div class="col-5 py-1"><strong>Description:</strong></div>
+                                            <div class="col-7 py-1"><strong></strong></div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="tag tag-blue mb-3">Online lecture</span>
+                                        
+                                        <div class="row">
+                                            <div class="col-5 py-1"><strong>Date:</strong></div>
+                                            <div class="col-7 py-1">11 & 22 Oct 2019</div>
+                                            <div class="col-5 py-1"><strong>Title:</strong></div>
+                                            <div class="col-7 py-1">Statistical Methods in Cosmology</div>
+                                            <div class="col-5 py-1"><strong>Participant:</strong></div>
+                                            <div class="col-7 py-1"><strong>13</strong></div>
+                                            <div class="col-5 py-1"><strong>Description:</strong></div>
+                                            <div class="col-7 py-1"><strong></strong></div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="tag tag-blue mb-3">Homework I</span>
+                                        
+                                        <div class="row">
+                                            <div class="col-5 py-1"><strong>Date:</strong></div>
+                                            <div class="col-7 py-1">17 - 24 Sep 2019</div>
+                                            <div class="col-5 py-1"><strong>Title:</strong></div>
+                                            <div class="col-7 py-1"> Questions that I gave during online lecture I</div>
+                                            <div class="col-5 py-1"><strong>Participant:</strong></div>
+                                            <div class="col-7 py-1"><strong>13</strong></div>
+                                            <div class="col-5 py-1"><strong>Description:</strong></div>
+                                            <div class="col-7 py-1"><strong></strong></div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="tag tag-blue mb-3">Homework II</span>
+                                        
+                                        <div class="row">
+                                            <div class="col-5 py-1"><strong>Date:</strong></div>
+                                            <div class="col-7 py-1">10 Oct - 9 Dec 2019</div>
+                                            <div class="col-5 py-1"><strong>Title: </strong></div>
+                                            <div class="col-7 py-1">Mini projects based on Cosmological problems</div>
+                                            <div class="col-5 py-1"><strong>Participant:</strong></div>
+                                            <div class="col-7 py-1"><strong>13</strong></div>
+                                            <div class="col-5 py-1"><strong>Description:</strong></div>
+                                            <div class="col-7 py-1"><strong></strong></div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="clearfix">
+                                            <div class="float-left"><strong>100%</strong></div>
+                                            <div class="float-right"><small class="text-muted">Completed</small></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-red" role="progressbar" style="width: 100%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="chart-combination" style="height: 305px"></div>
                             </div>
-                        </div>                
+                        </div>
                     </div>
-                    <div class="col-xl-4 col-lg-12 col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Activity</h3>
+                    <div class="tab-pane fade" id="Lecture-ObsCos" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Undergradute Course</h3>
+                                        <div class="card-options">
+                                            <label class="custom-switch m-0">
+                                                <input type="checkbox" value="1" class="custom-switch-input" checked>
+                                                <span class="custom-switch-indicator"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="tag tag-blue mb-3">Online Lecture I</span>
+                                        
+                                        <div class="row">
+                                            <div class="col-5 py-1"><strong>Date:</strong></div>
+                                            <div class="col-7 py-1">7 April 2020</div>
+                                            <div class="col-5 py-1"><strong>Title: </strong></div>
+                                            <div class="col-7 py-1">Gravitational Lensing in Cosmology</div>
+                                            <div class="col-5 py-1"><strong>Participant:</strong></div>
+                                            <div class="col-7 py-1"><strong>7</strong></div>
+                                            <div class="col-5 py-1"><strong>Description:</strong></div>
+                                            <div class="col-7 py-1"><strong></strong></div>
+                                        </div> 
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="tag tag-blue mb-3">Homework</span>
+                                        
+                                        <div class="row">
+                                            <div class="col-5 py-1"><strong>Date:</strong></div>
+                                            <div class="col-7 py-1">4 - 21 May 2020</div>
+                                            <div class="col-5 py-1"><strong>Title: </strong></div>
+                                            <div class="col-7 py-1">Penentuan konstanta Hubble, H<sub>0</sub>, menggunakan lensa gravitasi quasar</div>
+                                            <div class="col-5 py-1"><strong>Participant:</strong></div>
+                                            <div class="col-7 py-1"><strong>7</strong></div>
+                                            <div class="col-5 py-1"><strong>Description:</strong></div>
+                                            <div class="col-7 py-1"><strong></strong></div>
+                                        </div> 
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="clearfix">
+                                            <div class="float-left"><strong>80%</strong></div>
+                                            <div class="float-right"><small class="text-muted">Progress</small></div>
+                                        </div>
+                                        <div class="progress progress-xs">
+                                            <div class="progress-bar bg-red" role="progressbar" style="width: 80%" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <table class="table card-table mt-2">
-                                <tbody>
-                                    <tr>
-                                        <td class="w60"><img class="avatar" src="assets/images/ANTON3.jpeg" alt="Avatar"></td>
-                                        <td>
-                                            <p class="mb-0 d-flex justify-content-between"><span>Strong Lensing</span> <strong>Talk</strong></p>
-                                            <span class="text-muted font-13">Bandung, Jan 17, 2020</span>
-                                        </td>
-                                    </tr>                                    
-                                </tbody>
-                            </table>                        
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
         </div>
-        <div class="section-body">
-            <div class="container-fluid">
-                <div class="row clearfix row-deck">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Recent Publication in Journals </h3>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-vcenter mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            <a href="https://arxiv.org/abs/2004.00634">Survey of Gravitationally-lensed Objects in HSC Imaging (SuGOHI). VI. Crowdsourced lens finding with Space Warps</a>
-                                            <br>
-                                            <span>01 April 2020 </span> by <a> Sonnenfeld et al. (Submitted)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://doi.org/10.1093/mnras/staa1062">Survey of Gravitationally-lensed Objects in HSC Imaging (SuGOHI). V. Group-to-cluster scale lens search from the HSC-SSP Survey</a>
-                                            <br>
-                                            <span>21 April 2020</span> by <a> Jaelani et al. (MNRAS)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://doi.org/10.1093/mnras/staa583">Discovery of an unusually compact lensed Lyman-break galaxy from the Hyper Suprime-Cam Survey</a>
-                                            <br>
-                                            <span>28 February 2020</span> by <a> Jaelani et al. (MNRAS)</a>
-                                            </td>
-                                        </tr>                                    
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Recent Publication in Proceedings </h3>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-vcenter mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1245/1/012017">Constraints on Dark Energy Models in Cosmology from Double-Source Plane Strong Lensing System</a>
-                                            <br>
-                                            <span>01 August 2019</span> by <a> Jaelani et al. (JoPCs)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://iopscience.iop.org/article/10.1088/1742-6596/771/1/012038">Stellar background observation during Total Solar Eclipse March 9<sup>th</sup> 2016</a>
-                                            <br>
-                                            <span>01 November 2016</span> by <a> Jaelani et al. (JoPCs)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://aip.scitation.org/doi/abs/10.1063/1.4930662">Mass reconstruction of galaxies clusters: Abell 2219, RXC J2248.7-4431, and SDSS J1004+4112 using strong gravitational lensing</a>
-                                            <br>
-                                            <span>30 September 2015</span> by <a> Jaelani et al. (AIP)</a>
-                                            </td>
-                                        </tr>                                    
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Recent Medhok Sains Videos</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="row text-center">
-                                    <div class="col-4 border-right pb-4 pt-4">
-                                        <label class="mb-0 font-13">Total Videos</label>
-                                        <h4 class="font-30 font-weight-bold text-col-blue counter">21</h4>
-                                    </div>
-                                    <div class="col-4 border-right pb-4 pt-4">
-                                        <label class="mb-0 font-13">Diskusi Daring</label>
-                                        <h4 class="font-30 font-weight-bold text-col-blue counter">19</h4>
-                                    </div>
-                                    <div class="col-4 pb-4 pt-4">
-                                        <label class="mb-0 font-13">Medhok Bicara</label>
-                                        <h4 class="font-30 font-weight-bold text-col-blue counter">2</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-vcenter mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <a href="https://www.youtube.com/watch?v=KvQrlF9I_7U">MB 2: Kapankah Waktu Berjemur Terbaik?</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="https://www.youtube.com/watch?v=yAQmbBTwMcE">Ep. 19: Siklus Hidup Bintang-Bintang di Alam Semesta</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="https://www.youtube.com/watch?v=We9Y33Xe95E">Ep. 18: Model Penyebaran Covid-19 dari Perspektif Pemodelan Matematika</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-                <div class="row clearfix">
-                    <div class="col-12 col-sm-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Project Summary</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-striped text-nowrap table-vcenter mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Name</th>
-                                                <th>Team</th>
-                                                <th>Project</th>
-                                                <th>Timeline</th>
-                                                <th>Publication</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Finding New Strong Lenses</td>
-                                                <td>
-                                                    <ul class="list-unstyled team-info sm margin-0 w150">
-                                                        <li><img src="assets/images/ANTON3.jpeg" alt="Avatar"></li>
-                                                        <li><img src="assets/images/user.png" alt="Avatar"></li>
-                                                        <li><img src="assets/images/user.png" alt="Avatar"></li>
-                                                        <li class="ml-2"><span>many+</span></li>
-                                                    </ul>
-                                                </td>
-                                                <td>HSC SL WG</td>
-                                                <td>2015 - now</td>
-                                                <td>6</td>
-                                                <td><span class="tag tag-danger">on going</span></td>
-                                            </tr>                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                   
-                </div>
-            </div>
-        </div>       
         <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
@@ -678,14 +548,8 @@
 
 <script src="assets/bundles/lib.vendor.bundle.js"></script>
 
-<script src="assets/bundles/apexcharts.bundle.js"></script>
-<script src="assets/bundles/counterup.bundle.js"></script>
-<script src="assets/bundles/knobjs.bundle.js"></script>
-<script src="assets/bundles/c3.bundle.js"></script>
-
 <script src="assets/js/core.js"></script>
-<script src="assets/js/page/project-index.js"></script>
 </body>
 
-<!-- soccer/project/  07 Jan 2020 03:37:22 GMT -->
+<!-- soccer/project/project-list.html  07 Jan 2020 03:41:02 GMT -->
 </html>
