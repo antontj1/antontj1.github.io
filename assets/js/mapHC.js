@@ -35,7 +35,7 @@ Highcharts.getJSON('https://raw.githubusercontent.com/antontj1/antontj1.github.i
       name: 'updated by 2020',
       joinBy: ['iso-a3', 'code3'],
       data: data,
-      minSize: 4,
+      minSize: 0,
       maxSize: '12%',
       tooltip: {
         pointFormat: '{point.properties.hc-a2}: {point.z} meter'
