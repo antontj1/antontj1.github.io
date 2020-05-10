@@ -1,4 +1,4 @@
-Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function (data) {
+Highcharts.getJSON('https://raw.githubusercontent.com/antontj1/antontj1.github.io/master/assets/maps/telescopes.json?callback=?', function (data) {
 
   // Prevent logarithmic errors in color calulcation
   data.forEach(function (p) {
@@ -46,7 +46,7 @@ Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/sam
       padding: 0,
       pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
         '</span></span> {point.name}<br>' +
-        '<span style="font-size:30px">{point.value}/km²</span>',
+        '<span style="font-size:20px">{point.value}</span>',
       positioner: function () {
         return { x: 0, y: 250 };
       }
@@ -61,7 +61,7 @@ Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/sam
     series: [{
       data: data,
       joinBy: ['iso-a3', 'code3'],
-      name: 'Population density',
+      name: 'Details',
       states: {
         hover: {
           color: '#a4edba'
