@@ -2,7 +2,7 @@ Highcharts.getJSON('https://raw.githubusercontent.com/antontj1/antontj1.github.i
 
   // Prevent logarithmic errors in color calulcation
   data.forEach(function (p) {
-    p.value = (p.value < 1 ? 1 : p.value);
+    p.value = (p.value < 1 ? 0 : p.value);
   });
 
   // Initiate the chart
