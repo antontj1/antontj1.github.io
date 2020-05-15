@@ -25,13 +25,6 @@ $(function() {
                     ['data5', 2,0,0,12,66,190,60],
                 ],
                 type: 'bar', // default type of chart
-                //types: {
-                //    'data2': "line",
-                //    'data3': "spline",
-                //},
-                //groups: [
-                //    [ 'data1', 'data4']
-                //],
                 colors: {
                     'data1': '#1d37c9',
                     'data2': '#00a1e6',
@@ -42,10 +35,10 @@ $(function() {
                 names: {
                     // name of each serie
                     'data1': 'ADS',
-                    'data2': 'GoogleScholar',
-                    'data3': 'Scopus',
-                    'data4': 'Publons',
-                    'data5': 'ResearchGate'
+                    'data2': 'GS',
+                    'data3': 'SC',
+                    'data4': 'RID',
+                    'data5': 'RG'
                 }
             },
             axis: {
@@ -59,7 +52,7 @@ $(function() {
                 width: 16
             },
             legend: {
-                show: false, //hide legend
+                show: true, //hide legend
             },
             padding: {
                 bottom: 0,
