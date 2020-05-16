@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<!-- soccer/project/app-contact.html  07 Jan 2020 03:40:20 GMT -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -699,32 +698,6 @@
 
 <script src="assets/js/core.js"></script>
 <script src="assets/js/page/sweetalert.js"></script>
-<script>
-$(function() {
-    "use strict";
-    
-    $('.dropify').dropify();
-
-    var drEvent = $('#dropify-event').dropify();
-    drEvent.on('dropify.beforeClear', function(event, element) {
-        return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
-    });
-
-    drEvent.on('dropify.afterClear', function(event, element) {
-        alert('File deleted');
-    });
-
-    $('.dropify-fr').dropify({
-        messages: {
-            default: 'Glissez-déposez un fichier ici ou cliquez',
-            replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
-            remove: 'Supprimer',
-            error: 'Désolé, le fichier trop volumineux'
-        }
-    });
-});
-</script>
 </body>
 
-<!-- soccer/project/app-contact.html  07 Jan 2020 03:40:35 GMT -->
 </html>
