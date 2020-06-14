@@ -402,7 +402,7 @@
                     <div class="col-lg-8 col-md-12">
                         <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="pills-blog-tab" data-toggle="pill" href="#pills-blog" role="tab" aria-controls="pills-blog" aria-selected="true">Blog</a>
+                                <a class="nav-link active" id="pills-highlight-tab" data-toggle="pill" href="#pills-highlight" role="tab" aria-controls="pills-highlight" aria-selected="true">Highlight</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
@@ -410,32 +410,136 @@
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-CV" role="tab" aria-controls="pills-profile" aria-selected="false">CV</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-blog-tab" data-toggle="pill" href="#pills-blog" role="tab" aria-controls="pills-blog" aria-selected="true">Blog</a>
+                            </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade" id="pills-timeline" role="tabpanel" aria-labelledby="pills-timeline-tab">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Activity</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fa fa-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fa fa-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fa fa-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fa fa-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
+                            <div class="tab-pane fade show active" id="pills-highlight" role="tabpanel" aria-labelledby="pills-highlight-tab">
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Nuct4E8aOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">  
+                                        <h4><a href="https://www.youtube.com/watch?v=8Nuct4E8aOA">Exploring Your Potential to Face the New Normal</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about how we can explore our hidden potential to face the new normal. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
                                         </div>
-                                            </div>
-                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
                                     </div>
                                 </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <img class="tl_avatar" src="assets/images/sugohiV.jpeg" alt="">                                        
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="#">New Lenses from SuGOHI!</a></h4>
+                                        <p>Recently, our SuGOHI paper series has been published in MNRAS. We revealed hundreds of new strong gravitational lensing candidates at group/cluster scale from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 495, Issue 1, 1291</a>)</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="#">Research</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EUWTjxGX92Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="https://www.youtube.com/watch?v=EUWTjxGX92Q">The Fisheries Sector and the Pandemic</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about the fisheries sector and the Coronavirus pandemic. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <details>
+                                    <summary>
+                                        <a class="btn btn-outline-secondary" target="_blank">Previous</a>
+                                    </summary>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <img class="tl_avatar" src="assets/images/J0904.jpeg" alt="">                                        
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="#">Compact galaxy</a></h4>
+                                        <p>An usually compact lensed galaxy, HSC J0904–0102, discover from the from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. This is the second case after HSC J1152+0047 which is useful to study a source population that could not be studied before. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 494, Issue 3, 3156</a>)</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="#">Research</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HvqRmA8Db8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="https://www.youtube.com/watch?v=HvqRmA8Db8I">Astronomical Basis Of Calendars</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about astronomical basis of calendar systems. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvQrlF9I_7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="https://www.youtube.com/watch?v=KvQrlF9I_7U">When is the best time for sunbathing?</a></h4>
+                                        <p>The new Medhok Bicara's video is already published. This video describes to us when is the best time for sunbathing. Sunbathing is important to keep our body healthy, especially during a current global pandemic. So, let's enjoy guys!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="javascript:void(0)">New Layout!</a></h4>
+                                        <p>Welcome to my new webpages! I hope I can share my research and experience with new spirit. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="javascript:void(0)">General</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                </details>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div class="card">
@@ -574,129 +678,18 @@
                             </div>
                             <div class="tab-pane fade show active" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab">
                                 <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Nuct4E8aOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="img-post" align="middle">                                      
                                     </div>
                                     <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=8Nuct4E8aOA">Exploring Your Potential to Face the New Normal</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about how we can explore our hidden potential to face the new normal. Please stay tune!</p>
+                                        <h4><a href="#">Memasang target</a></h4>
+                                        <p>Please stay tune!</p>
                                     </div>
                                     <div class="footer">
                                         <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
+                                            <a href="blog.html" class="btn btn-outline-secondary">More</a>
+                                        </div>                                  
                                     </div>
                                 </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <img class="tl_avatar" src="assets/images/sugohiV.jpeg" alt="">                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="#">New Lenses from SuGOHI!</a></h4>
-                                        <p>Recently, our SuGOHI paper series has been published in MNRAS. We revealed hundreds of new strong gravitational lensing candidates at group/cluster scale from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 495, Issue 1, 1291</a>)</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="blog.html" class="btn btn-outline-secondary">Check this out</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="#">Research</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EUWTjxGX92Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=EUWTjxGX92Q">The Fisheries Sector and the Pandemic</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about the fisheries sector and the Coronavirus pandemic. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <details>
-                                    <summary>
-                                        <a class="btn btn-outline-secondary" target="_blank">Previous</a>
-                                    </summary>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <img class="tl_avatar" src="assets/images/J0904.jpeg" alt="">                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="#">Compact galaxy</a></h4>
-                                        <p>An usually compact lensed galaxy, HSC J0904–0102, discover from the from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. This is the second case after HSC J1152+0047 which is useful to study a source population that could not be studied before. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 494, Issue 3, 3156</a>)</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="blog.html" class="btn btn-outline-secondary">Check this out</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="#">Research</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HvqRmA8Db8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=HvqRmA8Db8I">Astronomical Basis Of Calendars</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about astronomical basis of calendar systems. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvQrlF9I_7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=KvQrlF9I_7U">When is the best time for sunbathing?</a></h4>
-                                        <p>The new Medhok Bicara's video is already published. This video describes to us when is the best time for sunbathing. Sunbathing is important to keep our body healthy, especially during a current global pandemic. So, let's enjoy guys!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="javascript:void(0)">New Layout!</a></h4>
-                                        <p>Welcome to my new webpages! I hope I can share my research and experience with new spirit. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="javascript:void(0)">General</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                </details>
                             </div>                        
                         </div>
                     </div>
