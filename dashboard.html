@@ -81,6 +81,37 @@
     }
 </script>
 
+<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ["Element", "Density", { role: "style" } ],
+        ["ADS", 669, "#1d37c9"],
+        ["GS", 658, "#00a1e6"],
+        ["RID", 407, "#7595ff"],
+        ["RG", 390, "#18dcab"],
+        ["SC", 382, "#e6a400"],
+      ]);
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+      var options = {
+        bar: {groupWidth: "75%"},
+        hAxis: {title: 'Total Citations'},
+        legend: { position: "none" },
+      };
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+
 </head>
 
 <body class="font-montserrat">
@@ -480,17 +511,17 @@
                     </div>
                 </div>
                 <div class="row clearfix row-deck">
-                    <div class="col-xl-8 col-lg-12">
+                    <div class="col-xl-7 col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Citations History (5 years)</h3>
+                                <h3 class="card-title">Citations History (4 years)</h3>
                             </div>
                             <div class="card-body">
-                                <div id="chart-combination" style="height: 335px"></div>
+                                <div id="chart-combination" style="height: 435px"></div>
                             </div>
                         </div>                
                     </div>
-                    <div class="col-xl-4 col-lg-12 col-md-12">
+                    <div class="col-xl-5 col-lg-12 col-md-12">
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Research Keywords</h3>
@@ -503,8 +534,8 @@
         </div>
         <div class="section-body">
             <div class="container-fluid">
-                <div class="row clearfix row-deck">
-                    <div class="col-xl-6 col-lg-6 col-md-6">
+                <div class="row clearfix row-deck"> 
+                    <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Published Journals</h3>
@@ -513,8 +544,18 @@
                                 <div id="piechart_3d" style="width: 300px; height: 300px; margin:0 auto;"></div>
                             </div>
                         </div>
+                    </div>                 
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Total Citations</h3>
+                            </div>
+                            <div class="card-body text-center">
+                                <div id="barchart_values" style="width: 300px; height: 300px; margin:0 auto;"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Scopus Indexed</h3>
@@ -524,7 +565,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card">
