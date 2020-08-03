@@ -75,10 +75,16 @@ $(function() {
                 start: today,
                 className: 'bg-info'
             },{            
-//                title: 'Birthday Party',
-//                start: current + '01',
-//                className: 'bg-info'
-//            },{
+                title: 'Online Summer School on Galaxies and Cosmology 2020: Deciphering Dark Matter: From Galaxies to the Universe',
+                start: '2020-09-14',
+                end: '2020-09-19',
+                className: 'bg-gray'
+            },{
+                title: 'Online Summer School on Galaxies and Cosmology 2020: Deciphering Dark Matter: From Galaxies to the Universe',
+                start: '2020-09-21',
+                end: '2020-09-26',
+                className: 'bg-gray'
+            },{
 //                title: 'Conference',
 //                start: current + '05',
 //                end: '2019-09-06',
@@ -98,11 +104,6 @@ $(function() {
 //                start: '2019-09-16',
 //                end: '2019-09-16',
 //                className: 'bg-indigo'
-//            },{
-                title: 'June Challenge',
-                start: '2019-09-10',
-                end: '2019-09-12',
-                className: 'bg-gray'
 //            },{
 //                title: 'Earthcon Exhibition',
 //                start: '2019-09-18',
