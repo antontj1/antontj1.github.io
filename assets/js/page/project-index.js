@@ -55,7 +55,7 @@ $(function() {
                 },
             },
             bar: {
-                width: 20
+                width: 15
             },
             legend: {
                 show: true, //hide legend
