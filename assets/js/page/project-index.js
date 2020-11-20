@@ -120,7 +120,7 @@ $(function() {
             grid: {
                 x: {
                 lines: [
-                    {value: 7, text: 'h-Index=7'},
+                    {value: 7, text: 'h-Index = 7'},
                 ]
                 },
                 y: {
