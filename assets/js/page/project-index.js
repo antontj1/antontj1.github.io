@@ -48,7 +48,7 @@ $(function() {
                 },
             },
             bar: {
-                width: 8
+                width: 10
             },
             legend: {
                 show: true, //hide legend
