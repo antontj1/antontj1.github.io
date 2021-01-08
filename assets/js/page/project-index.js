@@ -109,12 +109,12 @@ $(function() {
             },
             axis: {
                 x: {
-                    max: 25,
+                    max: 18,
                     min: 0.5,
                 },
                 y: {
-                    max: 350,
-                    min: 31,
+                    max: 30,
+                    min: 2,
                 },
             },
             grid: {
