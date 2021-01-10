@@ -17,11 +17,11 @@ $(function() {
             bindto: '#chart-combination', // id of chart wrapper
             data: {
                 columns: [
-                    ['data1', 34,197,181,422, 27],
-                    ['data2',  9,186,222,425, 25],
+                    ['data1', 34,197,181,422, 28],
+                    ['data2',  9,186,222,427, 30],
                     ['data3',  0,142,164,203, 10],
-                    ['data4',  3,143,150,234,  6],
-                    ['data5', 17, 70,189,243,  5],
+                    ['data4',  3,143,150,243,  6],
+                    ['data5', 17, 71,196,243,  5],
                 ],
                 type: 'bar', // default type of chart
                 colors: {
@@ -94,10 +94,10 @@ $(function() {
             bindto: '#chart-combination2', // id of chart wrapper
             data: {
                 columns: [
-                    ['ADS', 1000,367,294,82,35,21,15,10,7,7,6,5,5,2,1,1,1,0,0,0,0,0,0,0,0],
-                    ['GS' , 1000,389,306,85,31,22,14,10,6,5,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0],
+                    ['ADS', 1000,370,295,82,35,21,15,10,8,7,6,5,5,2,1,1,1,0,0,0,0,0,0,0,0],
+                    ['GS' , 1000,394,310,85,32,22,14,10,6,5,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0],
                     ['SC' , 1000,242,182,37,19,14,11, 8,2,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
-                    ['RID', 1000,259,192,36,20,11, 8, 5,2,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+                    ['RID', 1000,259,193,37,21,12, 8, 6,3,2,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0],
                 ],
                 type: 'scatter', // default type of chart
                 colors: {
@@ -120,12 +120,12 @@ $(function() {
             grid: {
                 x: {
                 lines: [
-                    {value: 7, text: 'h-Index = 7'},
+                    {value: 8, text: 'ADS h-Index = 8'},
                 ]
                 },
                 y: {
                 lines: [
-                    {value: 7, text: 'min. citation = 7'},
+                    {value: 8, text: 'min. citation = 8'},
                 ]
                 }
             },
@@ -152,11 +152,11 @@ $(function() {
             bindto: '#chart-combination3', // id of chart wrapper
             data: {
                 columns: [
-                    ['data1', 863],
-                    ['data2', 875],
+                    ['data1', 864],
+                    ['data2', 885],
                     ['data3', 521],
-                    ['data4', 538],
-                    ['data5', 526],
+                    ['data4', 547],
+                    ['data5', 534],
                 ],
                 type: 'bar', // default type of chart
                 colors: {
