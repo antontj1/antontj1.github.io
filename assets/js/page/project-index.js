@@ -99,7 +99,7 @@ $(function() {
                     ['SC' , 1000,243,184,39,19,14,11, 8,2,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
                     ['RID', 1000,261,194,38,21,12, 8, 6,3,2,2,2,1,1,0,0,0,0,0,0,0,0,0,0,0],
                 ],
-                type: 'scatter', // default type of chart
+                type: 'line', // default type of chart
                 colors: {
                     'ADS': '#1d37c9',
                     'GS': '#00a1e6',
