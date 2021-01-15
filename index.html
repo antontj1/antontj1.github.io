@@ -4,6 +4,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+div.ex1 {
+  background-color: white;
+  height: 400px;
+  overflow: scroll;
+}
+
+div.ex2 {
+  background-color: none;
+  height: 600px;
+  overflow: scroll;
+}
+
+
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -478,247 +491,14 @@ img {vertical-align: middle;}
                     <div class="col-lg-8 col-md-12">
                         <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="pills-highlight-tab" data-toggle="pill" href="#pills-highlight" role="tab" aria-controls="pills-highlight" aria-selected="true">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                                <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-CV" role="tab" aria-controls="pills-profile" aria-selected="false">CV</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-blog-tab" data-toggle="pill" href="#pills-blog" role="tab" aria-controls="pills-blog" aria-selected="true">Blog</a>
-                            </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-highlight" role="tabpanel" aria-labelledby="pills-highlight-tab">
-                                <div class="card blog_single_post">
-                                    <div class="card-body">  
-                                        <h4><a>[2] Lowongan Tim Peneliti Mahasiswa di CosmoLens Lab. Tahun 2021</a></h4>
-                                        <p>Gambaran:</p>
-                                        <p>1 (satu) orang Asisten Peneliti pada untuk topik penelitian Galaksi dan Kosmologi.</p>
-                                        <p>Syarat:</p>
-                                        <p>1. Mahasiswa S1 Prodi  Astronomi ITB (<b>minimal tingkat 3</b>),</p>
-                                        <p>2. sanggup bekerja min. 12 jam/bulan selama 10 bulan (<i>part time</i>),</p>
-                                        <p>3. berencana/sedang mengambil topik TA dalam bidang galaksi dan kosmologi,</p>
-                                        <p>4. <i>"good endurance"</i>.</p>
-
-                                        <p>Bagi mahasiswa yang tertarik dapat menghubungi Anton T. Jaelani melalui email yang tertera di website ini paling lambat <b>21 Januari 2021 atau sampai ada pendaftar yang memenuhi kualifikasi</b>.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a class="btn btn-outline-secondary" target="_blank" style="color:blue">Buka</a>
-                                        </div> 
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="project-list.html">Research</a></li>
-                                        </ul>                   
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="card-body">  
-                                        <h4><a>[1] Lowongan Tim Peneliti Mahasiswa di CosmoLens Lab. Tahun 2021</a></h4>
-                                        <p>Gambaran:</p>
-                                        <p>2 (dua) orang Asisten Peneliti pada untuk topik penelitian Galaksi dan Kosmologi menggunakan <i>deep machine learning</i>.</p>
-                                        <p>Syarat:</p>
-                                        <p>1. Mahasiswa S2 Prodi Astronomi ITB (bidang Astrofisika Lanjut),</p>
-                                        <p>2. sanggup bekerja min. 12 jam/bulan selama 10 bulan (<i>part time</i>),</p>
-                                        <p>3. punya ketertarikan dalam machine learning,</p>
-                                        <p>4. <i>"good endurance"</i>.</p>
-
-                                        <p>Bagi mahasiswa yang tertarik dapat menghubungi Anton T. Jaelani melalui email yang tertera di website ini paling lambat <b>3 Januari 2021 atau sampai ada pendaftar yang memenuhi kualifikasi</b>.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a class="btn btn-outline-secondary" target="_blank" style="color:red">Tutup</a>
-                                        </div> 
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="project-list.html">Research</a></li>
-                                        </ul>                   
-                                    </div>
-                                </div>
-
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y1ko_n6i-5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">Importance of radio telescope in Indonesia for global geodetic VLBI network</a></h4>
-                                        <p>Description:</p>
-                                        <p>To keep up with the modern development of astronomy in the world, Indonesian astronomers have commenced studying the possibility of developing new observatory in other Indonesian regions that are suitable for the development of multi-wavelength astronomy. <details>
-                                        <summary>
-                                        Details
-                                        </summary>Besides optical wavelengths, radio waves are naturally the main choice to introduce the multi-wavelength domain regarding a variety of important scientific interests. Considering this development, radio telescopes must be provided and prepared further to work in the network of radio telescopes that already exists in many regions of the globe such as Very Long Baseline Interferometry (VLBI) network. Two places have been selected as a host of new radio telescopes. Mount Timau in Timor Island will be the host of the new National Observatory and in the original proposal, a radio telescope envisaged to be integrated to the next VLBI generation was proposed. Meanwhile, a decommissioned telecommunication antenna in the city of Jatiluhur is currently being undertaken to be converted into a radio telescope. To develop the Indonesian VLBI campaign, and considering two antennas will be available in Jatiluhur and in Timau site, in this work we first undertake to study the possibility to use these telescopes, not only for astronomy/astrometry, but also for geodesy to enhance a more multi-disciplinary and collaborative work. Here we simulate the implication of these two future Indonesian antennas to the estimates of Earth orientation parameters (polar motion, nutation, and dUT1) and the station position. The simulation was performed in two types of VLBI session. First, we conduct the simulation of an intensive session between Japanese antenna Syowa and Indonesian antennas. Next, we simulate the complete 24 hours session by considering some different network configurations. Generally, we found that the Indonesian antennas play an important role to improve the estimation of station position as well as the Earth orientation parameters.</p>
-
-                                        <p>About the Speaker:</p>
-                                        <p>Dr. Ibnu Nurul Huda is currently a Postdoctoral in Astronomy Research Division, Institut Teknologi Bandung.</p></details>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/playlist?list=PLV2hbp85JNWR1tSX2i-6glM6zUWdQFz-n" class="btn btn-outline-secondary" target="_blank">Astronomy Online Colloquium</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Education</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <details>
-                                    <summary>
-                                        <a class="btn btn-outline-secondary" target="_blank">Previous</a>
-                                    </summary>
-                                <div class="card blog_single_post">
-                                    <div class="card-body">  
-                                        <p style="text-align:center">
-                                        <img class="tl_avatar" src="assets/images/SSGC2020.jpeg" alt=""  style="width:200px" > </p> 
-                                        <h4><a href="https://www.as.itb.ac.id/ssgc2020/">SSGC 2020 Registration is now closed!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.as.itb.ac.id/ssgc2020/" class="btn btn-outline-secondary" target="_blank">Visit SSGC 2020</a>
-                                        </div> 
-                                        <div class="actions">
-                                            <a href="https://bit.ly/SSGC2020" class="btn btn-outline-secondary" target="_blank">Registration Form</a>
-                                        </div>                  
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y8El9Aw8BPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">How to become a successful Researcher or Scientist?</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about how to become a world class Researcher or Scientist. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Nuct4E8aOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=8Nuct4E8aOA">Exploring Your Potential to Face the New Normal</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about how we can explore our hidden potential to face the new normal. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <img class="tl_avatar" src="assets/images/sugohiV.jpeg" alt="">                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="#">New Lenses from SuGOHI!</a></h4>
-                                        <p>Recently, our SuGOHI paper series has been published in MNRAS. We revealed hundreds of new strong gravitational lensing candidates at group/cluster scale from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 495, Issue 1, 1291</a>)</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="#">Research</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EUWTjxGX92Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=EUWTjxGX92Q">The Fisheries Sector and the Pandemic</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about the fisheries sector and the Coronavirus pandemic. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <img class="tl_avatar" src="assets/images/J0904.jpeg" alt="">                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="#">Compact galaxy</a></h4>
-                                        <p>An usually compact lensed galaxy, HSC J0904–0102, discover from the from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. This is the second case after HSC J1152+0047 which is useful to study a source population that could not be studied before. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 494, Issue 3, 3156</a>)</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="#">Research</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HvqRmA8Db8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=HvqRmA8Db8I">Astronomical Basis Of Calendars</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about astronomical basis of calendar systems. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvQrlF9I_7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=KvQrlF9I_7U">When is the best time for sunbathing?</a></h4>
-                                        <p>The new Medhok Bicara's video is already published. This video describes to us when is the best time for sunbathing. Sunbathing is important to keep our body healthy, especially during a current global pandemic. So, let's enjoy guys!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="javascript:void(0)">New Layout!</a></h4>
-                                        <p>Welcome to my new webpages! I hope I can share my research and experience with new spirit. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="javascript:void(0)">General</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                </details>
-                            </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div class="card">
                                     <div class="card-header">
                                         <h3 class="card-title">Profile</h3>
@@ -740,6 +520,7 @@ img {vertical-align: middle;}
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="ex1">
                                     <div class="card-body">
                                         <div class="row clearfix">
                                             <p>I attended undergraduate school at Institut Teknologi Bandung (ITB), Indonesia, where I majored in Astronomy. I then continue my master in astronomy and was luckily accepted by Astronomy Research Division at ITB. ITB has the oldest astronomy graduate school and hosts the optical telescope at the Bosscha Observatory in Bandung, Indonesia. I worked with Prof. Premana W. Premadi on the strong gravitational lensing for my Bachelor and Master thesis, which we studied both theoretical and observational aspects of cluster-scale lensing.</p>
@@ -747,6 +528,7 @@ img {vertical-align: middle;}
                                             <p>I then moved to Japan for my PhD studies. I attended the Astronomical Institute in Sendai. I worked with Prof. Toshifumi Futamase, Dr. Anupreeta More, and Prof. Masashi Chiba on strong lensing at group-scale, using the Strong Lensing Legacy Survey-ARCS (SARCS). I also participate in the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP), an ambitious program to map 1400 squared degrees of sky with grizy down to r=26 magnitudes, taking advantage of the high etendue delivered by the 1.7-degree diameter FOV Hyper Suprime-Cam onboard the 8.2-m Subaru telescope. I was mainly involved in gravitational lensing, and galaxy cluster studies utilizing the HSC-SSP data and follwing them up with the suite of instruments at Subaru, e.g. FOCAS and AO-InfraRed Camera and Spectrograph (IRCS).</p>
 
                                             <p>After finishing my PhD, I back to my country at the Bosscha Observatory as a researcher for six months. I started my first postdoc position with Prof. Kaiki Taro Inoue in Japan, where I spent most of the time participating Strong Lensing working groups in HSC-SSP Program, especially on strong lensing analysis. Recently, I joined ITB as a lecturer in Astronomy Research Division in ITB.</p>
+                                            </div> 
                                         </div>                                           
                                     </div>
                                 </div>
@@ -773,6 +555,7 @@ img {vertical-align: middle;}
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="ex1">
                                     <div class="card-body">
                                         <div class="row">
                                             <h3 class="card-title">Office Address</h3>
@@ -851,9 +634,139 @@ img {vertical-align: middle;}
                                             </ul>
                                         </div>                                           
                                     </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-highlight-tab" data-toggle="pill" href="#pills-highlight" role="tab" aria-controls="pills-highlight" aria-selected="true">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-blog-tab" data-toggle="pill" href="#pills-blog" role="tab" aria-controls="pills-blog" aria-selected="true">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-highlight" role="tabpanel" aria-labelledby="pills-highlight-tab">
+                                <div class="ex2">
+                                <div class="card blog_single_post">
+                                    <div class="card-body">  
+                                        <h4><a>[2] Lowongan Tim Peneliti Mahasiswa di CosmoLens Lab. Tahun 2021</a></h4>
+                                        <p>Gambaran:</p>
+                                        <p>1 (satu) orang Asisten Peneliti pada untuk topik penelitian Galaksi dan Kosmologi.</p>
+                                        <p>Syarat:</p>
+                                        <p>1. Mahasiswa S1 Prodi  Astronomi ITB (<b>minimal tingkat 3</b>),</p>
+                                        <p>2. sanggup bekerja min. 12 jam/bulan selama 10 bulan (<i>part time</i>),</p>
+                                        <p>3. berencana/sedang mengambil topik TA dalam bidang galaksi dan kosmologi,</p>
+                                        <p>4. <i>"good endurance"</i>.</p>
+
+                                        <p>Bagi mahasiswa yang tertarik dapat menghubungi Anton T. Jaelani melalui email yang tertera di website ini paling lambat <b>21 Januari 2021 atau sampai ada pendaftar yang memenuhi kualifikasi</b>.</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a class="btn btn-outline-secondary" target="_blank" style="color:blue">Buka</a>
+                                        </div> 
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="project-list.html">Research</a></li>
+                                        </ul>                   
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="card-body">  
+                                        <h4><a>[1] Lowongan Tim Peneliti Mahasiswa di CosmoLens Lab. Tahun 2021</a></h4>
+                                        <p>Gambaran:</p>
+                                        <p>2 (dua) orang Asisten Peneliti pada untuk topik penelitian Galaksi dan Kosmologi menggunakan <i>deep machine learning</i>.</p>
+                                        <p>Syarat:</p>
+                                        <p>1. Mahasiswa S2 Prodi Astronomi ITB (bidang Astrofisika Lanjut),</p>
+                                        <p>2. sanggup bekerja min. 12 jam/bulan selama 10 bulan (<i>part time</i>),</p>
+                                        <p>3. punya ketertarikan dalam machine learning,</p>
+                                        <p>4. <i>"good endurance"</i>.</p>
+
+                                        <p>Bagi mahasiswa yang tertarik dapat menghubungi Anton T. Jaelani melalui email yang tertera di website ini paling lambat <b>3 Januari 2021 atau sampai ada pendaftar yang memenuhi kualifikasi</b>.</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a class="btn btn-outline-secondary" target="_blank" style="color:red">Tutup</a>
+                                        </div> 
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="project-list.html">Research</a></li>
+                                        </ul>                   
+                                    </div>
+                                </div>
+
+                                <div class="card blog_single_post">
+                                    <div class="card-body">  
+                                        <p style="text-align:center">
+                                        <img class="tl_avatar" src="assets/images/SSGC2020.jpeg" alt=""  style="width:200px" > </p> 
+                                        <h4><a href="https://www.as.itb.ac.id/ssgc2020/">SSGC 2020 Registration is now closed!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.as.itb.ac.id/ssgc2020/" class="btn btn-outline-secondary" target="_blank">Visit SSGC 2020</a>
+                                        </div> 
+                                        <div class="actions">
+                                            <a href="https://bit.ly/SSGC2020" class="btn btn-outline-secondary" target="_blank">Registration Form</a>
+                                        </div>                  
+                                    </div>
+                                </div>
+
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <img class="tl_avatar" src="assets/images/sugohiV.jpeg" alt="">                                        
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="#">New Lenses from SuGOHI!</a></h4>
+                                        <p>Recently, our SuGOHI paper series has been published in MNRAS. We revealed hundreds of new strong gravitational lensing candidates at group/cluster scale from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 495, Issue 1, 1291</a>)</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="#">Research</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <img class="tl_avatar" src="assets/images/J0904.jpeg" alt="">                                        
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="#">Compact galaxy</a></h4>
+                                        <p>An usually compact lensed galaxy, HSC J0904–0102, discover from the from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. This is the second case after HSC J1152+0047 which is useful to study a source population that could not be studied before. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 494, Issue 3, 3156</a>)</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="#">Research</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="javascript:void(0)">New Layout!</a></h4>
+                                        <p>Welcome to my new webpages! I hope I can share my research and experience with new spirit. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="javascript:void(0)">General</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>  
                             <div class="tab-pane fade" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab">
+                                <div class="ex2">
                                 <div class="card blog_single_post">
                                     <div class="img-post" align="middle">
                                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5-UfKFpKHdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -888,7 +801,119 @@ img {vertical-align: middle;}
                                         </ul>                                    
                                     </div>
                                 </div>
-                            </div>                        
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y1ko_n6i-5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">  
+                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">Importance of radio telescope in Indonesia for global geodetic VLBI network</a></h4>
+                                        <p>Description:</p>
+                                        <p>To keep up with the modern development of astronomy in the world, Indonesian astronomers have commenced studying the possibility of developing new observatory in other Indonesian regions that are suitable for the development of multi-wavelength astronomy. <details>
+                                        <summary>
+                                        Details
+                                        </summary>Besides optical wavelengths, radio waves are naturally the main choice to introduce the multi-wavelength domain regarding a variety of important scientific interests. Considering this development, radio telescopes must be provided and prepared further to work in the network of radio telescopes that already exists in many regions of the globe such as Very Long Baseline Interferometry (VLBI) network. Two places have been selected as a host of new radio telescopes. Mount Timau in Timor Island will be the host of the new National Observatory and in the original proposal, a radio telescope envisaged to be integrated to the next VLBI generation was proposed. Meanwhile, a decommissioned telecommunication antenna in the city of Jatiluhur is currently being undertaken to be converted into a radio telescope. To develop the Indonesian VLBI campaign, and considering two antennas will be available in Jatiluhur and in Timau site, in this work we first undertake to study the possibility to use these telescopes, not only for astronomy/astrometry, but also for geodesy to enhance a more multi-disciplinary and collaborative work. Here we simulate the implication of these two future Indonesian antennas to the estimates of Earth orientation parameters (polar motion, nutation, and dUT1) and the station position. The simulation was performed in two types of VLBI session. First, we conduct the simulation of an intensive session between Japanese antenna Syowa and Indonesian antennas. Next, we simulate the complete 24 hours session by considering some different network configurations. Generally, we found that the Indonesian antennas play an important role to improve the estimation of station position as well as the Earth orientation parameters.</p>
+
+                                        <p>About the Speaker:</p>
+                                        <p>Dr. Ibnu Nurul Huda is currently a Postdoctoral in Astronomy Research Division, Institut Teknologi Bandung.</p></details>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/playlist?list=PLV2hbp85JNWR1tSX2i-6glM6zUWdQFz-n" class="btn btn-outline-secondary" target="_blank">Astronomy Online Colloquium</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Education</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y8El9Aw8BPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">  
+                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">How to become a successful Researcher or Scientist?</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about how to become a world class Researcher or Scientist. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Nuct4E8aOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">  
+                                        <h4><a href="https://www.youtube.com/watch?v=8Nuct4E8aOA">Exploring Your Potential to Face the New Normal</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about how we can explore our hidden potential to face the new normal. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EUWTjxGX92Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="https://www.youtube.com/watch?v=EUWTjxGX92Q">The Fisheries Sector and the Pandemic</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about the fisheries sector and the Coronavirus pandemic. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HvqRmA8Db8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="https://www.youtube.com/watch?v=HvqRmA8Db8I">Astronomical Basis Of Calendars</a></h4>
+                                        <p>The upcoming episode of Medhok Sains will discuss about astronomical basis of calendar systems. Please stay tune!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                <div class="card blog_single_post">
+                                    <div class="img-post" align="middle">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvQrlF9I_7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="card-body">                                    
+                                        <h4><a href="https://www.youtube.com/watch?v=KvQrlF9I_7U">When is the best time for sunbathing?</a></h4>
+                                        <p>The new Medhok Bicara's video is already published. This video describes to us when is the best time for sunbathing. Sunbathing is important to keep our body healthy, especially during a current global pandemic. So, let's enjoy guys!</p>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="actions">
+                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
+                                        </div>
+                                        <ul class="stats list-unstyled">
+                                            <li><a href="medhoksains.html">Outreach</a></li>
+                                        </ul>                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>                         
                         </div>
                     </div>
                 </div>
