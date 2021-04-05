@@ -121,15 +121,11 @@ $(function() {
                 x: {
                 lines: [
                     {value: 8, text: 'ADS/GS h-Index = 8'},
-                    {value: 7},
-                    {value: 6},
                 ]
                 },
                 y: {
                 lines: [
                     {value: 8, text: 'min. citation = 8'},
-                    {value: 7},
-                    {value: 6},
                 ]
                 }
             },
