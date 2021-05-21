@@ -12,15 +12,13 @@
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css"/>
+<link rel="stylesheet" href="assets/plugins/dropify/css/dropify.min.css">
 
 <!-- Core css -->
 <link rel="stylesheet" href="assets/css/main.css"/>
-<link rel="stylesheet" href="assets/css/mapHC.css"/>
 <link rel="stylesheet" href="assets/css/theme1.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Flag sprites service provided by Martijn Lafeber, https://github.com/lafeber/world-flags-sprite/blob/master/LICENSE -->
-<link rel="stylesheet" type="text/css" href="//github.com/downloads/lafeber/world-flags-sprite/flags32.css" />
-
 </head>
 
 <body class="font-montserrat">
@@ -29,6 +27,7 @@
     <div class="loader">
     </div>
 </div>
+<!-- Overlay For Sidebars -->
 
 <div id="main_content">
 
@@ -179,20 +178,13 @@
                 </ul>
             </div>
             <hr>
-            <div class="form-group">
-                <label class="d-block">Storage <span class="float-right">77%</span></label>
-                <div class="progress progress-sm">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-                </div>
-                <button type="button" class="btn btn-primary btn-block mt-3">Upgrade Storage</button>
-            </div>
         </div>
     </div>
 
     <div class="user_div">
         <h5 class="brand-name mb-4">CosmoLens<a href="javascript:void(0)" class="user_btn"><i class="fa fa-arrow-left"></i></a></h5>
         <div class="card-body">
-            <a href="index.html"><img class="card-profile-img" src="assets/images/doing_research.png" alt=""></a>
+            <<a href="index.html"><img class="card-profile-img" src="assets/images/doing_research.png" alt=""></a>
             <h6 class="mb-0">Anton T. Jaelani</h6>
             <a class="fa fa-envelope"></a> antontj@as.itb.ac.id<br>
             <!-- <a class="fa fa-envelope"></a> jaelani.at@gmail.com-->
@@ -320,9 +312,9 @@
                 <li class="g_heading"></li>
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
-                <li class="active"><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
+                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
                     <ul>
-                        <li class="active"><a href="overview.html">Overview</a></li>
+                        <li><a href="overview.html">Overview</a></li>
                         <li><a href="member.html">Member</a></li>
                         <li><a href="project-list.html">Projects</a></li>
                         <li><a href="result.html">Results</a></li>
@@ -336,11 +328,11 @@
                         <li><a href="alumni.html">Alumni</a></li>
                     </ul>
                 </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-youtube-play"></i><span>Public Outreach</span></a>
+                <li class="active"><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-youtube-play"></i><span>Public Outreach</span></a>
                     <ul>
                         <li><a href="medhoksains.html">Medhok Sains</a></li>
                         <li><a href="talks.html">Science Talks</a></li>
-                        <li><a href="sharing.html">Sharing Talks</a></li>
+                        <li class="active"><a href="sharing.html">Sharing Talks</a></li>
                     </ul>
                 </li>
                 <li><a href="publications.html"><i class="fa fa-book"></i><span>Publications</span></a></li>
@@ -376,114 +368,49 @@
                 <div class="page-header">
                     <div class="left">
                         <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Overview</h1>                        
-                    </div>   
-                </div>
-            </div>
-        </div>
-        <div class="section-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <ul class="nav nav-tabs page-header-tab">
-                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Networking">Networking</a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Lecture-ObsCos">Obervational Cosmology</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                        <h1 class="page-title">Medhok Sains</h1>                        
+                    </div>                    
                 </div>
             </div>
         </div>
         <div class="section-body mt-3">
             <div class="container-fluid">
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="Networking" role="tabpanel">
-                        <div class="row clearfix">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Collaborations</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <span class="tag tag-blue mb-3">Collaborators</span>
-                                        <img src="assets/images/MAP_collab.png" alt="unique" align="middle">
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Experiences</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <span class="tag tag-blue mb-3">Observation</span>
-                                        <img src="assets/images/MAP.png" alt="unique" align="middle">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="Lecture-ObsCos" role="tabpanel">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo1.gif" alt="Card image cap" style="width:500px" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo2.gif" alt="Card image cap" style="width:500px" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo3.gif" alt="Card image cap" style="width:500px" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo4.gif" alt="Card image cap" style="width:500px" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo5.gif" alt="Card image cap" style="width:500px" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo6.gif" alt="Card image cap" style="width:500px" >
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Cosmology</h3>
-                                    </div>
-                                    <img class="card-img-top" src="assets/images/cosmo7.gif" alt="Card image cap" style="width:500px" >
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-md-flex justify-content-between">
+                                     <h6>Sharing Talks</h6>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="tab-content">
+                    <div class="row row-deck">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card " >
+                                <div class="card-body">
+                                    <div class="card-status bg-blue"></div>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5-UfKFpKHdU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>     
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card " >
+                                <div class="card-body">
+                                    <div class="card-status bg-blue"></div>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a3TGsxBjO78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section-body">
             <footer class="footer">
@@ -496,20 +423,17 @@
                 </div>
             </footer>
         </div>
-    </div>    
+    </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
-<script src="https://code.highcharts.com/maps/highmaps.js"></script>
-<script src="https://code.highcharts.com/maps/modules/data.js"></script>
-<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
-<script src="https://code.highcharts.com/mapdata/countries/us/us-all.js"></script>
-<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+
 <script src="assets/bundles/lib.vendor.bundle.js"></script>
 
+<script src="assets/bundles/sweetalert.bundle.js"></script>
+<script src="assets/plugins/dropify/js/dropify.min.js"></script>
+
 <script src="assets/js/core.js"></script>
-<script src="assets/js/mapHC.js"></script>
+<script src="assets/js/page/sweetalert.js"></script>
 </body>
 
 </html>
