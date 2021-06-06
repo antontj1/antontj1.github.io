@@ -120,12 +120,12 @@ $(function() {
             grid: {
                 x: {
                 lines: [
-                    {value: 9, text: 'ADS/GS h-Index = 9'},
+                    {value: 9, text: 'GS h-index = 9'},
                 ]
                 },
                 y: {
                 lines: [
-                    {value: 9, text: 'min. citation = 9'},
+                    {value: 9},
                 ]
                 }
             },
