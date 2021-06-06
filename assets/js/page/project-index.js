@@ -152,27 +152,27 @@ $(function() {
             bindto: '#chart-combination3', // id of chart wrapper
             data: {
                 columns: [
-                    ['data1', 997],
                     ['data2', 1069],
-                    ['data3', 650],
-                    ['data4', 692],
+                    ['data1', 997],
                     ['data5', 913],
+                    ['data4', 692],
+                    ['data3', 650],
                 ],
                 type: 'bar', // default type of chart
                 colors: {
-                    'data1': '#1d37c9',
                     'data2': '#00a1e6',
-                    'data3': '#e6a400',
+                    'data1': '#1d37c9',
+                    'data5': '#18dcab',
                     'data4': '#7595ff',
-                    'data5': '#18dcab'
+                    'data3': '#e6a400',
                 },
                 names: {
                     // name of each serie
-                    'data1': 'ADS',
                     'data2': 'GS',
-                    'data3': 'SC',
+                    'data1': 'ADS',
+                    'data5': 'RG',
                     'data4': 'RID',
-                    'data5': 'RG'
+                    'data3': 'SC',    
                 }
 
             },
