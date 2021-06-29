@@ -86,6 +86,64 @@ img {vertical-align: middle;}
 }
 </style>
 
+<style style="text/css">
+    .marquee {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        background: #ffffff;
+        color: #333;
+        border: 1px solid #4a4a4a;
+    }
+    
+    .marquee p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: scroll-left 2s linear infinite;
+        -webkit-animation: scroll-left 2s linear infinite;
+        animation: scroll-left 50s linear infinite;
+    }
+    
+    @-moz-keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+        }
+    }
+    
+    @-webkit-keyframes scroll-left {
+        0% {
+            -webkit-transform: translateX(100%);
+        }
+        100% {
+            -webkit-transform: translateX(-100%);
+        }
+    }
+        
+    @keyframes scroll-left {
+        0% {
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+        }
+        100% {
+            -moz-transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
 <meta name="google-site-verification" content="rFX6dFlkp62akIeQFnPMi5fH2a-dVTkDQRNS9iFW_YM" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -526,7 +584,7 @@ img {vertical-align: middle;}
                                         <div class="row clearfix">
                                             <p>I am an Astrophysicist who grew up from small city, Banjar, West Java. After finishing my PhD from Tohoku University, Japan, I back to my country at the Bosscha Observatory as a researcher for six months. I started my postdoc position with Prof. Kaiki Taro Inoue in Kindai University, Japan, where I spent most of the time participating Strong Lensing working groups in HSC-SSP Program, especially on strong lensing analysis. Recently, I joined ITB as a lecturer in Astronomy Research Group in ITB.</p>
                                             </div> 
-                                        </div>                                           
+                                        </div>  
                                     </div>
                                 </div>
                             </div>
@@ -632,6 +690,15 @@ img {vertical-align: middle;}
                             </div>                    
                         </div>
                     </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="card">
+                            <div class="marquee">
+                                <p> Instead of Social Distancing Let's Call It Virtual Connecting! Stay Home. Stay Safe.</p>
+                            </div>  
+                        </div> 
+                    </div> 
+
                     <div class="col-lg-12 col-md-12">
                         <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item">
