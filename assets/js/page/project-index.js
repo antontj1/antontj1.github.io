@@ -62,6 +62,7 @@ $(function() {
                 lines: [
                     {value: 250},
                     {value: 500},
+                    {value: 750},
                 ]
                 }
             },
@@ -105,18 +106,18 @@ $(function() {
             },
             axis: {
                 x: {
-                    max: 18,
-                    min: 0.5,
+                    max: 24,
+                    min: 0.4,
                 },
                 y: {
-                    max: 30,
-                    min: 2,
+                    max: 15,
+                    min: 1.3,
                 },
             },
             grid: {
                 x: {
                 lines: [
-                    {value: 9, text: 'GS h-index = 9'},
+                    {value: 9, text: 'h-i = 9'},
                 ]
                 },
                 y: {
