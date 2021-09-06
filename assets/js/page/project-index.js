@@ -17,11 +17,11 @@ $(function() {
             bindto: '#chart-combination', // id of chart wrapper
             data: {
                 columns: [
-                    ['data1', 34,197,178,304,404],
-                    ['data2',  9,187,228,343,433],
-                    ['data3',  0,142,168,235,172],
-                    ['data4',  3,143,150,252,180],
-                    ['data5', 21, 81,217,391,308],
+                    ['data1', 34,197,178,304,404,1119],
+                    ['data2',  9,187,228,343,433,1206],
+                    ['data3',  0,142,168,235,172, 719],
+                    ['data4',  3,143,150,252,180, 730],
+                    ['data5', 21, 81,217,391,308,1020],
                 ],
                 type: 'bar', // default type of chart
                 colors: {
@@ -44,11 +44,11 @@ $(function() {
                 x: {
                     type: 'category',
                     // name of each category
-                    categories: ['2017','2018','2019','2020', '2021']
+                    categories: ['2017','2018','2019','2020', '2021', 'total']
                 },
             },
             bar: {
-                width: 10
+                width: 7
             },
             legend: {
                 show: true, //hide legend
@@ -63,6 +63,8 @@ $(function() {
                     {value: 250},
                     {value: 500},
                     {value: 750},
+                    {value:1000},
+                    {value:1250},
                 ]
                 }
             },
@@ -131,74 +133,3 @@ $(function() {
 
 });
 
-$(function() {
-    "use strict";
-
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-    $('.knob').knob({
-        draw: function () {           
-        }
-    });
-
-    // Current Ticket Status
-    $(document).ready(function(){
-        var chart = c3.generate({
-            bindto: '#chart-combination3', // id of chart wrapper
-            data: {
-                columns: [
-                    ['data2', 1206],
-                    ['data1', 1119],
-                    ['data5', 1020],
-                    ['data4', 730],
-                    ['data3', 719],
-                ],
-                type: 'bar', // default type of chart
-                colors: {
-                    'data2': '#00a1e6',
-                    'data1': '#1d37c9',
-                    'data5': '#18dcab',
-                    'data4': '#7595ff',
-                    'data3': '#e6a400',
-                },
-                names: {
-                    // name of each serie
-                    'data2': 'GS',
-                    'data1': 'ADS',
-                    'data5': 'RG',
-                    'data4': 'RID',
-                    'data3': 'SC',    
-                }
-
-            },
-            axis: {
-                x: {
-                    type: 'category',
-                    // name of each category
-                    categories: ['']
-                },
-            },
-            bar: {
-                width: 40
-            },
-            legend: {
-                show: true, //hide legend
-            },
-            padding: {
-                bottom: 0,
-                top: 0
-            },
-            grid: {
-                y: {
-                lines: [
-                    {value: 500},
-                    {value: 1000},
-                ]
-                }
-            },
-        });
-    });
-
-});

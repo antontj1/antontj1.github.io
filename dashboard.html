@@ -83,6 +83,32 @@
     }
 </script>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Pizza');
+        data.addColumn('number', 'Populartiy');
+        data.addRows([
+          ['MNRAS', 2], 
+          ['JKAS', 1],
+          ['ApJ', 1],          
+          ['JSD', 1],  
+        ]);
+
+        var options = {
+          chartArea:{width:"85%",height:"85%"},
+          legend: {'position': 'bottom'},
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_3'));
+        chart.draw(data, options);
+    }
+</script>
+
 </head>
 
 <body class="font-montserrat">
@@ -532,10 +558,10 @@
                     <div class="col-xl-4 col-lg-6 col-md-6">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Total Citations</h3>
+                                <h3 class="card-title">Peer Review</h3>
                             </div>
                             <div class="card-body">
-                                <div id="chart-combination3" style="height: 305px"></div>
+                                <div id="piechart_3d_3" style="height: 305px"></div>
                             </div>
                         </div>
                     </div>
