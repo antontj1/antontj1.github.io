@@ -27,14 +27,14 @@ $(function() {
                 colors: {
                     'data3': '#e6a400',
                     'data4': '#7595ff',
-                    'data5': '#18dcab'
+                    'data5': '#18dcab',
                     'data1': '#1d37c9',
                     'data2': '#00a1e6',
                 },
                 names: {
                     'data3': 'SC',
                     'data4': 'RID',
-                    'data5': 'RG'
+                    'data5': 'RG',
                     'data1': 'ADS',
                     'data2': 'GS',
                 }
