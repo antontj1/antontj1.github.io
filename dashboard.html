@@ -1,720 +1,523 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/j0904.ico" type="image/png">
+        <title>CosmoLens | ATJ</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Pizza');
+                data.addColumn('number', 'Populartiy');
+                data.addRows([
+                    ['A&A', 6],
+                    ['ApJ', 3], 
+                    ['MNRAS', 4],
+                    ['PASJ', 4],  
+                    ['RAA', 1],
+                    ['PKAS', 1],
+                    ['Exp. Astron.', 1],
+                    ['JoP Conf. Series', 2],
+                    ['AIP Conf. Proc.', 3],         
+                    ['arXiv', 1],
+                ]);
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+                var options = {
+                    chartArea:{width:"100%",height:"100%"},
+                    legend: {'position': 'bottom'},
+                    is3D: true,
+                };
 
-<link rel="icon" href="j0904.ico" type="image/x-icon"/>
+                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                chart.draw(data, options);
+            }
+        </script>
 
-<title>CosmoLens</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Pizza');
+                data.addColumn('number', 'Populartiy');
+                data.addRows([
+                    ['Q1', 14],
+                    ['Q2', 4],
+                    ['Q3', 2], 
+                    ['Q4', 4],  
+                    ['arXiv', 1],
+                    ['Unindexed', 1],
+                ]);
 
-<!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+                var options = {
+                    chartArea:{width:"100%",height:"100%"},
+                    legend: {'position': 'bottom'},
+                    is3D: true,
+                };
 
-<!-- Plugins css -->
-<link rel="stylesheet" href="assets/plugins/charts-c3/c3.min.css"/>
+                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_2'));
+                chart.draw(data, options);
+            }
+        </script>
 
-<!-- Core css -->
-<link rel="stylesheet" href="assets/css/main.css"/>
-<link rel="stylesheet" href="assets/css/theme1.css"/>
-<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'Pizza');
+                    data.addColumn('number', 'Populartiy');
+                    data.addRows([
+                        ['MNRAS', 2], 
+                        ['JKAS', 1],
+                        ['ApJ', 1],          
+                        ['JSD', 1],  
+                    ]);
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                var options = {
+                    chartArea:{width:"100%",height:"100%"},
+                    legend: {'position': 'bottom'},
+                    is3D: true,
+                };
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-    google.charts.load("current", {packages:["corechart"]});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Pizza');
-        data.addColumn('number', 'Populartiy');
-        data.addRows([
-          ['A&A', 6],
-          ['ApJ', 3], 
-          ['MNRAS', 4],
-          ['PASJ', 4],  
-          ['RAA', 1],
-          ['PKAS', 1],
-          ['Exp. Astron.', 1],
-          ['JoP Conf. Series', 2],
-          ['AIP Conf. Proc.', 3],         
-          ['arXiv', 1],
-        ]);
+                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_3'));
+                chart.draw(data, options);
+            }
+        </script>
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
 
-        var options = {
-          chartArea:{width:"85%",height:"85%"},
-          legend: {'position': 'bottom'},
-          is3D: true,
-        };
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['', 'ADS', 'GS', 'RG', 'SC', 'RID'],
+                    ['1',   469,  515,  426,  329, 311],
+                    ['2',   355,  395,  280,  234, 223],
+                    ['3',   151,  167,  183,   89, 100],
+                    ['4',    48,   42,   49,   28,  30],
+                    ['5',    42,   37,   33,   21,  19],
+                    ['6',    24,   28,   29,   15,  13],
+                    ['7',    22,   25,   24,   10,  10],
+                    ['8',    15,   14,   12,    8,  10],
+                    ['9',    8,   13,    9,    6,   8],
+                    ['10',    7,    9,    8,    5,   8],
+                    ['11',    6,    7,    4,    2,   6],
+                    ['12',    6,    4,    2,    1,   2],
+                    ['13',    4,    3,    2,    1,   1],
+                    ['14',    2,    2,    1,    1,   1],
+                    ['15',    1,    1,    1,    0,   1],
+                    ['16',    1,    1,    1,    0,   1],
+                    ['17',    1,    1,    1,    0,   0],
+                    ['18',    1,    1,    0,    0,   0],
+                    ['19',    0,    1,    0,    0,   0],
+                    ['20',    0,    0,    0,    0,   0],
+                ]);
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-    }
-</script>
+                var options = {
+                    curveType: 'line',
+                    legend: { position: 'bottom' },
+                    axes: {
+                    y: {
+                        range: {
+                            max: 24,
+                            min: 0
+                            }
+                        }
+                    },
+                };
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-    google.charts.load("current", {packages:["corechart"]});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Pizza');
-        data.addColumn('number', 'Populartiy');
-        data.addRows([
-          ['Q1', 14],
-          ['Q2', 4],
-          ['Q3', 2], 
-          ['Q4', 4],  
-          ['arXiv', 1],
-          ['Unindexed', 1],
-        ]);
+                var chart = new google.visualization.LineChart(document.getElementById('chart_hi'));
+                chart.draw(data, options);
+            }
+        </script>
 
-        var options = {
-          chartArea:{width:"85%",height:"85%"},
-          legend: {'position': 'bottom'},
-          is3D: true,
-        };
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['bar']});
+            google.charts.setOnLoadCallback(drawChart);
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_2'));
-        chart.draw(data, options);
-    }
-</script>
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['', 'SC', 'RID', 'RG', 'ADS', 'GS'],
+                    ['2017',   0,  3,  21,  34,   9],
+                    ['2018', 147,143,  81, 197, 187],
+                    ['2019', 168,150, 217, 178, 228],
+                    ['2020', 240,252, 391, 300, 344],
+                    ['2021', 193,194, 362, 452, 491],
+                    ['Tot.', 750,744,1074,1163,1265],
+                ]);
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-    google.charts.load("current", {packages:["corechart"]});
-    google.charts.setOnLoadCallback(drawChart);
-    function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Pizza');
-        data.addColumn('number', 'Populartiy');
-        data.addRows([
-          ['MNRAS', 2], 
-          ['JKAS', 1],
-          ['ApJ', 1],          
-          ['JSD', 1],  
-        ]);
+                var options = {
+                    legend: 'none'
+                };
 
-        var options = {
-          chartArea:{width:"85%",height:"85%"},
-          legend: {'position': 'bottom'},
-          is3D: true,
-        };
+                var chart = new google.charts.Bar(document.getElementById('chart_cit'));
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_3'));
-        chart.draw(data, options);
-    }
-</script>
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+        </script>
 
-</head>
-
-<body class="font-montserrat">
-<!-- Page Loader -->
-<div class="page-loader-wrapper">
-    <div class="loader">
-    </div>
-</div>
-
-<div id="main_content">
-
-    <div id="header_top" class="header_top">
-        <div class="container">
-            <div class="hleft">
-                <a class="header-brand" href="index.html"><i class="fa fa-grav brand-logo"></i></a>
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/doing_research.png" alt="" data-toggle="tooltip" data-placement="right" title="History"/></a>
-                </div>
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container box_1620">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="index.html"><p style="color:white; font-family:sans-serif">CosmoLens</p></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                                <li class="nav-item active"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="member.html">Member</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teaching</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="lectures.html">Lectures</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outreach</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="oprojects.html">Projects</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+                                    </ul>
+                                </li> 
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </nav>
             </div>
-            <div class="hright">
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
-                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
-                </div>            
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Dashboard</h2>
+                            <div class="page_link">
+                                <a href="dashboard.html">Dashboard</a>
+                            </div>
+						</div>
+					</div>
+				</div>
             </div>
-        </div>
-    </div>
-
-    <div id="rightsidebar" class="right_sidebar">
-        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
-        <div class="p-4">
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
-                <div class="custom-controls-stacked font_setting">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
-                        <span class="custom-control-label">Open Sans Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
-                        <span class="custom-control-label">Montserrat Google Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
-                        <span class="custom-control-label">Robot Google Font</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
-                <div class="custom-controls-stacked arrow_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
-                <div class="custom-controls-stacked list_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
-                <ul class="setting-list list-unstyled mt-1 setting_switch">
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Night Mode</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Fix Navbar top</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Header Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader" checked="">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Min Sidebar Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Sidebar Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Icon Color</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Gradient Color</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Box Shadow</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">RTL Support</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Box Layout</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-        </div>
-    </div>
-
-    <div class="user_div">
-        <h5 class="brand-name mb-4">CosmoLens<a href="javascript:void(0)" class="user_btn"><i class="fa fa-arrow-left"></i></a></h5>
-        <div class="card-body">
-            <a href="index.html"><img class="card-profile-img" src="assets/images/doing_research.png" alt=""></a>
-            <h6 class="mb-0">Anton T. Jaelani</h6>
-            <a class="fa fa-envelope"></a> antontj@as.itb.ac.id<br>
-            <!-- <a class="fa fa-envelope"></a> jaelani.at@gmail.com-->
-            <div class="d-flex align-items-baseline mt-3">
-                <h3 class="mb-0 mr-2">007</h3>
-                <p class="mb-0"><span class="text-success">1.6% <i class="fa fa-arrow-up"></i></span></p>
-            </div>
-            <div class="progress progress-xs">
-                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-orange" role="progressbar" style="width: 5%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-indigo" role="progressbar" style="width: 13%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <hr>
-            <p>Employment</p>
-            <ul class="new_timeline">
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2020 - now</div>
-                    <div class="desc">
-                        <h3>Lecturer</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Astronomy Research Group</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2018 - 2021</div>
-                    <div class="desc">
-                        <h3>Postdoctoral</h3>
-                        <h4><a href="https://www.phys.kindai.ac.jp/english/research/" target="_blank">Department of Physics</a>
-                        <br><a href="https://www.kindai.ac.jp/" target="_blank">Kindai University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2018</div>
-                    <div class="desc">
-                        <h3>Researcher</h3>
-                        <h4><a href="https://bosscha.itb.ac.id/" target="_blank">Bosscha Observatory</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet orange"></div>
-                    <div class="time">2017 - 2018</div>
-                    <div class="desc">
-                        <h3>Research Assistant</h3>
-                        <h4><a href="https://www.astr.tohoku.ac.jp/" target="_blank">Astronomical Institute</a>
-                        <br><a href="http://www.tohoku.ac.jp/en/" target="_blank">Tohoku University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet orange"></div>
-                    <div class="time">2012 - 2014</div>
-                    <div class="desc">
-                        <h3>Research Assistant</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Astronomy Research Group</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-            </ul>
-            <p>Education</p>
-            <ul class="new_timeline">
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2014 - 2018</div>
-                    <div class="desc">
-                        <h3>Ph. D. in Astrophysics</h3>
-                        <h4><a href="https://www.astr.tohoku.ac.jp/" target="_blank">Astronomical Institute</a>
-                        <br><a href="http://www.tohoku.ac.jp/en/" target="_blank">Tohoku University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2012 - 2014</div>
-                    <div class="desc">
-                        <h3>M. Sc. in Astrophysics</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Graduate Programme in Astronomy</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2008 - 2012</div>
-                    <div class="desc">
-                        <h3>B. Sc. in Astrophysics</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Undergraduate Programme in Astronomy</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">2005 - 2008</div>
-                    <div class="desc">
-                        <h3>Senior High School</h3>
-                        <h4><a href="http://www.sman1banjar.sch.id/html/" target="_blank">SMA Negeri 1 Banjar</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">2002 - 2005</div>
-                    <div class="desc">
-                        <h3>Junior High School</h3>
-                        <h4><a href="http://smpn3banjar.sch.id/" target="_blank">SMP Negeri 3 Banjar</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">1996 - 2002</div>
-                    <div class="desc">
-                        <h3>Elementary School</h3>
-                        <h4><a href="https://www.google.com/search?client=firefox-b-d&q=MI+Banjar+2" target="_blank">MI Banjar 2</a></h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="left-sidebar" class="sidebar ">
-        <h5 class="brand-name">CosmoLens </h5>
-        <nav id="left-sidebar-nav" class="sidebar-nav">
-            <ul class="metismenu">
-                <li class="g_heading"></li>
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li class="active"><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
-                    <ul>
-                        <li><a href="overview.html">Overview</a></li>
-                        <li><a href="member.html">Member</a></li>
-                        <li><a href="project-list.html">Projects</a></li>
-                        <li><a href="result.html">Results</a></li>
-                        <li><a href="team.html">Collaborators</a></li>   
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-graduation-cap"></i><span>Teaching</span></a>
-                    <ul>
-                        <li><a href="Lecture.html">Lecture</a></li>
-                        <li><a href="students.html">Students</a></li>
-                        <li><a href="alumni.html">Alumni</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-youtube-play"></i><span>Public Outreach</span></a>
-                    <ul>
-                        <li><a href="medhoksains.html">Medhok Sains</a></li>
-                        <li><a href="talks.html">Science Talks</a></li>
-                        <li><a href="sharing.html">Sharing Talks</a></li>
-                    </ul>
-                </li>
-                <li><a href="publications.html"><i class="fa fa-book"></i><span>Publications</span></a></li>
-                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
-                <li><a href="page-gallery.html"><i class="fa fa-image"></i><span>Gallery</span></a></li>
-            </ul>
-
-            <br>
-            <a><i class="fa fa-crosshairs"></i> Office address</a>
-            <br><small>Jl. Ganesha No. 10
-            <br>CAS Building, 6<sup>th</sup>  Floor
-            <br>Bandung, West Java
-            <br>Indonesia 40132</small>
-
-            <br>
-            <br>
-            <a><i class="fa fa-phone"></i> Phone</a>
-            <br><small>+62-22-2511576 
-            <br>Fax: +62-22-2509170</small>
-
-            <br>
-            <br>
-            <a><i class="fa fa-envelope-square"></i> Emails</a>
-            <br>
-            <small>antontj@as.itb.ac.id 
-            <!-- <br>jaelani.at@gmail.com--></small>            
-        </nav>     
-    </div>
-
-    <div class="page">
-        <div id="page_top" class="section-body top_dark">
-            <div class="container-fluid">
-                <div class="page-header">
-                    <div class="left">
-                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Dashboard</h1>                       
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-body mt-3">
-            <div class="container-fluid">
-                <div class="row clearfix">
-                </div>
-                <div class="row clearfix row-deck">
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h4 style="text-align:center"> <a class="ai ai-ads-square ai-3x" href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22Jaelani%2C%20Anton%22%20OR%20%22Jelani%2C%20Anton%22%20OR%20%22Timur%20Jaelani%2C%20Anton%22)%20%20orcid%3A%220000-0001-6282-5778%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" style="color:blue"></a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h4 style="text-align:center"> <a class="ai ai-google-scholar-square ai-3x" href="https://scholar.google.co.id/citations?hl=id&user=0XYGYv4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" style="color:#34c9eb"></a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h4 style="text-align:center"> <a href="https://www.scopus.com/authid/detail.uri?authorId=55991348300" target="_blank"><img src="assets/images/Scopus.png" alt="" style="width:70px"></a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h4 style="text-align:center"> <a id="badgeCont875"><script type="text/javascript" src="https://publons.com/mashlets?el=badgeCont875&rid=P-2841-2019" target="_blank"></script></a><a href="https://publons.com/researcher/2942061/anton-t-jaelani/" target="_blank"></a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h4 style="text-align:center"> <a class="ai ai-researchgate-square ai-3x" href="https://www.researchgate.net/profile/Anton_Timur_Jaelani2" target="_blank" style="color:#34ebc6"></a> </h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6">
-                        <div class="card">
-                            <div class="card-body text-center">
-                                <h4 style="text-align:center"> <a href="https://sinta.ristekbrin.go.id/authors/detail?id=6719695&view=overview" target="_blank"><img src="assets/images/sinta_logo.png" alt="Sinta" style="width:135px"></a></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row clearfix row-deck">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Citations History (5 years)</h3>
-                            </div>
-                            <div class="card-body">
-                                <div id="chart-combination" style="height: 305px"></div>
-                            </div>
-                        </div>                
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">H-Index</h3>
-                            </div>
-                            <div class="card-body">
-                                <div id="chart-combination2" style="height: 305px"></div>
-                            </div>
-                        </div>                
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Research Keywords</h3>
-                            </div>
-                            <img src="assets/images/unique.png" alt="unique" align="middle" style="margin:60px 0px">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-body">
-            <div class="container-fluid">
-                <div class="row clearfix row-deck"> 
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Published Journals</h3>
-                            </div>
-                            <div class="card-body text-center">
-                                <div id="piechart_3d" style="width: 300px; height: 300px; margin:0 auto;"></div>
-                            </div>
-                        </div>
-                    </div>                 
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Peer Review</h3>
-                            </div>
-                            <div class="card-body">
-                                <div id="piechart_3d_3" style="height: 305px"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Scopus Indexed</h3>
-                            </div>
-                            <div class="card-body text-center">
-                                <div id="piechart_3d_2" style="width: 300px; height: 300px; margin:0 auto;"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Recent Publication in Journals </h3>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-vcenter mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            <a href="https://arxiv.org/abs/2106.14581" target="_blank">Properties of the Environment of Galaxies in Clusters of Galaxies CL 0024+1654 and RX J0152.7−1357</a>
-                                            <br>
-                                            <span>29 Jun 2021</span> by <a> Premadi et al. (Submitted to J. Math. Fund. Sci., arXiv:2106.14581)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://doi.org/10.1051/0004-6361/202039376" target="_blank">Strongly lensed candidates from the HSC transient survey</a>
-                                            <br>
-                                            <span>16 August 2021 </span> by <a> Chao et al. (A&A in press.)</a>
-                                            </td>
-                                        </tr> 
-                                        <tr>
-                                            <td>
-                                            <a href="https://doi.org/10.1051/0004-6361/202141758" target="_blank">HOLISMOKES. VI. New galaxy-scale strong lens candidates from the HSC-SSP imaging survey </a>
-                                            <br>
-                                            <span>3 August 2021 </span> by <a> Canameras et al. (A&A, 653, L6)</a>
-                                            </td>
-                                        </tr>                  
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Recent Publication in Proceedings </h3>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-vcenter mb-0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1245/1/012017" target="_blank">Constraints on Dark Energy Models in Cosmology from Double-Source Plane Strong Lensing System</a>
-                                            <br>
-                                            <span>01 August 2019</span> by <a> Jaelani et al. (JoPCS)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://iopscience.iop.org/article/10.1088/1742-6596/771/1/012038" target="_blank">Stellar background observation during Total Solar Eclipse March 9<sup>th</sup> 2016</a>
-                                            <br>
-                                            <span>01 November 2016</span> by <a> Mumtahana et al. (JoPCS)</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            <a href="https://aip.scitation.org/doi/abs/10.1063/1.4930662" target="_blank">Mass reconstruction of galaxies clusters: Abell 2219, RXC J2248.7-4431, and SDSS J1004+4112 using strong gravitational lensing</a>
-                                            <br>
-                                            <span>30 September 2015</span> by <a> Jaelani et al. (AIP Conf. Proc.)</a>
-                                            </td>
-                                        </tr>                                    
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Recent Medhok Sains Videos</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="row text-center">
-                                    <div class="col-4 border-right pb-3 pt-3">
-                                        <label class="mb-0 font-13">Total Videos</label>
-                                        <h4 class="font-30 font-weight-bold text-col-blue">26</h4>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        
+        <!-- Start Sample Area -->
+			<div class="whole-wrap">
+				<div class="container">
+					<div class="section-top-border">
+					    <div class="row clearfix row-deck">
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Published Journals</h4>
                                     </div>
-                                    <div class="col-4 border-right pb-3 pt-3">
-                                        <label class="mb-0 font-13">Diskusi Daring</label>
-                                        <h4 class="font-30 font-weight-bold text-col-blue">24</h4>
+                                <div class="card-body text-center">
+                                    <div id="piechart_3d" align="middle" style="width: 100%; height: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Peer Review</h4>
                                     </div>
-                                    <div class="col-4 pb-3 pt-3">
-                                        <label class="mb-0 font-13">Medhok Bicara</label>
-                                        <h4 class="font-30 font-weight-bold text-col-blue">2</h4>
+                                <div class="card-body text-center">
+                                    <div id="piechart_3d_3" align="middle" style="width: 100%; height: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Scopus Indexed</h4>
+                                    </div>
+                                <div class="card-body text-center">
+                                    <div id="piechart_3d_2" align="middle" style="width: 100%; height: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-top-border">
+                        <div class="row clearfix row-deck">
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Citations History (5 years)</h4>
+                                    </div>
+                                <div class="card-body">
+                                    <div id="chart_cit" align="middle" style="width: 100%; height: 100%;"></div>
+                                </div>
+                            </div>                
+                        </div>
+
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">H-Index</h4>
+                                    </div>
+                                <div class="card-body">
+                                    <div id="chart_hi" align="middle" style="width: 100%; height: 100%;"></div>
+                                </div>
+                            </div>                
+                        </div>
+                    
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Research Keywords</h4>
+                                    </div>
+                                        <img src="assets/images/unique.png" alt="unique" align="middle" style="margin:20px 0px">
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-vcenter mb-0">
-                                    <tbody>                        
-                                        <tr>
-                                            <td>
-                                                <a href="https://youtu.be/_l6YfAYhqbA" target="_blank">Ep. 24: Serba-Serbi Vaksin COVID-19</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM" target="_blank">Ep. 23: Menjadi Peneliti Kelas Dunia Dari Dalam Negeri</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="https://www.youtube.com/watch?v=8Nuct4E8aOA" target="_blank">Ep. 22: Menggali Potensi Diri: Bekal Mengarungi New Normal</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        </div>
+                    </div>
+
+                    <div class="section-top-border">
+                        <div class="row clearfix row-deck">
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Recent Publication in Journals </h4>
+                                    </div>
+                                <div class="table-responsive">
+                                    <table class="table table-vcenter mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                <a href="https://arxiv.org/abs/2106.14581" target="_blank">Properties of the Environment of Galaxies in Clusters of Galaxies CL 0024+1654 and RX J0152.7−1357</a>
+                                                <br>
+                                                <span>29 Jun 2021</span> by <a> Premadi et al. (Submitted to J. Math. Fund. Sci., arXiv:2106.14581)</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <a href="https://doi.org/10.1051/0004-6361/202039376" target="_blank">Strongly lensed candidates from the HSC transient survey</a>
+                                                <br>
+                                                <span>16 Aug 2021 </span> by <a> Chao et al. (A&A in press.)</a>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <td>
+                                                <a href="https://doi.org/10.1051/0004-6361/202141758" target="_blank">HOLISMOKES. VI. New galaxy-scale strong lens candidates from the HSC-SSP imaging survey </a>
+                                                <br>
+                                                <span>3 Aug 2021 </span> by <a> Canameras et al. (A&A, 653, L6)</a>
+                                                </td>
+                                            </tr>                  
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Recent Publication in Proceedings </h4>
+                                    </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-vcenter mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1245/1/012017" target="_blank">Constraints on Dark Energy Models in Cosmology from Double-Source Plane Strong Lensing System</a>
+                                                <br>
+                                                <span>01 Aug 2019</span> by <a> Jaelani et al. (JoPCS)</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/771/1/012038" target="_blank">Stellar background observation during Total Solar Eclipse March 9<sup>th</sup> 2016</a>
+                                                <br>
+                                                <span>01 Nov 2016</span> by <a> Mumtahana et al. (JoPCS)</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <a href="https://aip.scitation.org/doi/abs/10.1063/1.4930662" target="_blank">Mass reconstruction of galaxies clusters: Abell 2219, RXC J2248.7-4431, and SDSS J1004+4112 using strong gravitational lensing</a>
+                                                <br>
+                                                <span>30 Sep 2015</span> by <a> Jaelani et al. (AIP Conf. Proc.)</a>
+                                                </td>
+                                            </tr>                                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-xl-4 col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Recent Medhok Sains Videos</h4>
+                                    </div>
+                                <div class="card-body">
+                                    <div class="row text-center">
+                                        <div class="col-4 border-right pb-3 pt-3">
+                                            <label class="mb-0 font-13">Total Videos</label>
+                                            <h4 class="font-30 font-weight-bold text-col-blue">26</h4>
+                                        </div>
+                                        <div class="col-4 border-right pb-3 pt-3">
+                                            <label class="mb-0 font-13">Diskusi Daring</label>
+                                            <h4 class="font-30 font-weight-bold text-col-blue">24</h4>
+                                        </div>
+                                        <div class="col-4 pb-3 pt-3">
+                                            <label class="mb-0 font-13">Medhok Bicara</label>
+                                            <h4 class="font-30 font-weight-bold text-col-blue">2</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-vcenter mb-0">
+                                        <tbody>                        
+                                            <tr>
+                                                <td>
+                                                    <a href="https://youtu.be/_l6YfAYhqbA" target="_blank">Ep. 24: Serba-Serbi Vaksin COVID-19</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM" target="_blank">Ep. 23: Menjadi Peneliti Kelas Dunia Dari Dalam Negeri</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://www.youtube.com/watch?v=8Nuct4E8aOA" target="_blank">Ep. 22: Menggali Potensi Diri: Bekal Mengarungi New Normal</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>                  
-            </div>
-        </div>       
-        <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            &copy; 2020, Anton T. Jaelani. Design: <a href="https://www.templateshub.net/">Templates Hub</a>
+
+                    <div class="section-top-border">
+                        <div class="row clearfix row-deck">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Collaborations</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="assets/images/MAP_collab.png" alt="unique" align="middle" style="width: 100%; height: 100%;">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Observing Experiences</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="assets/images/MAP.png" alt="unique" align="middle" style="width: 100%; height: 100%;">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+					</div>
+				</div>
+			</div>	
+			<!-- End Align Area -->
+        
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+            <div class="container">
+                <div class="row footer_inner">
+                    <div class="col-lg-6 col-sm-6">
+                        <aside class="f_widget ab_widget">
+                            <div class="f_title">
+                                <h3>Office address</h3>
+                            </div>
+                            <p>Jl. Ganesha No. 10
+                            <br>CAS Building, 6th Floor
+                            <br>Bandung, West Java
+                            <br>Indonesia 40132</p>
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </aside>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <aside class="f_widget news_widget">
+                            <div class="f_title">
+                                <h3>Links</h3>
+                            </div>
+                            <p><a href="https://www.itb.ac.id/" target="_blank" >Institut Teknologi Bandung</a>
+                            <br><a href="https://fmipa.itb.ac.id/" target="_blank" >Faculty of Mathematics and Natural Sciences</a>
+                            <br><a href="https://www.as.itb.ac.id/" target="_blank" >Astronomy Research Group</a></p>
+                        </aside>
                     </div>
                 </div>
-            </footer>
-        </div>
-    </div>    
-</div>
-
-
-<script src="assets/bundles/lib.vendor.bundle.js"></script>
-
-<script src="assets/bundles/apexcharts.bundle.js"></script>
-<script src="assets/bundles/counterup.bundle.js"></script>
-<script src="assets/bundles/knobjs.bundle.js"></script>
-<script src="assets/bundles/c3.bundle.js"></script>
-
-<script src="assets/js/core.js"></script>
-<script src="assets/js/page/project-index.js"></script>
-</body>
-
+            </div>
+        </footer>
+        <!--================End Footer Area =================--> 
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+        <script src="js/project-index.js"></script>
+    </body>
 </html>

@@ -1,1034 +1,561 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-div.ex1 {
-  background-color: white;
-  height: 400px;
-  overflow: scroll;
-}
-
-div.ex2 {
-  background-color: none;
-  height: 600px;
-  overflow: scroll;
-}
-
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 250px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #000000;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: right;
-  top: 0;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: "none";
-  font-size: 16px;
-  padding: 8px 12px;
-  position: absolute;
-  text-align: right;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.5s;
-  animation-name: fade;
-  animation-duration: 6.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .8} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .8} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-
-<style style="text/css">
-    .marquee {
-        height: 50px;
-        overflow: hidden;
-        position: relative;
-        background: #ffffff;
-        color: #333;
-        border: 1px solid #4a4a4a;
-    }
-    
-    .marquee p {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        font-size: 20px;
-        line-height: 50px;
-        text-align: center;
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-        -moz-animation: scroll-left 2s linear infinite;
-        -webkit-animation: scroll-left 2s linear infinite;
-        animation: scroll-left 50s linear infinite;
-    }
-    
-    @-moz-keyframes scroll-left {
-        0% {
-            -moz-transform: translateX(100%);
-        }
-        100% {
-            -moz-transform: translateX(-100%);
-        }
-    }
-    
-    @-webkit-keyframes scroll-left {
-        0% {
-            -webkit-transform: translateX(100%);
-        }
-        100% {
-            -webkit-transform: translateX(-100%);
-        }
-    }
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/j0904.ico" type="image/png">
+        <title>CosmoLens | ATJ</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
         
-    @keyframes scroll-left {
-        0% {
-            -moz-transform: translateX(100%);
-            -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-        }
-        100% {
-            -moz-transform: translateX(-100%);
-            -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-        }
-    }
-</style>
-
-<meta name="google-site-verification" content="rFX6dFlkp62akIeQFnPMi5fH2a-dVTkDQRNS9iFW_YM" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<link rel="icon" href="j0904.ico" type="image/x-icon"/>
-
-<title>CosmoLens</title>
-
-<!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
-
-
-<link rel="stylesheet" href="assets/plugins/summernote/dist/summernote.css"/>
-<link rel="stylesheet" href="assets/plugins/fullcalendar/fullcalendar.min.css">
-<link rel="stylesheet" href="academicons/css/academicons.min.css"/>
-
-<!-- Core css -->
-<link rel="stylesheet" href="assets/css/main.css"/>
-<link rel="stylesheet" href="assets/css/theme1.css"/>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body class="font-montserrat">
-<!-- Page Loader -->
-<div class="page-loader-wrapper">
-    <div class="loader">
-    </div>
-</div>
-
-<div id="main_content">
-
-    <div id="header_top" class="header_top">
-        <div class="container">
-            <div class="hleft">
-                <a class="header-brand" href="index.html"><i class="fa fa-grav brand-logo"></i></a>
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/doing_research.png" alt="" data-toggle="tooltip" data-placement="right" title="History"/></a>
-                </div>
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><p style="color:white; font-family:sans-serif">CosmoLens</p></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+										<li class="nav-item"><a class="nav-link" href="member.html">Member</a></li>
+										<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teaching</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="lectures.html">Lectures</a></li>
+										<li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outreach</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="oprojects.html">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
             </div>
-            <div class="hright">
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
-                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
-                </div>            
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/anton.jpg" alt="" width="512">
+							</div>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6>Hello Everybody, i am</h6>
+									<h3>Anton T. Jaelani</h3>
+									<h4>Astrophysicist / Lecturer</h4>
+									<p>Recently, I am joining ITB as a researcher in Astronomy Research Group, Faculty of Mathematics and Natural Sciences.</p>
+									<ul class="list basic_info">
+										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 10<sup>th</sup> January, 1990</a></li>
+										<li><a href="#"><i class="lnr lnr-phone-handset"></i> +62-22-2511576 (office)</a></li>
+										<li><a href="#"><i class="lnr lnr-envelope"></i> antontj@as.itb.ac.id</a></li>
+										<li><a href="#"><i class="lnr lnr-home"></i> Bandung, Indonesia</a></li>
+									</ul>
+									<ul class="list personal_social">
+										<li><a href="https://www.scopus.com/authid/detail.uri?authorId=55991348300" target="_blank"><i class="ai ai-scopus-square"></i></a></li>
+										<li><a href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22Jaelani%2C%20Anton%22%20OR%20%22Jelani%2C%20Anton%22%20OR%20%22Timur%20Jaelani%2C%20Anton%22)%20%20orcid%3A%220000-0001-6282-5778%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank"><i class="ai ai-ads-square"></i></a></li>
+										<li><a href="https://scholar.google.co.id/citations?hl=id&user=0XYGYv4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar-square"></i></a></li>
+										<li><a href="https://publons.com/researcher/2942061/anton-t-jaelani/?utm_campaign=researcher_id_badge" target="_blank"><i class="ai ai-publons-square"></i></a></li>
+										<li><a href="https://www.researchgate.net/profile/Anton_Timur_Jaelani2" target="_blank"><i class="ai ai-researchgate-square"></i></a></li>
+										<li><a href="https://orcid.org/0000-0001-6282-5778" target="_blank"><i class="ai ai-orcid-square"></i></a></li>
+										<li><a href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Jaelani%2C+A+T&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=hide&size=50&order=-announced_date_first" target="_blank"><i class="ai ai-arxiv-square"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/atj1029/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="https://sinta.ristekbrin.go.id/authors/detail?id=6719695&view=overview" target="_blank"><img src="assets/images/sinta_logo.png" style="width:15px"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-        </div>
-    </div>
-
-    <div id="rightsidebar" class="right_sidebar">
-        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
-        <div class="p-4">
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
-                <div class="custom-controls-stacked font_setting">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
-                        <span class="custom-control-label">Open Sans Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
-                        <span class="custom-control-label">Montserrat Google Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
-                        <span class="custom-control-label">Robot Google Font</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
-                <div class="custom-controls-stacked arrow_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
-                <div class="custom-controls-stacked list_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
-                <ul class="setting-list list-unstyled mt-1 setting_switch">
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Night Mode</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Fix Navbar top</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Header Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader" checked="">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Min Sidebar Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Sidebar Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Icon Color</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Gradient Color</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Box Shadow</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">RTL Support</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Box Layout</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-        </div>
-    </div>
-
-    <div class="user_div">
-        <h5 class="brand-name mb-4">CosmoLens<a href="javascript:void(0)" class="user_btn"><i class="fa fa-arrow-left"></i></a></h5>
-        <div class="card-body">
-            <a href="index.html"><img class="card-profile-img" src="assets/images/doing_research.png" alt=""></a>
-            <h6 class="mb-0">Anton T. Jaelani</h6>
-            <a class="fa fa-envelope"></a> antontj@as.itb.ac.id<br>
-            <!-- <a class="fa fa-envelope"></a> jaelani.at@gmail.com -->
-            <div class="d-flex align-items-baseline mt-3">
-                <h3 class="mb-0 mr-2">007</h3>
-                <p class="mb-0"><span class="text-success">1.6% <i class="fa fa-arrow-up"></i></span></p>
-            </div>
-            <div class="progress progress-xs">
-                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-orange" role="progressbar" style="width: 5%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-indigo" role="progressbar" style="width: 13%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <hr>
-            <p>Employment</p>
-            <ul class="new_timeline">
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2020 - now</div>
-                    <div class="desc">
-                        <h3>Lecturer</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Astronomy Research Group</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2018 - 2021</div>
-                    <div class="desc">
-                        <h3>Postdoctoral</h3>
-                        <h4><a href="https://www.phys.kindai.ac.jp/english/research/" target="_blank">Department of Physics</a>
-                        <br><a href="https://www.kindai.ac.jp/" target="_blank">Kindai University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2018</div>
-                    <div class="desc">
-                        <h3>Researcher</h3>
-                        <h4><a href="https://bosscha.itb.ac.id/" target="_blank">Bosscha Observatory</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet orange"></div>
-                    <div class="time">2017 - 2018</div>
-                    <div class="desc">
-                        <h3>Research Assistant</h3>
-                        <h4><a href="https://www.astr.tohoku.ac.jp/" target="_blank">Astronomical Institute</a>
-                        <br><a href="http://www.tohoku.ac.jp/en/" target="_blank">Tohoku University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet orange"></div>
-                    <div class="time">2012 - 2014</div>
-                    <div class="desc">
-                        <h3>Research Assistant</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Astronomy Research Group</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-            </ul>
-            <p>Education</p>
-            <ul class="new_timeline">
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2014 - 2018</div>
-                    <div class="desc">
-                        <h3>Ph. D. in Astrophysics</h3>
-                        <h4><a href="https://www.astr.tohoku.ac.jp/" target="_blank">Astronomical Institute</a>
-                        <br><a href="http://www.tohoku.ac.jp/en/" target="_blank">Tohoku University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2012 - 2014</div>
-                    <div class="desc">
-                        <h3>M. Sc. in Astrophysics</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Graduate Programme in Astronomy</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2008 - 2012</div>
-                    <div class="desc">
-                        <h3>B. Sc. in Astrophysics</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Undergraduate Programme in Astronomy</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">2005 - 2008</div>
-                    <div class="desc">
-                        <h3>Senior High School</h3>
-                        <h4><a href="http://www.sman1banjar.sch.id/html/" target="_blank">SMA Negeri 1 Banjar</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">2002 - 2005</div>
-                    <div class="desc">
-                        <h3>Junior High School</h3>
-                        <h4><a href="http://smpn3banjar.sch.id/" target="_blank">SMP Negeri 3 Banjar</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">1996 - 2002</div>
-                    <div class="desc">
-                        <h3>Elementary School</h3>
-                        <h4><a href="https://www.google.com/search?client=firefox-b-d&q=MI+Banjar+2" target="_blank">MI Banjar 2</a></h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="left-sidebar" class="sidebar ">
-        <h5 class="brand-name">CosmoLens</h5>
-        <nav id="left-sidebar-nav" class="sidebar-nav">
-            <ul class="metismenu">
-                <li class="g_heading"></li>
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
-                    <ul>
-                        <li><a href="overview.html">Overview</a></li>
-                        <li><a href="member.html">Member</a></li>
-                        <li><a href="project-list.html">Projects</a></li>
-                        <li><a href="result.html">Results</a></li>
-                        <li><a href="team.html">Collaborators</a></li>   
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-graduation-cap"></i><span>Teaching</span></a>
-                    <ul>
-                        <li><a href="Lecture.html">Lecture</a></li>
-                        <li><a href="students.html">Students</a></li>
-                        <li><a href="alumni.html">Alumni</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-youtube-play"></i><span>Public Outreach</span></a>
-                    <ul>
-                        <li><a href="medhoksains.html">Medhok Sains</a></li>
-                        <li><a href="talks.html">Science Talks</a></li>
-                        <li><a href="sharing.html">Sharing Talks</a></li>
-                    </ul>
-                </li>
-                <li><a href="publications.html"><i class="fa fa-book"></i><span>Publications</span></a></li>
-                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
-                <li><a href="page-gallery.html"><i class="fa fa-image"></i><span>Gallery</span></a></li>
-            </ul>
-
-            <br>
-            <a><i class="fa fa-crosshairs"></i> Office address</a>
-            <br><small>Jl. Ganesha No. 10
-            <br>CAS Building, 6<sup>th</sup>  Floor
-            <br>Bandung, West Java
-            <br>Indonesia 40132</small>
-
-            <br>
-            <br>
-            <a><i class="fa fa-phone"></i> Phone</a>
-            <br><small>+62-22-2511576 
-            <br>Fax: +62-22-2509170</small>
-
-            <br>
-            <br>
-            <a><i class="fa fa-envelope-square"></i> Emails</a>
-            <br>
-            <small>antontj@as.itb.ac.id 
-            <!-- <br>jaelani.at@gmail.com--></small>            
-        </nav>     
-    </div>
-
-    <div class="page">
-        <div id="page_top" class="section-body top_dark">
-            <div class="container-fluid">
-                <div class="page-header">
-                    <div class="left">
-                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Anton T. Jaelani's webpages</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-body mt-4">
-            <div class="container-fluid">
-                <div class="row clearfix">
-                    <div class="col-lg-5 col-md-12">
-                        <div class="card">
-                            <p style="text-align:center">
-                            <img class="card-img-top" src="assets/images/anton07.JPG" alt="profil" style="width:200px; margin:20px 0px" align="middle" >
-                            </p>
-                            <div class="card-body">
-                                <p style="text-align:center"> <a class="ai ai-orcid-square" href="https://orcid.org/0000-0001-6282-5778" target="_blank"></a> ORCiD -- <a class="ai ai-arxiv-square" href="https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=Jaelani%2C+A+T&terms-0-field=author&classification-physics_archives=all&classification-include_cross_list=include&date-filter_by=all_dates&date-year=&date-from_date=&date-to_date=&date-date_type=submitted_date&abstracts=hide&size=50&order=-announced_date_first" target="_blank"></a> ArXiv --
-                                Linked<a class="fa fa-linkedin" href="https://www.linkedin.com/in/atj1029/" target="_blank"></a> -- 
-                                <a class="fa fa-skype" href="#" target="_blank"></a> antontj4</p>
-                            </div>
-                            <div class="card-body">
-                                <a href="https://www.cosmology.jp/" class="card-link" target="_blank">Cosmology Kindai</a>
-                                <a href="https://www.as.itb.ac.id/en/" class="card-link" target="_blank">Astronomy ITB</a>
-                                <a href="https://www.astr.tohoku.ac.jp/en/index.html" class="card-link" target="_blank">Astronomical Inst.</a>
-                                <a href="https://bosscha.itb.ac.id/" class="card-link" target="_blank">Bosscha Obs.</a>
-                                <a href="https://www.ipmu.jp/en" class="card-link" target="_blank">Kavli IPMU</a>
-                                <a href="https://www.ictp.it/" class="card-link" target="_blank">ICTP</a>
-                                <a href="https://www.asiaa.sinica.edu.tw/" class="card-link" target="_blank">ASIAA</a>
-                            </div>
-                            <div class="card-body">
-                                <h5 style="text-align:center;color:red"> <a class="fa fa-youtube-play" style="font-size:22px;color:red" href="https://www.youtube.com/channel/UCpH3S1xgy4oF9Xw08ZunvzQ/featured" target="_blank"></a> Prodi Astronomi</h5>
-                                <h5 style="text-align:center;color:red"> <a class="fa fa-youtube-play" style="font-size:22px;color:red" href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" target="_blank"></a> medhok sains</h5>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col-lg-7 col-md-12">
-                        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-CV" role="tab" aria-controls="pills-profile" aria-selected="false">CV</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Profile</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fa fa-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fa fa-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fa fa-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                        </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ex1">
-                                    <div class="card-body">
-                                        <div class="row clearfix">
-                                            <p>I am an Astrophysicist who grew up from small city, Banjar, West Java. After finishing my PhD from Tohoku University, Japan, I back to my country at the Bosscha Observatory as a researcher for six months. I started my postdoc position with Prof. Kaiki Taro Inoue in Kindai University, Japan, where I spent most of the time participating Strong Lensing working groups in HSC-SSP Program, especially on strong lensing analysis. Recently, I joined ITB as a lecturer in Astronomy Research Group in ITB.</p>
-                                            </div> 
-                                        </div>  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-CV" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Curriculum Vitae</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fa fa-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fa fa-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fa fa-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                            <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                        </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="ex1">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <h3 class="card-title">Office Address</h3>
-                                            <ul>
-                                                <li><b>Postal Address:</b> Astronomy Research Group, Faculty of Mathematics and Natural Sciences, Institut Teknologi Bandung, Jl. Ganesha No. 10, Bandung, West Java 40132, Indonesia</li>
-                                                <li><b>Room:</b> CAS Building, 6<sup>th</sup> Floor</li>
-                                                <li><b>Phone:</b> +62-22-2511576</li>
-                                                <li><b>Fax:</b> +62-22-2509170</li>
-                                                <li><b>E-mail:</b> antontj@as.itb.ac.id</li>
-                                            </ul>
-                                        </div> 
-                                        <div class="row">
-                                            <h3 class="card-title">Personal Details</h3>
-                                            <ul>
-                                                <li><b>Nationality:</b> Indonesia</li>
-                                                <li><b>Date of Birth:</b> January 10<sup>th</sup>, 1990</li>
-                                                <li><b>Status:</b> Married</li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="card-title">Present Position</h3>
-
-                                            <ul>
-                                                <li>Lecturer [<b>2020</b> -  now]<br>
-                                                    Astronomy, Faculty of Mathematics and Natural Sciences, Institut Teknologi Bandung<br></li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="card-title">Position Held</h3>
-                                            <ul>
-                                                <li><b>2018 - 2021</b>, Postdoctoral, Department of Physics, Kindai University, Japan</li>
-                                                <li><b>2019</b>, Academic Assistant, Department of Astronomy, Institut Teknologi Bandung, Indonesia</li>
-                                                <li><b>2018</b>, Research Fellow, Bosscha Observatory, Institut Teknologi Bandung, Indonesia</li>
-                                                <li><b>2017 - 2018</b>, Research Assistant, Astronomical Institute, Tohoku University, Japan</li>
-                                                <li><b>2012 - 2014</b>, Research Assistant, Department of Astronomy, Institut Teknologi Bandung, Indonesia</li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="card-title">Education</h3>
-                                            <ul>
-                                                <li><b>2014 - 2018</b>, Astronomical Institute, Tohoku University, Japan (Doctor of Science)</li>
-                                                <li><b>2012 - 2014</b>, Graduate Programme in Astronomy, Institut Teknologi Bandung, Indonesia (Master of Science)</li>
-                                                <li><b>2008 - 2012</b>, Undergraduate Programme in Astronomy, Institut Teknologi Bandung, Indonesia (Bachelor of Science)</li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="card-title">Society Membership</h3>
-                                            <ul>
-                                                <li><a href="http://www.asj.or.jp/en/" target="_blank">Astronomical Society of Japan</a></li>
-                                                <li><a href="https://hai-ias.org/" target="_blank">Indonesian Astronomical Society</a></li>
-                                                <li><a href="http://www.fisika.or.id/" target="_blank">Physical Society of Indonesia</a></li>
-                                                <!-- <li><a href="https://www.iau.org/" target="_blank">The International Astronomical Union</a></li> -->
-                                                <li><a href="https://i4indonesia.org/" target="_blank">Ikatan Ilmuwan Indonesia Internasional</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="card-title">Visits</h3>
-                                            <ul>
-                                                <li><b>2015 - 2018</b>,<a href="https://www.ipmu.jp/" target="_blank"> Kavli The Institute for the Physics and Mathematics of the Universe (IPMU), University of Tokyo, Japan</a></li>
-                                                <li><b>2017</b>,<a href="https://www.asiaa.sinica.edu.tw/" target="_blank"> Academia Sinica Institute of Astronomy and Astrophysics (ASIAA), Taiwan</a></li>
-                                                <li><b>2013 and 2016</b>,<a href="https://www.ictp.it/" target="_blank"> International Centre for Theoretical Physics (ICTP), Italy</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="row">
-                                            <h3 class="card-title">Miscellaneous</h3>
-                                            <ul>
-                                                <li>Referee of papers submitted to Monthly Notices of the Royal Astronomical Society</li>
-                                                <li>Referee of papers submitted to The Journal of the Korean Astronomical Society</li>
-                                                <li>Referee of papers submitted to Jurnal Sains & Dirgantara</li>
-                                                <li>Observational experience at the following ground telescopes:  <a href="https://subarutelescope.org/" target="_blank">Subaru</a> (PI/co-I), <a href="http://www.ctio.noao.edu/soar/" target="_blank">SOAR</a> (co-I), <a href="http://www.eso.org/sci/facilities/paranal/instruments/xshooter/overview.html" target="_blank">VLT</a> (co-I), <a href="http://www.lco.cl/telescopes-information/magellan/" target="_blank">Magellan</a> (co-I), <a href="https://www.gemini.edu/" target="_blank">Gemini</a> (PI/co-I), <a href="https://www.salt.ac.za" target="_blank">SALT</a> (co-I)   [3+ nights]</li>
-                                                <li>Observing with space telescopes: <a href="https://hubblesite.org/" target="_blank">Hubble</a> (co-I), <a href="https://sci.esa.int/web/xmm-newton" target="_blank">XMM-Newton</a> (co-I) [3 orbits + 11.94 hours]</li>
-                                            </ul>
-                                        </div>                                           
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>                    
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12 col-md-12">
-                        <div class="card">
-                            <div class="marquee">
-                                <p> Instead of Social Distancing Let's Call It Virtual Connecting! Stay Home. Stay Safe.</p>
-                            </div>  
-                        </div> 
-                    </div> 
-
-                    <div class="col-lg-12 col-md-12">
-                        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="pills-highlight-tab" data-toggle="pill" href="#pills-highlight" role="tab" aria-controls="pills-highlight" aria-selected="true">News</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-blog-tab" data-toggle="pill" href="#pills-blog" role="tab" aria-controls="pills-blog" aria-selected="true">Blog</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-highlight" role="tabpanel" aria-labelledby="pills-highlight-tab">
-                                <div class="ex2">
-                                <div class="card blog_single_post">
-                                    <div class="card-body">  
-                                        <h4><a>[2] Lowongan Tim Peneliti Mahasiswa di CosmoLens Lab. Tahun 2021</a></h4>
-                                        <p>Gambaran:</p>
-                                        <p>1 (satu) orang Asisten Peneliti untuk topik penelitian Galaksi dan Kosmologi.</p>
-                                        <p>Syarat:</p>
-                                        <p>1. Mahasiswa S1 Prodi  Astronomi ITB (<b>minimal tingkat 3</b>),</p>
-                                        <p>2. sanggup bekerja min. 12 jam/bulan selama 10 bulan (<i>part time</i>),</p>
-                                        <p>3. berencana/sedang mengambil topik TA dalam bidang galaksi dan kosmologi,</p>
-                                        <p>4. <i>"good endurance"</i>.</p>
-
-                                        <p>Bagi mahasiswa yang tertarik dapat menghubungi Anton T. Jaelani melalui email yang tertera di website ini paling lambat <b>21 Januari 2021 atau sampai ada pendaftar yang memenuhi kualifikasi</b>.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a class="btn btn-outline-secondary" target="_blank" style="color:red">Tutup</a>
-                                        </div> 
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="project-list.html">Research</a></li>
-                                        </ul>                   
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="card-body">  
-                                        <h4><a>[1] Lowongan Tim Peneliti Mahasiswa di CosmoLens Lab. Tahun 2021</a></h4>
-                                        <p>Gambaran:</p>
-                                        <p>2 (dua) orang Asisten Peneliti untuk topik penelitian Galaksi dan Kosmologi menggunakan <i>deep machine learning</i>.</p>
-                                        <p>Syarat:</p>
-                                        <p>1. Mahasiswa S2 Prodi Astronomi ITB (bidang Astrofisika Lanjut),</p>
-                                        <p>2. sanggup bekerja min. 12 jam/bulan selama 10 bulan (<i>part time</i>),</p>
-                                        <p>3. punya ketertarikan dalam machine learning,</p>
-                                        <p>4. <i>"good endurance"</i>.</p>
-
-                                        <p>Bagi mahasiswa yang tertarik dapat menghubungi Anton T. Jaelani melalui email yang tertera di website ini paling lambat <b>3 Januari 2021 atau sampai ada pendaftar yang memenuhi kualifikasi</b>.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a class="btn btn-outline-secondary" target="_blank" style="color:red">Tutup</a>
-                                        </div> 
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="project-list.html">Research</a></li>
-                                        </ul>                   
-                                    </div>
-                                </div>
-
-                                <div class="card blog_single_post">
-                                    <div class="card-body">  
-                                        <p style="text-align:center">
-                                        <img class="tl_avatar" src="assets/images/SSGC2020.jpeg" alt=""  style="width:200px" > </p> 
-                                        <h4><a href="https://www.as.itb.ac.id/ssgc2020/">SSGC 2020 Registration is now closed!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.as.itb.ac.id/ssgc2020/" class="btn btn-outline-secondary" target="_blank">Visit SSGC 2020</a>
-                                        </div> 
-                                        <div class="actions">
-                                            <a href="https://bit.ly/SSGC2020" class="btn btn-outline-secondary" target="_blank">Registration Form</a>
-                                        </div>                  
-                                    </div>
-                                </div>
-
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <img class="tl_avatar" src="assets/images/sugohiV.jpeg" alt="">                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="#">New Lenses from SuGOHI!</a></h4>
-                                        <p>Recently, our SuGOHI paper series has been published in MNRAS. We revealed hundreds of new strong gravitational lensing candidates at group/cluster scale from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 495, Issue 1, 1291</a>)</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="#">Research</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <img class="tl_avatar" src="assets/images/J0904.jpeg" alt="">                                        
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="#">Compact galaxy</a></h4>
-                                        <p>An usually compact lensed galaxy, HSC J0904–0102, discover from the from the Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) Survey. This is the second case after HSC J1152+0047 which is useful to study a source population that could not be studied before. (Figure taken from <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146">Jaelani et al., 2020, MNRAS, 494, Issue 3, 3156</a>)</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://academic.oup.com/mnras/article/495/1/1291/5823146" class="btn btn-outline-secondary" target="_blank">Check this out</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="#">Research</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="javascript:void(0)">New Layout!</a></h4>
-                                        <p>Welcome to my new webpages! I hope I can share my research and experience with new spirit. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="javascript:void(0)">General</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>  
-                            <div class="tab-pane fade" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab">
-                                <div class="ex2">
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5-UfKFpKHdU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">Mempersiapkan Penelitian dan Penulisan Artikel Ilmiah pada Publikasi Internasional Bereputasi</a></h4>
-                                        <p>Ngobrol SanTEI #01 Menuju Publikasi Q1 bersama Anton Timur Jaelani.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/playlist?list=PLJemrCgABfW-6j4BBLHvlVnz9AWTUejmt" target="_blank">Ngobrol SanTEI</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kJMllSiqB9I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">Pengamatan Virtual Langit Malam 05 - Jarak dalam Astronomi</a></h4>
-                                        <p>Untuk seri kelima ini, kami mengundang Bapak Dr. Anton T. Jaelani (Kelompok Keahlian Astronomi ITB) dan Denny Mandey (Astronom) untuk menemani Anda belajar mengenai cara astronom mengukur jarak antara benda-benda langit, termasuk dari Bumi kita sendiri.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/playlist?list=PLJemrCgABfW-6j4BBLHvlVnz9AWTUejmt" target="_blank">PVLM 2020 Bosscha</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y1ko_n6i-5Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">Importance of radio telescope in Indonesia for global geodetic VLBI network</a></h4>
-                                        <p>Description:</p>
-                                        <p>To keep up with the modern development of astronomy in the world, Indonesian astronomers have commenced studying the possibility of developing new observatory in other Indonesian regions that are suitable for the development of multi-wavelength astronomy. <details>
-                                        <summary>
-                                        Details
-                                        </summary>Besides optical wavelengths, radio waves are naturally the main choice to introduce the multi-wavelength domain regarding a variety of important scientific interests. Considering this development, radio telescopes must be provided and prepared further to work in the network of radio telescopes that already exists in many regions of the globe such as Very Long Baseline Interferometry (VLBI) network. Two places have been selected as a host of new radio telescopes. Mount Timau in Timor Island will be the host of the new National Observatory and in the original proposal, a radio telescope envisaged to be integrated to the next VLBI generation was proposed. Meanwhile, a decommissioned telecommunication antenna in the city of Jatiluhur is currently being undertaken to be converted into a radio telescope. To develop the Indonesian VLBI campaign, and considering two antennas will be available in Jatiluhur and in Timau site, in this work we first undertake to study the possibility to use these telescopes, not only for astronomy/astrometry, but also for geodesy to enhance a more multi-disciplinary and collaborative work. Here we simulate the implication of these two future Indonesian antennas to the estimates of Earth orientation parameters (polar motion, nutation, and dUT1) and the station position. The simulation was performed in two types of VLBI session. First, we conduct the simulation of an intensive session between Japanese antenna Syowa and Indonesian antennas. Next, we simulate the complete 24 hours session by considering some different network configurations. Generally, we found that the Indonesian antennas play an important role to improve the estimation of station position as well as the Earth orientation parameters.</p>
-
-                                        <p>About the Speaker:</p>
-                                        <p>Dr. Ibnu Nurul Huda is currently a Postdoctoral in Astronomy Research Group, Institut Teknologi Bandung.</p></details>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/playlist?list=PLV2hbp85JNWR1tSX2i-6glM6zUWdQFz-n" class="btn btn-outline-secondary" target="_blank">Astronomy Online Colloquium</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Education</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y8El9Aw8BPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM">How to become a successful Researcher or Scientist?</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about how to become a world class Researcher or Scientist. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Nuct4E8aOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">  
-                                        <h4><a href="https://www.youtube.com/watch?v=8Nuct4E8aOA">Exploring Your Potential to Face the New Normal</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about how we can explore our hidden potential to face the new normal. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EUWTjxGX92Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=EUWTjxGX92Q">The Fisheries Sector and the Pandemic</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about the fisheries sector and the Coronavirus pandemic. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HvqRmA8Db8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=HvqRmA8Db8I">Astronomical Basis Of Calendars</a></h4>
-                                        <p>The upcoming episode of Medhok Sains will discuss about astronomical basis of calendar systems. Please stay tune!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                <div class="card blog_single_post">
-                                    <div class="img-post" align="middle">
-                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KvQrlF9I_7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="card-body">                                    
-                                        <h4><a href="https://www.youtube.com/watch?v=KvQrlF9I_7U">When is the best time for sunbathing?</a></h4>
-                                        <p>The new Medhok Bicara's video is already published. This video describes to us when is the best time for sunbathing. Sunbathing is important to keep our body healthy, especially during a current global pandemic. So, let's enjoy guys!</p>
-                                    </div>
-                                    <div class="footer">
-                                        <div class="actions">
-                                            <a href="https://www.youtube.com/channel/UCdz7RwTXSqoApKlTYSNoLqg" class="btn btn-outline-secondary" target="_blank">More MS videos</a>
-                                        </div>
-                                        <ul class="stats list-unstyled">
-                                            <li><a href="medhoksains.html">Outreach</a></li>
-                                        </ul>                                    
-                                    </div>
-                                </div>
-                                </div>
-                            </div>                         
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            &copy; 2020, Anton T. Jaelani. Design: <a href="https://www.templateshub.net/">Templates Hub</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
-</div>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166112393-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-166112393-1');
-</script>
-
-<!-- End Google Analytics -->
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 7000); // Change image every 2 seconds
-}
-</script>
-
-<script src="assets/bundles/lib.vendor.bundle.js"></script>
-
-<script src="assets/bundles/fullcalendar.bundle.js"></script>
-<script src="assets/bundles/knobjs.bundle.js"></script>
-
-<script src="assets/js/core.js"></script>
-<script src="assets/js/page/calendar.js"></script>
-<script src="assets/js/chart/knobjs.js"></script>
-</body>
-
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+        					<p>I am an Astrophysicist who grew up from small city, Banjar, West Java. After finishing my PhD from Tohoku University, Japan, I back to my country at the Bosscha Observatory as a researcher for six months. I started my postdoc position with Prof. Kaiki Taro Inoue in Kindai University, Japan, where I spent most of the time participating Strong Lensing working groups in HSC-SSP Program, especially on strong lensing analysis.</p>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>20</h4>
+        								<p>Refereed Publications</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>2</h4>
+        								<p>Research  Projects (in ITB)</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>5</h4>
+        								<p>as Journal Reviewers</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>0<span class="counter"></span></h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>000<span class="counter"></span></h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>00000<span class="counter"></span></h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>00000<span class="counter"></span></h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>000<span class="counter"></span></h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>0<span class="counter"></span></h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================My Tabs Area =================-->
+        <section class="mytabs_area p_120">
+        	<div class="container">
+        		<div class="tabs_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>02/2020 - ..present</p>
+										</div>
+										<div class="media-body">
+											<h4>Institut Teknologi Bandung</h4>
+											<p>Researcher<br />Astronomy Research Group, FMNS, Bandung, Indonesia</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>10/2018 - 04/2021</p>
+										</div>
+										<div class="media-body">
+											<h4>Kindai University</h4>
+											<p>Postdoctoral <br />Department of Physics, Osaka, Japan</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>03/2018 - 09/2018</p>
+										</div>
+										<div class="media-body">
+											<h4>Institut Teknologi Bandung</h4>
+											<p>Researcher <br />Bosscha Observatory, FMNS, Bandung, Indonesia</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>10/2014 - 03/2018</p>
+										</div>
+										<div class="media-body">
+											<h4>PhD</h4>
+											<p>Astronomical Institute <br />Tohoku University, Japan</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>08/2012 - 07/2014</p>
+										</div>
+										<div class="media-body">
+											<h4>Master</h4>
+											<p>Graduate Programme in Astronomy <br />Institut Teknologi Bandung, Indonesia</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>08/2008 - 07/2012</p>
+										</div>
+										<div class="media-body">
+											<h4>Bachelor</h4>
+											<p>Ungraduate Programme in Astronomy <br />Institut Teknologi Bandung, Indonesia</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>08/2005 - 07/2008</p>
+										</div>
+										<div class="media-body">
+											<h4>Senior High School</h4>
+											<p>SMA Negeri 1 Banjar <br />Banjar, West Java, Indonesia</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>08/2002 - 07/2005</p>
+										</div>
+										<div class="media-body">
+											<h4>Junior High School</h4>
+											<p>SMP Negeri 3 Banjar <br />Banjar, West Java, Indonesia</p>
+										</div>
+									</div>
+								</li>
+								<li>
+								<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>08/1996 - 07/2002</p>
+										</div>
+										<div class="media-body">
+											<h4>Elementary School</h4>
+											<p>MI Banjar 2<br />Banjar, West Java, Indonesia</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End My Tabs Area =================-->
+        
+        <!--================Feature Area =================-->
+        <section class="feature_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>What I am doing</h2>
+        			<p>As a lecturer in Indonesia, I have to implemened the Three Pillars of Higher Education which is comprising Education, Research and Community Service.</p>
+        		</div>
+        		<div class="feature_inner row">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="flaticon-city"></i>
+        					<h4>Education</h4>
+        					<p>Since I joined ITB, I've been teaching some lectures, e. g., Astrophysics, Cosmology, Extragalactic, and Capita Selecta in Astrophysics.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="flaticon-skyline"></i>
+        					<h4>Community Service</h4>
+        					<p>I and Medhok Sains team initiated to make a YouTube channel to talk about science to the public.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<i class="flaticon-sketch"></i>
+        					<h4>Research</h4>
+        					<p>My research’s activities is concentrating on structure formation, mass distribution, high redshift object in order to study galaxy evolution using gravitational lensing as main tool to study those topics.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Feature Area =================-->
+        
+        <!--================Home Gallery Area =================-->
+        <section class="home_gallery_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>My Latest Activities</h2>
+        			<p>The activities here are related with my position as lecturer and researcher.</p>
+        		</div>
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".publ"><a href="#">Publications</a></li>
+						<li data-filter=".otre"><a href="#">Outreach</a></li>
+						<li data-filter=".event"><a href="#">Events</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container">
+        		<div class="gallery_f_inner row imageGallery1">
+        			<div class="col-lg-4 col-md-4 col-sm-6 event creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/logo_70th_transparent.png" alt="">
+        						<a class="light" href="assets/images/logo_70th_transparent.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://www.as.itb.ac.id/astroedu70/" target="_blank" >Commemorate</a></h4>
+        						<p>the 70th Anniversary of Astronomy Tertiary Education in Indonesia</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 otre creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/fishI.jpeg" alt="">
+        						<a class="light" href="assets/images/fishI.jpeg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://youtu.be/x6JA6HaGPVQ" target="_blank" >Fish Japan</a></h4>
+        						<p>Forsalim International Scholarship Hunters</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 publ print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/arxiv_logo.png" alt="">
+        						<a class="light" href="assets/images/arxiv_logo.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://arxiv.org/abs/2106.14581" target="_blank" >arXiv:2106.14581</a></h4>
+        						<p>Premadi et al. (2021)</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 publ print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/aa_logo.jpg" alt="">
+        						<a class="light" href="assets/images/aa_logo.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://doi.org/10.1051/0004-6361/202039376" target="_blank" >A&A, in press.</a></h4>
+        						<p>Chao et al. (2021)</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 publ print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/aa_logo.jpg" alt="">
+        						<a class="light" href="assets/images/aa_logo.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://doi.org/10.1051/0004-6361/202141758" target="_blank" >A&A, 653, L6</a></h4>
+        						<p>Canameras et al. (2021)</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 event creative">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/Poster_IVC.jpg" alt="">
+        						<a class="light" href="assets/images/Poster_IVC.jpg"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://www.as.itb.ac.id/ivcasml2021/" target="_blank" >International Virtual Course ITB</a></h4>
+        						<p>Astrostatistics and Machine Learning</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 publ print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/apj_logo.png" alt="" >
+        						<a class="light" href="assets/images/apj_logo.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://doi.org/10.3847/1538-4357/abea15" target="_blank" >ApJ, 911, 2</a></h4>
+        						<p>Ono et al. (2021)</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 publ print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/apj_logo.png" alt="">
+        						<a class="light" href="assets/images/apj_logo.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="https://iopscience.iop.org/article/10.3847/1538-4365/abd023" target="_blank" >ApJS, 253, 3</a></h4>
+        						<p>Hilton et al. (2021)</p>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-4 col-sm-6 publ print">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="assets/images/MNRAS_logo.png" alt="">
+        						<a class="light" href="assets/images/MNRAS_logo.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4><a href="http://dx.doi.org/10.1093/mnras/stab145" target="_blank" >MNRAS, 502, 1487 - 1493</a></h4>
+        						<p>Jaelani et al. (2021)</p>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Home Gallery Area =================-->
+        
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-6 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>Office address</h3>
+        					</div>
+        					<p>Jl. Ganesha No. 10
+							<br>CAS Building, 6th Floor
+							<br>Bandung, West Java
+							<br>Indonesia 40132</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-6 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Links</h3>
+        					</div>
+        					<p><a href="https://www.itb.ac.id/" target="_blank" >Institut Teknologi Bandung</a>
+        					<br><a href="https://fmipa.itb.ac.id/" target="_blank" >Faculty of Mathematics and Natural Sciences</a>
+        					<br><a href="https://www.as.itb.ac.id/" target="_blank" >Astronomy Research Group</a></p>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->             
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+        <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+    </body>
 </html>

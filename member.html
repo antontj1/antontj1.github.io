@@ -1,532 +1,200 @@
 <!doctype html>
-<html lang="en" dir="ltr">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-<link rel="icon" href="j0904.ico" type="image/x-icon"/>
-
-<title>CosmoLens</title>
-
-<!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="assets/plugins/sweetalert/sweetalert.css"/>
-<link rel="stylesheet" href="assets/plugins/dropify/css/dropify.min.css">
-
-<!-- Core css -->
-<link rel="stylesheet" href="assets/css/main.css"/>
-<link rel="stylesheet" href="assets/css/theme1.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body class="font-montserrat">
-<!-- Page Loader -->
-<div class="page-loader-wrapper">
-    <div class="loader">
-    </div>
-</div>
-<!-- Overlay For Sidebars -->
-
-<div id="main_content">
-
-    <div id="header_top" class="header_top">
-        <div class="container">
-            <div class="hleft">
-                <a class="header-brand" href="index.html"><i class="fa fa-grav brand-logo"></i></a>
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="assets/images/doing_research.png" alt="" data-toggle="tooltip" data-placement="right" title="History"/></a>
-                </div>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/j0904.ico" type="image/png">
+        <title>CosmoLens | ATJ</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><p style="color:white; font-family:sans-serif">CosmoLens</p></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+										<li class="nav-item active"><a class="nav-link" href="member.html">Member</a></li>
+										<li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="results.html">Results</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Teaching</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="lectures.html">Lectures</a></li>
+										<li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outreach</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="oprojects.html">Projects</a></li>
+										<li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
+									</ul>
+								</li> 
+								<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> 
+								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
             </div>
-            <div class="hright">
-                <div class="dropdown">
-                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
-                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
-                </div>            
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Member</h2>
+							<div class="page_link">
+								<a>Research</a>
+								<a href="member.html">Member</a>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-        </div>
-    </div>
-
-    <div id="rightsidebar" class="right_sidebar">
-        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
-        <div class="p-4">
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
-                <div class="custom-controls-stacked font_setting">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-opensans">
-                        <span class="custom-control-label">Open Sans Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
-                        <span class="custom-control-label">Montserrat Google Font</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="font" value="font-roboto">
-                        <span class="custom-control-label">Robot Google Font</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div class="mb-4">
-                <h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
-                <div class="custom-controls-stacked arrow_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="marrow" value="arrow-c" checked="">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
-                <div class="custom-controls-stacked list_option">
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-a" checked="">
-                        <span class="custom-control-label">A</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-b">
-                        <span class="custom-control-label">B</span>
-                    </label>
-                    <label class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input" name="listicon" value="list-c">
-                        <span class="custom-control-label">C</span>
-                    </label>
-                </div>
-            </div>
-            <hr>
-            <div>
-                <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
-                <ul class="setting-list list-unstyled mt-1 setting_switch">
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Night Mode</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Fix Navbar top</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Header Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader" checked="">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Min Sidebar Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Sidebar Dark</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Icon Color</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Gradient Color</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Box Shadow</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">RTL Support</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="custom-switch">
-                            <span class="custom-switch-description">Box Layout</span>
-                            <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
-                            <span class="custom-switch-indicator"></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-        </div>
-    </div>
-
-    <div class="user_div">
-        <h5 class="brand-name mb-4">CosmoLens<a href="javascript:void(0)" class="user_btn"><i class="fa fa-arrow-left"></i></a></h5>
-        <div class="card-body">
-            <a href="index.html"><img class="card-profile-img" src="assets/images/doing_research.png" alt=""></a>
-            <h6 class="mb-0">Anton T. Jaelani</h6>
-            <a class="fa fa-envelope"></a> antontj@as.itb.ac.id<br>
-            <!-- <a class="fa fa-envelope"></a> jaelani.at@gmail.com-->
-            <div class="d-flex align-items-baseline mt-3">
-                <h3 class="mb-0 mr-2">007</h3>
-                <p class="mb-0"><span class="text-success">1.6% <i class="fa fa-arrow-up"></i></span></p>
-            </div>
-            <div class="progress progress-xs">
-                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-orange" role="progressbar" style="width: 5%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar bg-indigo" role="progressbar" style="width: 13%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <hr>
-            <p>Employment</p>
-            <ul class="new_timeline">
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2020 - now</div>
-                    <div class="desc">
-                        <h3>Lecturer</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Astronomy Research Group</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2018 - 2021</div>
-                    <div class="desc">
-                        <h3>Postdoctoral</h3>
-                        <h4><a href="https://www.phys.kindai.ac.jp/english/research/" target="_blank">Department of Physics</a>
-                        <br><a href="https://www.kindai.ac.jp/" target="_blank">Kindai University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet blue"></div>
-                    <div class="time">2018</div>
-                    <div class="desc">
-                        <h3>Researcher</h3>
-                        <h4><a href="https://bosscha.itb.ac.id/" target="_blank">Bosscha Observatory</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet orange"></div>
-                    <div class="time">2017 - 2018</div>
-                    <div class="desc">
-                        <h3>Research Assistant</h3>
-                        <h4><a href="https://www.astr.tohoku.ac.jp/" target="_blank">Astronomical Institute</a>
-                        <br><a href="http://www.tohoku.ac.jp/en/" target="_blank">Tohoku University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet orange"></div>
-                    <div class="time">2012 - 2014</div>
-                    <div class="desc">
-                        <h3>Research Assistant</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Astronomy Research Group</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-            </ul>
-            <p>Education</p>
-            <ul class="new_timeline">
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2014 - 2018</div>
-                    <div class="desc">
-                        <h3>Ph. D. in Astrophysics</h3>
-                        <h4><a href="https://www.astr.tohoku.ac.jp/" target="_blank">Astronomical Institute</a>
-                        <br><a href="http://www.tohoku.ac.jp/en/" target="_blank">Tohoku University</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2012 - 2014</div>
-                    <div class="desc">
-                        <h3>M. Sc. in Astrophysics</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Graduate Programme in Astronomy</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet green"></div>
-                    <div class="time">2008 - 2012</div>
-                    <div class="desc">
-                        <h3>B. Sc. in Astrophysics</h3>
-                        <h4><a href="https://www.as.itb.ac.id/en/" target="_blank">Undergraduate Programme in Astronomy</a>
-                        <br><a href="https://www.itb.ac.id/" target="_blank">Institut Teknologi Bandung</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">2005 - 2008</div>
-                    <div class="desc">
-                        <h3>Senior High School</h3>
-                        <h4><a href="http://www.sman1banjar.sch.id/html/" target="_blank">SMA Negeri 1 Banjar</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">2002 - 2005</div>
-                    <div class="desc">
-                        <h3>Junior High School</h3>
-                        <h4><a href="http://smpn3banjar.sch.id/" target="_blank">SMP Negeri 3 Banjar</a></h4>
-                    </div>
-                </li>
-                <li>
-                    <div class="bullet pink"></div>
-                    <div class="time">1996 - 2002</div>
-                    <div class="desc">
-                        <h3>Elementary School</h3>
-                        <h4><a href="https://www.google.com/search?client=firefox-b-d&q=MI+Banjar+2" target="_blank">MI Banjar 2</a></h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="left-sidebar" class="sidebar ">
-        <h5 class="brand-name">CosmoLens </h5>
-        <nav id="left-sidebar-nav" class="sidebar-nav">
-            <ul class="metismenu">
-                <li class="g_heading"></li>
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>  
-                <li class="active"><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-line-chart"></i><span>Research</span></a>
-                    <ul>
-                        <li><a href="overview.html">Overview</a></li>
-                        <li class="active"><a href="member.html">Member</a></li>
-                        <li><a href="project-list.html">Projects</a></li>
-                        <li><a href="result.html">Results</a></li>
-                        <li><a href="team.html">Collaborators</a></li>   
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-graduation-cap"></i><span>Teaching</span></a>
-                    <ul>
-                        <li><a href="Lecture.html">Lecture</a></li>
-                        <li><a href="students.html">Students</a></li>
-                        <li><a href="alumni.html">Alumni</a></li>
-                    </ul>
-                </li>
-                <li><a href="javascript:void(0)" class="has-arrow arrow-c"><i class="fa fa-youtube-play"></i><span>Public Outreach</span></a>
-                    <ul>
-                        <li><a href="medhoksains.html">Medhok Sains</a></li>
-                        <li><a href="talks.html">Science Talks</a></li>
-                        <li><a href="sharing.html">Sharing Talks</a></li>
-                    </ul>
-                </li>
-                <li><a href="publications.html"><i class="fa fa-book"></i><span>Publications</span></a></li>
-                <li><a href="app-calendar.html"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
-                <li><a href="page-gallery.html"><i class="fa fa-image"></i><span>Gallery</span></a></li>
-            </ul>
-
-            <br>
-            <a><i class="fa fa-crosshairs"></i> Office address</a>
-            <br><small>Jl. Ganesha No. 10
-            <br>CAS Building, 6<sup>th</sup>  Floor
-            <br>Bandung, West Java
-            <br>Indonesia 40132</small>
-
-            <br>
-            <br>
-            <a><i class="fa fa-phone"></i> Phone</a>
-            <br><small>+62-22-2511576 
-            <br>Fax: +62-22-2509170</small>
-
-            <br>
-            <br>
-            <a><i class="fa fa-envelope-square"></i> Emails</a>
-            <br>
-            <small>antontj@as.itb.ac.id 
-            <!-- <br>jaelani.at@gmail.com--></small>            
-        </nav>     
-    </div>
-
-    <div class="page">
-        <div id="page_top" class="section-body top_dark">
-            <div class="container-fluid">
-                <div class="page-header">
-                    <div class="left">
-                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
-                        <h1 class="page-title">Group Member</h1>                        
-                    </div>                    
-                </div>
-            </div>
-        </div>
-        <div class="section-body">
-            <div class="container-fluid">
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="list" role="tabpanel">
-                        <div class="row clearfix">
-                            <div class="col-lg-12">
-                                <div class="table-responsive" id="users">
-                                    <table class="table table-hover table-vcenter text-nowrap table_custom border-style list">
-                                        <tbody>
-                                            <tr class="">
-                                                <td class="width35 hidden-xs">
-                                                    <a href="javascript:void(0);" class="mail-star"></a>
-                                                </td>
-                                                <td class="text-center width40">
-                                                    <div>
-                                                        <a class="text-muted">Photo</a></div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="text-muted"><a>Name/Status</a></div>
-                                                </td>
-                                                <td class="hidden-xs">
-                                                    <div class="text-muted">Affiliation</div>
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">Project</div>                                                
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">Year</div> 
-                                                </td>
-                                            </tr> 
-                                            <tr class="">
-                                                <td class="width35 hidden-xs">
-                                                    <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
-                                                </td>
-                                                <td class="text-center width40">
-                                                    <div class="avatar d-block">
-                                                        <img class="avatar" src="assets/images/sulistyowati.png" alt="avatar">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div><a href="javascript:void(0);">Sulistiyowati</a></div>
-                                                    <div class="text-muted">Alumni/Researcher</div>
-                                                </td>
-                                                <td class="hidden-xs">
-                                                    <div class="text-muted">SkyLab, Indonesia</div>
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">Project Collaborator -- P2MI FMIPA - Astronomy 2021 (EELs)</div>                                                
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">2020 - 2021</div> 
-                                                </td>
-                                            </tr> 
-                                            <tr class="">
-                                                <td class="width35 hidden-xs">
-                                                    <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
-                                                </td>
-                                                <td class="text-center width40">
-                                                    <div class="avatar d-block">
-                                                        <img class="avatar" src="assets/images/dobson.jpg" alt="avatar">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div><a href="javascript:void(0);">Muhammad Arifin Dobson</a></div>
-                                                    <div class="text-muted">Master Student</div>
-                                                </td>
-                                                <td class="hidden-xs">
-                                                    <div class="text-muted">Institut Teknologi Bandung, Indonesia</div>
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">Student Collaborator -- Riset ITB 2021 (Machine Learning)</div>                                                
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">2021</div> 
-                                                </td>
-                                            </tr> 
-                                            <tr class="">
-                                                <td class="width35 hidden-xs">
-                                                    <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
-                                                </td>
-                                                <td class="text-center width40">
-                                                    <div class="avatar d-block">
-                                                        <img class="avatar" src="assets/images/galih.jpg" alt="avatar">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div><a href="javascript:void(0);">Muhammad Galih Prawiradilaga</a></div>
-                                                    <div class="text-muted">Master Student</div>
-                                                </td>
-                                                <td class="hidden-xs">
-                                                    <div class="text-muted">Institut Teknologi Bandung, Indonesia</div>
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">Student Collaborator -- Riset ITB 2021 (Machine Learning)</div>                                                
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">2021</div> 
-                                                </td>
-                                            </tr> 
-                                            <tr class="">
-                                                <td class="width35 hidden-xs">
-                                                    <a href="javascript:void(0);" class="mail-star"><i class="fa fa-star"></i></a>
-                                                </td>
-                                                <td class="text-center width40">
-                                                    <div class="avatar d-block">
-                                                        <img class="avatar" src="assets/images/user.png" alt="avatar">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div><a href="javascript:void(0);">Ririn Andriyani</a></div>
-                                                    <div class="text-muted">Alumni/Researcher</div>
-                                                </td>
-                                                <td class="hidden-xs">
-                                                    <div class="text-muted">Institut Teknologi Bandung, Indonesia</div>
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">Student Collaborator -- P2MI FMIPA - Astronomy 2021 (EELs)</div>                                                
-                                                </td>
-                                                <td class="hidden-sm">
-                                                    <div class="text-muted">2021</div> 
-                                                </td>
-                                            </tr> 
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-        <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            &copy; 2020, Anton T. Jaelani. Design: <a href="https://www.templateshub.net/">Templates Hub</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
-</div>
-
-
-<script src="assets/bundles/lib.vendor.bundle.js"></script>
-
-<script src="assets/bundles/sweetalert.bundle.js"></script>
-<script src="assets/plugins/dropify/js/dropify.min.js"></script>
-
-<script src="assets/js/core.js"></script>
-<script src="assets/js/page/sweetalert.js"></script>
-</body>
-
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        
+        <!-- Start Sample Area -->
+			<!-- Start Align Area -->
+			<div class="whole-wrap">
+				<div class="container">
+					<div class="section-top-border">
+						<h3 class="mb-30 title_color">Group Member</h3>
+						<div class="progress-table-wrap">
+							<div class="progress-table">
+								<div class="table-head">
+									<div class="visit" style="width:15%">Photo</div>
+									<div class="visit" style="width:25%">Name/Status</div>
+									<div class="visit" style="width:20%">Affiliation</div>
+									<div class="visit" style="width:25%">Project</div>
+									<div class="visit" style="width:5%"></div>
+									<div class="visit" style="width:10%">Year</div>
+								</div>
+								<div class="table-row">
+									<div class="visit" style="width:15%"> <img src="assets/images/sulistyowati.png" style="width: 100px"></div>
+									<div class="visit" style="width:25%">Sulistiyowati <br>Alumni/Researcher </div>
+									<div class="visit" style="width:20%">SkyLab, Indonesia</div>
+									<div class="visit" style="width:25%">Project Collaborator -- P2MI FMIPA - Astronomy 2021 (EELs)</div>
+									<div class="visit" style="width:5%"></div>
+									<div class="visit" style="width:10%">2020 - 2021</div>
+								</div>
+								<div class="table-row">
+									<div class="visit" style="width:15%"> <img src="assets/images/dobson.jpg" style="width: 100px"></div>
+									<div class="visit" style="width:25%">Muhammad Arifin Dobson<br>Master Student</div>
+									<div class="visit" style="width:20%">Institut Teknologi Bandung, Indonesia</div>
+									<div class="visit" style="width:25%">Student Collaborator -- Riset ITB 2021 (Machine Learning)</div>
+									<div class="visit" style="width:5%"></div>
+									<div class="visit" style="width:10%">2021</div>
+								</div>
+								<div class="table-row">
+									<div class="visit" style="width:15%"> <img src="assets/images/galih.jpg" style="width: 100px"></div>
+									<div class="visit" style="width:25%">Muhammad Galih Prawiradilaga<br>Master Student</div>
+									<div class="visit" style="width:20%">Institut Teknologi Bandung, Indonesia</div>
+									<div class="visit" style="width:25%">Student Collaborator -- Riset ITB 2021 (Machine Learning)</div>
+									<div class="visit" style="width:5%"></div>
+									<div class="visit" style="width:10%">2021</div>
+								</div>
+								<div class="table-row">
+									<div class="visit" style="width:15%"> <img src="assets/images/ririn.jpeg" style="width: 100px"></div>
+									<div class="visit" style="width:25%">Ririn Andriyani<br>Master Student</div>
+									<div class="visit" style="width:20%">Institut Teknologi Bandung, Indonesia</div>
+									<div class="visit" style="width:25%">Student Collaborator -- P2MI FMIPA - Astronomy 2021 (EELs)</div>
+									<div class="visit" style="width:5%"></div>
+									<div class="visit" style="width:10%">2021</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Align Area -->
+        
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-6 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>Office address</h3>
+        					</div>
+        					<p>Jl. Ganesha No. 10
+							<br>CAS Building, 6th Floor
+							<br>Bandung, West Java
+							<br>Indonesia 40132</p>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			<div class="col-lg-6 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Links</h3>
+        					</div>
+        					<p><a href="https://www.itb.ac.id/" target="_blank" >Institut Teknologi Bandung</a>
+        					<br><a href="https://fmipa.itb.ac.id/" target="_blank" >Faculty of Mathematics and Natural Sciences</a>
+        					<br><a href="https://www.as.itb.ac.id/" target="_blank" >Astronomy Research Group</a></p>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->  
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
 </html>
