@@ -120,7 +120,7 @@
                     ['6',    24,   28,   29,   15,  13],
                     ['7',    22,   25,   24,   10,  10],
                     ['8',    15,   14,   12,    8,  10],
-                    ['9',    8,   13,    9,    6,   8],
+                    ['9',     8,   13,    9,    6,   8],
                     ['10',    7,    9,    8,    5,   8],
                     ['11',    6,    7,    4,    2,   6],
                     ['12',    6,    4,    2,    1,   2],
@@ -136,15 +136,8 @@
 
                 var options = {
                     curveType: 'line',
-                    legend: { position: 'bottom' },
-                    axes: {
-                    y: {
-                        range: {
-                            max: 24,
-                            min: 0
-                            }
-                        }
-                    },
+                    vAxis: {scaleType: 'log'},
+                    legend: { position: "none" },
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('chart_hi'));
@@ -169,7 +162,7 @@
                 ]);
 
                 var options = {
-                    legend: 'none'
+                    legend: { position: "none" },
                 };
 
                 var chart = new google.charts.Bar(document.getElementById('chart_cit'));
@@ -247,8 +240,7 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
-        
+               
         <!-- Start Sample Area -->
 			<div class="whole-wrap">
 				<div class="container">
