@@ -34,8 +34,11 @@
                     ['RAA', 1],
                     ['PKAS', 1],
                     ['Exp. Astron.', 1],
+                    ['JMFS', 1],
                     ['JoP Conf. Series', 2],
-                    ['AIP Conf. Proc.', 3],         
+                    ['AIP Conf. Proc.', 3],  
+                    ['Pros. SiNaFi 7.0', 1],   
+                    ['Pros. SPA 2021', 2],          
                     ['arXiv', 1],
                 ]);
 
@@ -60,7 +63,7 @@
                 data.addColumn('number', 'Populartiy');
                 data.addRows([
                     ['Q1', 14],
-                    ['Q2', 4],
+                    ['Q2', 5],
                     ['Q3', 2], 
                     ['Q4', 4],  
                     ['arXiv', 1],
@@ -112,26 +115,27 @@
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     [' ', {role: 'annotation', type: 'string'},'ADS', 'GS', 'RG', 'SC', 'RID'],
-                    ['1', null,   489,  544,  444,  351, 320],
-                    ['2', null,   362,  403,  288,  247, 226],
-                    ['3', null,   159,  180,  193,  100, 106],
-                    ['4', null,    50,   46,   50,   30,  32],
-                    ['5', null,    47,   42,   34,   21,  20],
-                    ['6', null,    28,   30,   33,   17,  16],
-                    ['7', null,    28,   30,   27,   10,  13],
-                    ['8', null,    18,   14,   14,    8,  10],
-                    ['9', null,    11,   14,    9,    7,   8],
-                    ['10','h-i=10',10,   10,    8,    5,   8],
-                    ['11', null,    6,    9,    4,    2,   6],
-                    ['12', null,    6,    4,    2,    1,   2],
-                    ['13', null,    4,    3,    2,    1,   1],
-                    ['14', null,    3,    3,    1,    1,   1],
-                    ['15', null,    3,    2,    1,    1,   1],
-                    ['16', null,    1,    1,    1,    0,   1],
-                    ['17', null,    1,    1,    1,    0,   0],
-                    ['18', null,    1,    1,    0,    0,   0],
+                    ['1', null,   539,  614,  502,  386, 392],
+                    ['2', null,   384,  428,  318,  263, 259],
+                    ['3', null,   191,  209,  230,  127, 132],
+                    ['4', null,    69,   63,   55,   32,  34],
+                    ['5', null,    49,   55,   55,   23,  32],
+                    ['6', null,    30,   38,   36,   21,  23],
+                    ['7', null,    29,   31,   32,   11,  15],
+                    ['8', null,    19,   18,   16,   10,  11],
+                    ['9', null,    13,   16,   13,    9,  10],
+                    ['10',null,    12,   14,    9,    6,   9],
+                    ['11','h-i=11', 8,   14,    6,    5,   7],
+                    ['12', null,    7,    5,    4,    3,   3],
+                    ['13', null,    5,    5,    4,    2,   2],
+                    ['14', null,    4,    4,    3,    1,   1],
+                    ['15', null,    4,    3,    2,    1,   1],                   
+                    ['16', null,    3,    3,    1,    1,   1],
+                    ['17', null,    2,    1,    1,    0,   1],
+                    ['18', null,    1,    1,    1,    0,   0],
                     ['19', null,    1,    1,    0,    0,   0],
-                    ['20', null,    0,    0,    0,    0,   0],
+                    ['20', null,    0,    1,    0,    0,   0],
+                    ['21', null,    0,    1,    0,    0,   0],
                 ]);
 
                 var options = {
@@ -159,12 +163,12 @@
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
                     ['', 'SC', 'RID', 'RG', 'ADS', 'GS'],
-                    ['2017',   0,  3,  21,  34,   9],
-                    ['2018', 147,143,  81, 197, 191],
-                    ['2019', 168,150, 217, 178, 231],
-                    ['2020', 240,252, 391, 299, 346],
-                    ['2021', 245,221, 411, 518, 554],
-                    ['Tot.', 802,771,1123,1228,1337],
+                    ['2018', 142,143,  81, 197, 190],
+                    ['2019', 170,150, 218, 178, 236],
+                    ['2020', 239,246, 392, 286, 358],
+                    ['2021', 325,354, 499, 536, 601],
+                    ['2022',  23, 35,  87, 137, 125],
+                    ['Tot.', 901,933,1300,1370,1524],
                 ]);
 
                 var options = {
@@ -220,7 +224,7 @@
                                         <li class="nav-item"><a class="nav-link" href="videos.html">Videos</a></li>
                                     </ul>
                                 </li> 
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             </ul>
                         </div> 
@@ -236,10 +240,7 @@
 				<div class="banner_inner d-flex align-items-center">
 					<div class="container">
 						<div class="banner_content text-center">
-							<h2>Dashboard</h2>
-                            <div class="page_link">
-                                <a href="dashboard.html">Dashboard</a>
-                            </div>
+							<h1>Dashboard</h1>
 						</div>
 					</div>
 				</div>
@@ -248,14 +249,18 @@
         <!--================End Home Banner Area =================-->
                
         <!-- Start Sample Area -->
+        <section class="home_gallery_area p_120">
 			<div class="whole-wrap">
 				<div class="container">
+                    <div class="main_title">
+                        <h2>My Statictics</h2>
+                    </div>
 					<div class="section-top-border">
 					    <div class="row clearfix row-deck">
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h4 class="card-title">Published Journals</h4>
+                                        <h4 class="card-title">Published Journals / Procs.</h4>
                                     </div>
                                 <div class="card-body text-center">
                                     <div id="piechart_3d" align="middle" style="width: 100%; height: 100%;"></div>
@@ -324,122 +329,6 @@
 
                     <div class="section-top-border">
                         <div class="row clearfix row-deck">
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4 class="card-title">Recent Publication in Journals </h4>
-                                    </div>
-                                <div class="table-responsive">
-                                    <table class="table table-vcenter mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                <a href="https://arxiv.org/abs/2106.14581" target="_blank">Properties of the Environment of Galaxies in Clusters of Galaxies CL 0024+1654 and RX J0152.7−1357</a>
-                                                <br>
-                                                <span>29 Jun 2021</span> by <a> Premadi et al. (Submitted to J. Math. Fund. Sci., arXiv:2106.14581)</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                <a href="https://doi.org/10.1051/0004-6361/202039376" target="_blank">Strongly lensed candidates from the HSC transient survey</a>
-                                                <br>
-                                                <span>16 Aug 2021 </span> by <a> Chao et al. (A&A in press.)</a>
-                                                </td>
-                                            </tr> 
-                                            <tr>
-                                                <td>
-                                                <a href="https://doi.org/10.1051/0004-6361/202141758" target="_blank">HOLISMOKES. VI. New galaxy-scale strong lens candidates from the HSC-SSP imaging survey </a>
-                                                <br>
-                                                <span>3 Aug 2021 </span> by <a> Canameras et al. (A&A, 653, L6)</a>
-                                                </td>
-                                            </tr>                  
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4 class="card-title">Recent Publication in Proceedings </h4>
-                                    </div>
-                                <div class="table-responsive">
-                                    <table class="table table-striped table-vcenter mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1245/1/012017" target="_blank">Constraints on Dark Energy Models in Cosmology from Double-Source Plane Strong Lensing System</a>
-                                                <br>
-                                                <span>01 Aug 2019</span> by <a> Jaelani et al. (JoPCS)</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                <a href="https://iopscience.iop.org/article/10.1088/1742-6596/771/1/012038" target="_blank">Stellar background observation during Total Solar Eclipse March 9<sup>th</sup> 2016</a>
-                                                <br>
-                                                <span>01 Nov 2016</span> by <a> Mumtahana et al. (JoPCS)</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                <a href="https://aip.scitation.org/doi/abs/10.1063/1.4930662" target="_blank">Mass reconstruction of galaxies clusters: Abell 2219, RXC J2248.7-4431, and SDSS J1004+4112 using strong gravitational lensing</a>
-                                                <br>
-                                                <span>30 Sep 2015</span> by <a> Jaelani et al. (AIP Conf. Proc.)</a>
-                                                </td>
-                                            </tr>                                    
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="col-xl-4 col-lg-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4 class="card-title">Recent Medhok Sains Videos</h4>
-                                    </div>
-                                <div class="card-body">
-                                    <div class="row text-center">
-                                        <div class="col-4 border-right pb-3 pt-3">
-                                            <label class="mb-0 font-13">Total Videos</label>
-                                            <h4 class="font-30 font-weight-bold text-col-blue">26</h4>
-                                        </div>
-                                        <div class="col-4 border-right pb-3 pt-3">
-                                            <label class="mb-0 font-13">Diskusi Daring</label>
-                                            <h4 class="font-30 font-weight-bold text-col-blue">24</h4>
-                                        </div>
-                                        <div class="col-4 pb-3 pt-3">
-                                            <label class="mb-0 font-13">Medhok Bicara</label>
-                                            <h4 class="font-30 font-weight-bold text-col-blue">2</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="table-responsive">
-                                    <table class="table table-vcenter mb-0">
-                                        <tbody>                        
-                                            <tr>
-                                                <td>
-                                                    <a href="https://youtu.be/_l6YfAYhqbA" target="_blank">Ep. 24: Serba-Serbi Vaksin COVID-19</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="https://www.youtube.com/watch?v=Y8El9Aw8BPM" target="_blank">Ep. 23: Menjadi Peneliti Kelas Dunia Dari Dalam Negeri</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="https://www.youtube.com/watch?v=8Nuct4E8aOA" target="_blank">Ep. 22: Menggali Potensi Diri: Bekal Mengarungi New Normal</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="section-top-border">
-                        <div class="row clearfix row-deck">
                             <div class="col-lg-12 col-md-12">
                                 <div class="card">
                                     <div class="card-header">
@@ -463,6 +352,7 @@
 					</div>
 				</div>
 			</div>	
+        </section>
 			<!-- End Align Area -->
         
         
