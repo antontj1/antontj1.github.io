@@ -750,7 +750,21 @@
                           plotarea: {
                             margin: '50px 25px 70px 46px',
                           },
-                          scaleX: {
+                          scaleX: {   
+                          markers: [ 
+                            { 
+                                type: "line",
+                                range: [10]
+                            },
+                            { 
+                                type: "line",
+                                range: [11]
+                            },
+                            { 
+                                type: "area",
+                                range: [10,11]
+                            },
+                            ],
                             values: [
                               '1',
                               '2',
