@@ -575,7 +575,8 @@
                             },
                           },
                           scaleY: {
-                            values: '0:650:50',
+                            progression: "log",
+                          'log-base': 2,
                             guide: {
                               alpha: 0.5,
                               lineColor: '#d2dae2',
@@ -616,7 +617,7 @@
                               },
                               series: [{
                                   text: 'Google Scholar',
-                                  values: [0, 0, 0, 0, 9, 193, 234, 359, 491, 614],
+                                  values: [ , , , , 9, 193, 234, 359, 491, 614],
                                   lineColor: '#9999ff',
                                   lineWidth: '2px',
                               marker: {
@@ -631,7 +632,7 @@
                             },
                             {
                               text: 'ADS',
-                              values: [0, 0, 0, 0, 34, 197, 181, 286, 398, 565],
+                              values: [ , , , , 34, 197, 181, 286, 398, 565],
                               lineColor: '#0000ff',
                               lineWidth: '2px',
                               marker: {
@@ -647,7 +648,7 @@
                             },
                             {
                               text: 'WoS',
-                              values: [0, 0, 1, 1, 0, 142, 149, 248, 351, 348],
+                              values: [ , , 1, 1, , 142, 149, 248, 351, 348],
                               lineColor: '#8000ff',
                               lineWidth: '2px',
                               marker: {
@@ -663,7 +664,7 @@
                             },
                             {
                               text: 'Scopus',
-                              values: [0, 0, 1, 0, 0, 143, 170, 239, 328, 317],
+                              values: [ , , 1, , , 143, 170, 239, 328, 317],
                               lineColor: '#f3950d',
                               lineWidth: '2px',
                               marker: {
@@ -679,7 +680,7 @@
                             },
                             {
                               text: 'ResearchGate',
-                              values: [1, 1, 0, 0, 21, 81, 218, 395, 528, 499],
+                              values: [1, 1, , , 21, 81, 218, 395, 528, 499],
                               lineColor: '#66ff66',
                               lineWidth: '2px',
                               marker: {
@@ -808,7 +809,7 @@
                           },
                           'scale-y': {
                            progression: "log",
-                          'log-base': 6,
+                          'log-base': 2,
                             guide: {
                               alpha: 0.5,
                               lineColor: '#d2dae2',
