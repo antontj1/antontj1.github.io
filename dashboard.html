@@ -119,7 +119,7 @@
                         let chartConfig = {
                             backgroundColor: '#ecf2f6',
                             graphset: [{
-                            type: 'bar',
+                            type: 'bar3d',
                             backgroundColor: '#fff',
                             borderWidth: '1px',
                             borderColor: '#dae5ec',
@@ -159,7 +159,7 @@
                                     },
                                 },
                                 plotarea: {
-                                    margin: '45px 20px 38px 45px',
+                                    margin: '45px 0px 68px 65px',
                                 },
                                 scaleX: {
                             values: [
@@ -215,6 +215,11 @@
                             tick: {
                               visible: false,
                             },
+                          },
+                          "3d-aspect": {
+                            "x-angle": "-10",
+                            "y-angle": "20",
+                            "z-angle": "-2"
                           },
                           series: [{
                             values: [2029, 1886, 1762, 1291, 1279],
@@ -491,7 +496,7 @@
                       ],
                         },
                         {
-                          type: 'line',
+                          type: 'mixed',
                           backgroundColor: '#fff',
                           borderColor: '#dae5ec',
                           borderWidth: '1px',
@@ -500,7 +505,7 @@
                           x: '34%',
                           y: '35.2%',
                           title: {
-                            text: "CITATION HISTORY",
+                            text: "CITATION (LINE) AND DOCUMENT (BAR) HISTORY",
                             marginTop: '7px',
                             marginLeft: '12px',
                             backgroundColor: 'none',
@@ -534,6 +539,7 @@
                             shadow: false,
                           },
                           plot: {
+                            stacked: false,
                             tooltip: {
                               visible: false,
                             },
@@ -617,6 +623,47 @@
                                 },
                               },
                               series: [{
+                              "type": "bar",
+                              legendItem: {
+                                visible: false
+                                },
+                                backgroundColor: '#9999ff',
+                              "values": [ 5, 2, 4, 2, 1, 6, 3, 7, 10, 9, 0]
+                            },
+                            {
+                              "type": "bar",
+                              legendItem: {
+                                visible: false
+                                },
+                                backgroundColor: '#0000ff',
+                              "values": [ 0, 2, 3, 1, 0, 5, 3, 7, 9, 6, 0]
+                            },
+                            {
+                              "type": "bar",
+                              legendItem: {
+                                visible: false
+                                },
+                                backgroundColor: '#8000ff',
+                              "values": [ 0, 2, 3, 1, 0, 5, 3, 6, 6, 3, 0]
+                            },
+                            {
+                              "type": "bar",
+                              legendItem: {
+                                visible: false
+                                },
+                                backgroundColor: '#f3950d',
+                              "values": [ 0, 2, 2, 1, 0, 5, 3, 6, 6, 1, 0]
+                            },
+                            {
+                              "type": "bar",
+                              legendItem: {
+                                visible: false
+                                },
+                                backgroundColor: '#66ff66',
+                              "values": [ 1, 4, 2, 1, 3, 3, 12, 9, 9, 8, 0]
+                            },
+                              {
+                                  type: "line",
                                   text: 'Google Scholar',
                                   values: [ , , , , 9, 193, 234, 355, 499, 666, 66],
                                   lineColor: '#9999ff',
@@ -632,6 +679,7 @@
                               shadow: false,
                             },
                             {
+                              type: "line",
                               text: 'ADS',
                               values: [ , , 1, 1, 34, 197, 181, 286, 387, 610, 65],
                               lineColor: '#0000ff',
@@ -648,6 +696,7 @@
                               visible: true,
                             },
                             {
+                              type: "line",
                               text: 'WoS',
                               values: [ , , 1, 1, , 142, 148, 248, 350, 397, 0],
                               lineColor: '#8000ff',
@@ -664,6 +713,7 @@
                               visible: true,
                             },
                             {
+                              type: "line",
                               text: 'Scopus',
                               values: [ , , 1, , , 143, 170, 239, 330, 388, 3],
                               lineColor: '#f3950d',
@@ -680,6 +730,7 @@
                               visible: true,
                             },
                             {
+                              type: "line",
                               text: 'ResearchGate',
                               values: [1, 1, , , 21, 81, 218, 395, 529, 610, 30],
                               lineColor: '#66ff66',
@@ -809,6 +860,18 @@
                             },
                           },
                           'scale-y': {
+                            "markers": [
+                              {
+                                "type": "line",
+                                "range": [12],
+                                "line-width": 1,
+                                "line-color": "green",
+                                "text": "h-index = 12",
+                                "placement": "bottom",
+                                "label-placement": "normal",
+                                "label-alignment": "normal"
+                              }
+                            ],
                            progression: "log",
                           'log-base': 2,
                             guide: {
