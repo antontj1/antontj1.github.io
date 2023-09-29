@@ -164,8 +164,8 @@
                             'GS',
                             'RG',
                             'ADS',
-                            'WoS',
                             'Sc',
+                            'WoS',
                             ],
                             guide: {
                                 visible: false,
@@ -220,7 +220,7 @@
                             "z-angle": "-2"
                           },
                           series: [{
-                            values: [2407, 2303, 2029, 1490, 1543],
+                            values: [2424, 2310, 2040, 1562, 1495],
                             styles: [{
                                 backgroundColor: '#9999ff',
                               },
@@ -231,10 +231,10 @@
                                 backgroundColor: '#0000ff',
                               },
                               {
-                                backgroundColor: '#8000ff',
+                                backgroundColor: '#f3950d',
                               },
                               {
-                                backgroundColor: '#f3950d',
+                                backgroundColor: '#8000ff',
                               },
                             ],
                           }, ],
@@ -323,7 +323,7 @@
                         },
                       },
                       series: [{
-                          values: [3, 9, 4, 2, 5, 17],
+                          values: [1, 13, 3, 3, 5, 19],
                           styles: [{
                               backgroundColor: '#000000',
                             },
@@ -347,7 +347,7 @@
                           zIndex: 2,
                         },
                         {
-                          values: [17, 17, 17, 17, 17, 17],
+                          values: [19, 19, 19, 19, 19, 19],
                           valueBox: {
                             text: '%data-rvalues',
                             paddingBottom: '8px',
@@ -360,7 +360,7 @@
                             visible: true,
                           },
                           backgroundColor: '#d9e4eb',
-                          dataRvalues: [3, 9, 4, 2, 5, 17],
+                          dataRvalues: [1, 13, 3, 3, 5, 19],
                           maxTrackers: 0,
                           zIndex: 1,
                         },
@@ -631,7 +631,7 @@
                                 visible: false
                                 },
                                 backgroundColor: '#9999ff',
-                              "values": [ 5, 2, 4, 2, 1, 6, 3, 7, 10, 8, 3]
+                              "values": [ 5, 2, 4, 2, 1, 6, 4, 7, 10, 8, 6]
                             },
                             {
                               "type": "bar",
@@ -640,7 +640,7 @@
                                 visible: false
                                 },
                                 backgroundColor: '#0000ff',
-                              "values": [ 0, 2, 3, 1, 0, 5, 3, 7, 9, 5, 4]
+                              "values": [ 0, 2, 3, 1, 0, 5, 3, 7, 9, 5, 6]
                             },
                             {
                               "type": "bar",
@@ -649,7 +649,7 @@
                                 visible: false
                                 },
                                 backgroundColor: '#8000ff',
-                              "values": [ 0, 2, 3, 1, 0, 5, 3, 8, 6, 4, 2]
+                              "values": [ 0, 2, 3, 1, 0, 5, 3, 8, 6, 3, 4]
                             },
                             {
                               "type": "bar",
@@ -667,12 +667,12 @@
                                 visible: false
                                 },
                                 backgroundColor: '#66ff66',
-                              "values": [ 1, 4, 2, 1, 3, 3, 12, 9, 9, 8, 1]
+                              "values": [ 1, 4, 2, 1, 3, 3, 12, 9, 9, 8, 3]
                             },
                             {
                               type: "line",
                               text: 'GS',
-                              values: [ , , , , 9, 197, 231, 344, 488, 635, 490],
+                              values: [ , , , , 9, 197, 231, 344, 488, 635, 507],
                               lineColor: '#9999ff',
                               lineWidth: '2px',
                               marker: {
@@ -688,7 +688,7 @@
                             {
                               type: "line",
                               text: 'ADS',
-                              values: [ , , 1, 1, 34, 197, 181, 286, 385, 480, 464],
+                              values: [ , , 1, 1, 34, 197, 181, 286, 385, 479, 476],
                               lineColor: '#0000ff',
                               lineWidth: '2px',
                               marker: {
@@ -705,7 +705,7 @@
                             {
                               type: "line",
                               text: 'WoS',
-                              values: [ , , 1, 1, , 141, 145, 239, 354, 410, 196],
+                              values: [ , , 1, 1, , 141, 145, 239, 354, 411, 200],
                               lineColor: '#8000ff',
                               lineWidth: '2px',
                               marker: {
@@ -722,7 +722,7 @@
                             {
                               type: "line",
                               text: 'Sc',
-                              values: [ , , 1, , , 143, 165, 239, 332, 425, 237],
+                              values: [ , , 1, , , 143, 165, 239, 333, 425, 255],
                               lineColor: '#f3950d',
                               lineWidth: '2px',
                               marker: {
@@ -739,7 +739,7 @@
                             {
                               type: "line",
                               text: 'RG',
-                              values: [1, 1, , , 26, 85, 222, 395, 535, 635, 403],
+                              values: [1, 1, , , 26, 85, 222, 395, 535, 635, 410],
                               lineColor: '#66ff66',
                               lineWidth: '2px',
                               marker: {
@@ -814,7 +814,7 @@
                           markers: [ 
                             { 
                                 type: "line",
-                                range: [11]
+                                range: [10]
                             },
                             { 
                                 type: "line",
@@ -822,7 +822,7 @@
                             },
                             { 
                                 type: "area",
-                                range: [11,13]
+                                range: [10,13]
                             },
                             ],
                             values: [
@@ -873,14 +873,14 @@
                                 "range": [14],
                                 "line-width": 1,
                                 "line-color": "green",
-                                "text": "h-index = 12 & 14",
+                                "text": "h-index = 11 - 14",
                                 "placement": "bottom",
                                 "label-placement": "normal",
                                 "label-alignment": "normal"
                               },
                               {
                                 "type": "line",
-                                "range": [12],
+                                "range": [11],
                                 "line-width": 1,
                                 "line-color": "green",
                                 "placement": "bottom",
@@ -930,7 +930,7 @@
                               },
                               series: [{
                                   text: 'GS',
-                                  values: [871, 557, 371, 157, 94, 59, 57, 42, 38, 32, 24, 23, 17, 15, 13, 12, 8, 6, 5, 2, 1, 1, 1, 1, 1],
+                                  values: [878, 559, 372, 161, 94, 59, 57, 42, 38, 32, 24, 24, 18, 15, 14, 12, 8, 6, 5, 2, 1, 1, 1, 1, 1],
                                   lineColor: '#9999ff',
                                   lineWidth: '2px',
                               marker: {
@@ -945,7 +945,7 @@
                             },
                             {
                               text: 'ADS',
-                              values: [745, 478, 316, 133, 75, 47, 44, 32, 28, 24, 20, 18, 13, 12, 12, 8, 6, 6, 5, 2, 2, 1, 1, 1, ],
+                              values: [748, 480, 317, 137, 75, 47, 44, 32, 28, 24, 20, 19, 13, 12, 12, 8, 6, 6, 5, 2, 2, 1, 1, 1, ],
                               lineColor: '#0000ff',
                               lineWidth: '2px',
                               marker: {
@@ -961,7 +961,7 @@
                             },
                             {
                               text: 'WoS',
-                              values: [480, 390, 264, 96, 55, 41, 33, 23, 22, 19, 12, 11, 10, 9, 8, 6, 5, 2, 2, 1, 1, , , ,],
+                              values: [483, 390, 265, 97, 55, 41, 33, 23, 22, 19, 12, 11, 10, 9, 8, 6, 5, 2, 2, 1, 1, , , ,],
                               lineColor: '#8000ff',
                               lineWidth: '2px',
                               marker: {
@@ -977,7 +977,7 @@
                             },
                             {
                               text: 'Sc',
-                              values: [609, 368, 272, 55, 40, 39, 35, 22, 19, 19, 12, 12, 11, 9, 8, 5, 3, 2, 2, 1, , , ,],
+                              values: [615, 371, 276, 56, 41, 39, 35, 22, 20, 19, 13, 12, 12, 9, 8, 5, 4, 2, 2, 1, , , ,],
                               lineColor: '#f3950d',
                               lineWidth: '2px',
                               marker: {
@@ -993,7 +993,7 @@
                             },
                             {
                               text: 'RG',
-                              values: [792, 454, 452, 164, 90, 62, 59, 34, 33, 29, 24, 21, 20, 17, 13, 11, 10, 6, 6, 2, 1, 1, 1, 1, ],
+                              values: [794, 456, 453, 165, 91, 63, 59, 34, 33, 29, 25, 21, 20, 17, 13, 11, 10, 7, 6, 2, 1, 1, 1, 1, ],
                               lineColor: '#66ff66',
                               lineWidth: '2px',
                               marker: {
