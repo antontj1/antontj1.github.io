@@ -56,7 +56,7 @@
                         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                             <ul class="nav navbar-nav menu_nav ml-auto">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                                <li class="nav-item active"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="dashboard.html">Stats</a></li>
                                 <li class="nav-item submenu dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research</a>
                                     <ul class="dropdown-menu">
@@ -96,7 +96,7 @@
                 <div class="banner_inner d-flex align-items-center">
                     <div class="container">
                         <div class="banner_content text-center">
-                            <h1>Dashboard</h1>
+                            <h1>Statistics</h1>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
         <!--================End Home Banner Area =================-->
                
         <!-- Start Sample Area -->
-        <section class="home_gallery_area p_120">
+        <section class="home_gallery_area p_240">
             <div class="whole-wrap">
                 <div class="container">
                     <div id="myChart" class="chart--container">
@@ -117,12 +117,12 @@
                         let chartConfig = {
                             backgroundColor: '#ecf2f6',
                             graphset: [{
-                            type: 'bar3d',
+                            type: 'bar',
                             backgroundColor: '#fff',
                             borderWidth: '1px',
                             borderColor: '#dae5ec',
                             width: '96%',
-                            height: '30%',
+                            height: '46%',
                             x: '2%',
                             y: '3%',
                             title: {
@@ -157,7 +157,7 @@
                                     },
                                 },
                                 plotarea: {
-                                    margin: '45px 0px 68px 65px',
+                                    margin: '45px 25px 28px 65px',
                                 },
                                 scaleX: {
                             values: [
@@ -186,7 +186,7 @@
                             },
                             },
                             scaleY: {
-                                values: '0:3000:250',
+                                values: '0:3500:250',
                                 guide: {
                             rules: [{
                                 lineWidth: '0px',
@@ -215,12 +215,12 @@
                             },
                           },
                           "3d-aspect": {
-                            "x-angle": "-10",
-                            "y-angle": "20",
-                            "z-angle": "-2"
+                            "x-angle": "0",
+                            "y-angle": "0",
+                            "z-angle": "0"
                           },
                           series: [{
-                            values: [2984, 2934, 2473, 1925, 1875],
+                            values: [2993, 2949, 2483, 1930, 1879],
                             styles: [{
                                 backgroundColor: '#9999ff',
                               },
@@ -238,276 +238,18 @@
                               },
                             ],
                           }, ],
-                        },
-                        {
-                              type: 'hbar',
-                              backgroundColor: '#fff',
-                              borderColor: '#dae5ec',
-                              borderWidth: '1px',
-                              width: '30%',
-                              height: '30%',
-                              x: '2%',
-                              y: '35.2%',
-                          title: {
-                            text: 'SCOPUS INDEX',
-                            marginTop: '7px',
-                            marginLeft: '9px',
-                            backgroundColor: 'none',
-                            fontColor: '#707d94',
-                            fontFamily: 'Arial',
-                            fontSize: '11px',
-                            shadow: false,
-                            textAlign: 'left',
-                          },
-                          plot: {
-                            tooltip: {
-                              padding: '5px 10px',
-                              backgroundColor: '#707e94',
-                              borderRadius: '6px',
-                              fontColor: '#ffffff',
-                              fontFamily: 'Arial',
-                              fontSize: '11px',
-                              shadow: false,
-                            },
-                            animation: {
-                              delay: 500,
-                              effect: 'ANIMATION_EXPAND_LEFT',
-                            },
-                            barsOverlap: '100%',
-                            barWidth: '12px',
-                            hoverState: {
-                              backgroundColor: '#707e94',
-                            },
-                            thousandsSeparator: ',',
-                          },
-                          plotarea: {
-                            margin: '50px 15px 10px 15px',
-                          },
-                          scaleX: {
-                        values: [
-                          'ArXiv',
-                          'non-Q',
-                          'Q4',
-                          'Q3',
-                          'Q2',
-                          "Q1",
-                        ],
-                        guide: {
-                          visible: false,
-                        },
-                        item: {
-                          paddingBottom: '8px',
-                          fontColor: '#8391a5',
-                          fontFamily: 'Arial',
-                          fontSize: '11px',
-                          offsetX: '206px',
-                          offsetY: '-12px',
-                          textAlign: 'left',
-                          width: '200px',
-                        },
-                        lineColor: 'none',
-                        tick: {
-                          visible: false,
-                        },
-                      },
-                      scaleY: {
-                        guide: {
-                          visible: false,
-                        },
-                        item: {
-                          visible: false,
-                        },
-                        lineColor: 'none',
-                        tick: {
-                          visible: false,
-                        },
-                      },
-                      series: [{
-                          values: [3, 13, 4, 4, 5, 22],
-                          styles: [{
-                              backgroundColor: '#000000',
-                            },
-                            {
-                              backgroundColor: '#808080',
-                            },
-                            {
-                              backgroundColor: '#ff0000',
-                            },
-                            {
-                              backgroundColor: '#FFA500',
-                            },
-                            {
-                              backgroundColor: '#ffff00',
-                            },
-                            {
-                              backgroundColor: '#00FF00',
-                            },
-                          ],
-                          tooltipText: '%node-value',
-                          zIndex: 2,
-                        },
-                        {
-                          values: [22, 22, 22, 22, 22, 22],
-                          valueBox: {
-                            text: '%data-rvalues',
-                            paddingBottom: '8px',
-                            fontColor: '#8391a5',
-                            fontFamily: 'Arial',
-                            fontSize: '11px',
-                            offsetX: '-54px',
-                            offsetY: '-12px',
-                            textAlign: 'right',
-                            visible: true,
-                          },
-                          backgroundColor: '#d9e4eb',
-                          dataRvalues: [3, 13, 4, 4, 5, 22],
-                          maxTrackers: 0,
-                          zIndex: 1,
-                        },
-                      ],
-                        },
-                        {
-                              type: 'hbar',
-                              backgroundColor: '#fff',
-                              borderColor: '#dae5ec',
-                              borderWidth: '1px',
-                              width: '30%',
-                              height: '30%',
-                              x: '2%',
-                              y: '68.2%',
-                          title: {
-                            text: 'PEER REVIEW',
-                            marginTop: '7px',
-                            marginLeft: '9px',
-                            backgroundColor: 'none',
-                            fontColor: '#707d94',
-                            fontFamily: 'Arial',
-                            fontSize: '11px',
-                            shadow: false,
-                            textAlign: 'left',
-                          },
-                          plot: {
-                            tooltip: {
-                              padding: '5px 10px',
-                              backgroundColor: '#707e94',
-                              borderRadius: '6px',
-                              fontColor: '#ffffff',
-                              fontFamily: 'Arial',
-                              fontSize: '11px',
-                              shadow: false,
-                            },
-                            animation: {
-                              delay: 500,
-                              effect: 'ANIMATION_EXPAND_LEFT',
-                            },
-                            barsOverlap: '100%',
-                            barWidth: '12px',
-                            hoverState: {
-                              backgroundColor: '#707e94',
-                            },
-                            thousandsSeparator: ',',
-                          },
-                          plotarea: {
-                            margin: '50px 15px 10px 15px',
-                          },
-                          scaleX: {
-                        values: [
-                          'A&A',
-                          'MNRAS',
-                          'ApJ',
-                          'JKAS',
-                          'JSD',
-                          'Proc. Nat.',
-                          "Proc. Int",
-                        ],
-                        guide: {
-                          visible: false,
-                        },
-                        item: {
-                          paddingBottom: '8px',
-                          fontColor: '#8391a5',
-                          fontFamily: 'Arial',
-                          fontSize: '11px',
-                          offsetX: '206px',
-                          offsetY: '-12px',
-                          textAlign: 'left',
-                          width: '200px',
-                        },
-                        lineColor: 'none',
-                        tick: {
-                          visible: false,
-                        },
-                      },
-                      scaleY: {
-                        guide: {
-                          visible: false,
-                        },
-                        item: {
-                          visible: false,
-                        },
-                        lineColor: 'none',
-                        tick: {
-                          visible: false,
-                        },
-                      },
-                      series: [{
-                          values: [1, 2, 1, 1, 1, 3, 1],
-                          styles: [{
-                              backgroundColor: '#4dbac0',
-                            },
-                            {
-                              backgroundColor: '#4dbac0',
-                            },
-                            {
-                              backgroundColor: '#4dbac0',
-                            },
-                            {
-                              backgroundColor: '#4dbac0',
-                            },
-                            {
-                              backgroundColor: '#4dbac0',
-                            },
-                            {
-                              backgroundColor: '#4dbac0',
-                            },
-                            {
-                              backgroundColor: '#4dbac0',
-                            },
-                          ],
-                          tooltipText: '%node-value',
-                          zIndex: 2,
-                        },
-                        {
-                          values: [3, 3, 3, 3, 3, 3, 3],
-                          valueBox: {
-                            text: '%data-rvalues',
-                            paddingBottom: '8px',
-                            fontColor: '#8391a5',
-                            fontFamily: 'Arial',
-                            fontSize: '11px',
-                            offsetX: '-54px',
-                            offsetY: '-12px',
-                            textAlign: 'right',
-                            visible: true,
-                          },
-                          backgroundColor: '#d9e4eb',
-                          dataRvalues: [1, 2, 1, 1, 1, 3, 1],
-                          maxTrackers: 0,
-                          zIndex: 1,
-                        },
-                      ],
-                        },
+                        },                       
                         {
                           type: 'mixed',
                           backgroundColor: '#fff',
                           borderColor: '#dae5ec',
                           borderWidth: '1px',
-                          width: '64%',
-                          height: '30%',
-                          x: '34%',
-                          y: '35.2%',
+                          width: '96%',
+                          height: '46%',
+                          x: '2%',
+                          y: '52.2%',
                           title: {
-                            text: "CIT. (LINE) & DOC. (BAR) HISTORY",
+                            text: "CITATIONS (LINE) & DOC. (BAR) HISTORY",
                             marginTop: '7px',
                             marginLeft: '12px',
                             backgroundColor: 'none',
@@ -673,7 +415,7 @@
                             {
                               type: "line",
                               text: 'GS',
-                              values: [ , , , , 9, 201, 238, 339, 508, 624, 577, 475],
+                              values: [ , , , , 9, 201, 238, 339, 508, 624, 577, 484],
                               lineColor: '#9999ff',
                               lineWidth: '2px',
                               marker: {
@@ -689,7 +431,7 @@
                             {
                               type: "line",
                               text: 'ADS',
-                              values: [ , , 1, 1, 34, 197, 182, 286, 384, 468, 470, 450],
+                              values: [ , , 1, 1, 34, 197, 182, 286, 384, 468, 470, 460],
                               lineColor: '#0000ff',
                               lineWidth: '2px',
                               marker: {
@@ -706,7 +448,7 @@
                             {
                               type: "line",
                               text: 'WoS',
-                              values: [ , , 1, 1, , 141, 145, 239, 354, 416, 339, 236],
+                              values: [ , , 1, 1, , 141, 145, 239, 354, 416, 333, 246],
                               lineColor: '#8000ff',
                               lineWidth: '2px',
                               marker: {
@@ -723,7 +465,7 @@
                             {
                               type: "line",
                               text: 'Sc',
-                              values: [ , , 1, , , 143, 166, 241, 332, 437, 369, 235],
+                              values: [ , , 1, , , 143, 166, 241, 332, 437, 369, 240],
                               lineColor: '#f3950d',
                               lineWidth: '2px',
                               marker: {
@@ -740,268 +482,7 @@
                             {
                               type: "line",
                               text: 'RG',
-                              values: [1, 1, , , 87, 125, 260, 411, 548, 647, 559, 295],
-                              lineColor: '#66ff66',
-                              lineWidth: '2px',
-                              marker: {
-                                backgroundColor: '#fff',
-                                borderColor: '#66ff66',
-                                borderWidth: '1px',
-                                shadow: false,
-                                size: 3,
-                              },
-                              palette: 2,
-                              shadow: false,
-                              visible: true,
-                            },
-                          ],
-                        },
-                        {
-                          type: 'line',
-                          backgroundColor: '#fff',
-                          borderColor: '#dae5ec',
-                          borderWidth: '1px',
-                          width: '64%',
-                          height: '30%',
-                          x: '34%',
-                          y: '68.2%',
-                          title: {
-                            text: "H-Index",
-                            marginTop: '7px',
-                            marginLeft: '12px',
-                            backgroundColor: 'none',
-                            fontColor: '#707d94',
-                            fontFamily: 'Arial',
-                            fontSize: '11px',
-                            shadow: false,
-                            textAlign: 'left',
-                          },
-                          legend: {
-                            margin: 'auto auto 15 auto',
-                            backgroundColor: 'none',
-                            borderWidth: '0px',
-                            item: {
-                              margin: '0px',
-                              padding: '0px',
-                              fontColor: '#707d94',
-                              fontFamily: 'Arial',
-                              fontSize: '9px',
-                            },
-                            layout: 'x3',
-                            marker: {
-                              type: 'match',
-                              padding: '3px',
-                              fontFamily: 'Arial',
-                              fontSize: '10px',
-                              lineWidth: '2px',
-                              showLine: 'true',
-                              size: 4,
-                            },
-                            shadow: false,
-                          },
-                          plot: {
-                            tooltip: {
-                              visible: false,
-                            },
-                            animation: {
-                              delay: 500,
-                              effect: 'ANIMATION_SLIDE_LEFT',
-                            },
-                          },
-                          plotarea: {
-                            margin: '50px 25px 70px 46px',
-                          },
-                          scaleX: {   
-                          markers: [ 
-                            { 
-                                type: "line",
-                                range: [13]
-                            },
-                            { 
-                                type: "line",
-                                range: [14]
-                            },
-                            { 
-                                type: "area",
-                                range: [13,14]
-                            },
-                            ],
-                            values: [
-                              '1',
-                              '2',
-                              '3',
-                              '4',
-                              '5',
-                              '6',
-                              '7',
-                              '8',
-                              '9',
-                              '10',
-                              '11',
-                              '12',
-                              '13',
-                              '14',
-                              '15',
-                              '16',
-                              '17',
-                              '18',
-                              '19',
-                              '20',
-                              '21',
-                              '22',
-                              '23',
-                              '24',
-                              '25',
-                              '26',
-                              '27',
-                              '28',
-                              '29',
-                              '30'
-                            ],
-                            guide: {
-                              visible: false,
-                            },
-                            item: {
-                              paddingTop: '5px',
-                              fontColor: '#8391a5',
-                              fontFamily: 'Arial',
-                              fontSize: '10px',
-                            },
-                            lineColor: '#d2dae2',
-                            lineWidth: '2px',
-                            tick: {
-                              lineColor: '#d2dae2',
-                              lineWidth: '1px',
-                            },
-                          },
-                          'scale-y': {
-                            "markers": [
-                              {
-                                "type": "line",
-                                "range": [15],
-                                "line-width": 1,
-                                "line-color": "green",
-                                "text": "h-index = 14 - 15",
-                                "placement": "bottom",
-                                "label-placement": "normal",
-                                "label-alignment": "normal"
-                              },
-                              {
-                                "type": "line",
-                                "range": [14],
-                                "line-width": 1,
-                                "line-color": "green",
-                                "placement": "bottom",
-                                "label-placement": "normal",
-                                "label-alignment": "normal"
-                              }
-                            ],
-                           progression: "log",
-                          'log-base': 2,
-                            guide: {
-                              alpha: 0.5,
-                              lineColor: '#d2dae2',
-                              lineStyle: 'solid',
-                              lineWidth: '1px',
-                            },
-                            item: {
-                              paddingRight: '5px',
-                              fontColor: '#8391a5',
-                              fontFamily: 'Arial',
-                              fontSize: '10px',
-                            },
-                            lineColor: 'none',
-                            tick: {
-                              visible: false,
-                            },
-                          },
-                              scaleLabel: {
-                                padding: '5px 10px',
-                                backgroundColor: '#707d94',
-                                borderRadius: '5px',
-                                fontColor: '#ffffff',
-                                fontFamily: 'Arial',
-                                fontSize: '10px',
-                              },
-                              crosshairX: {
-                                lineColor: '#707d94',
-                                lineWidth: '1px',
-                                plotLabel: {
-                                  padding: '5px 10px',
-                                  alpha: 1,
-                                  borderRadius: '5px',
-                                  fontColor: '#000',
-                                  fontFamily: 'Arial',
-                                  fontSize: '10px',
-                                  shadow: false,
-                                },
-                              },
-                              series: [{
-                                  text: 'GS',
-                                  values: [1111, 621, 452, 237, 105, 67, 60, 54, 45, 38, 37, 25, 23, 21, 20, 14, 13, 12, 6, 6, 5, 3, 3, 2, 1, 1, 1, 1, , ],
-                                  lineColor: '#9999ff',
-                                  lineWidth: '2px',
-                              marker: {
-                                backgroundColor: '#fff',
-                                borderColor: '#9999ff',
-                                borderWidth: '1px',
-                                shadow: false,
-                                size: 3,
-                            },
-                              palette: 0,
-                              shadow: false,
-                            },
-                            {
-                              text: 'ADS',
-                              values: [875, 531, 380, 197, 88, 57, 51, 42, 41, 31, 30, 22, 20, 19, 14, 13, 12, 10, 7, 6, 6, 5, 5, 4, 2, 1, 1, 1, 1, 1],
-                              lineColor: '#0000ff',
-                              lineWidth: '2px',
-                              marker: {
-                                backgroundColor: '#fff',
-                                borderColor: '#0000ff',
-                                borderWidth: '1px',
-                                shadow: false,
-                                size: 3,
-                              },
-                              palette: 1,
-                              shadow: false,
-                              visible: true,
-                            },
-                            {
-                              text: 'WoS',
-                              values: [606, 443, 328, 135, 68, 50, 36, 35, 28, 25, 18, 16, 15, 15, 14, 10, 8, 6, 6, 4, 4, 2, 1, 1, 1, , , , ,],
-                              lineColor: '#8000ff',
-                              lineWidth: '2px',
-                              marker: {
-                                backgroundColor: '#fff',
-                                borderColor: '#8000ff',
-                                borderWidth: '1px',
-                                shadow: false,
-                                size: 3,
-                              },
-                              palette: 2,
-                              shadow: false,
-                              visible: true,
-                            },
-                            {
-                              text: 'Sc',
-                              values: [731, 421, 332, 70, 55, 51, 43, 33, 29, 25, 23, 19, 18, 14, 11, 10, 10, 6, 4, 4, 4, 3, 1, 1, 1, , ,],
-                              lineColor: '#f3950d',
-                              lineWidth: '2px',
-                              marker: {
-                                backgroundColor: '#fff',
-                                borderColor: '#f3950d',
-                                borderWidth: '1px',
-                                shadow: false,
-                                size: 3,
-                              },
-                              palette: 2,
-                              shadow: false,
-                              visible: true,
-                            },
-                            {
-                              text: 'RG',
-                              values: [1016, 592, 525, 217, 110, 74, 66, 48, 45, 36, 30, 29, 27, 25, 21, 15, 15, 14, 9, 6, 4, 4, 3, 3, 2, 1, 1, 1, 1, ],
+                              values: [1, 1, , , 87, 125, 260, 415, 548, 647, 559, 306],
                               lineColor: '#66ff66',
                               lineWidth: '2px',
                               marker: {
@@ -1061,9 +542,7 @@
                             <br>CAS Building, 6th Floor
                             <br>Bandung, West Java
                             <br>Indonesia 40132</p>
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </aside>
                     </div>
                     <div class="col-lg-6 col-sm-6">
