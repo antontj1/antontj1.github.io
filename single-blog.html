@@ -1,6 +1,24 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <style>
+            .zc-body {
+            background: #ecf2f6;
+            }
+
+            .chart--container {
+            height: 100%;
+            width: 100%;
+            min-height: 830px;
+            }
+
+            .zc-ref {
+            display: none;
+            }
+        </style>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,6 +36,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
     <body>
         
@@ -65,10 +84,10 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link" href="about.html">Bio</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
                                     </ul>
                                 </li> 
-                                <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             </ul>
                         </div> 
                     </div>
@@ -83,9 +102,11 @@
 				<div class="banner_inner d-flex align-items-center">
 					<div class="container">
 						<div class="banner_content text-center">
-							<h1>Contact</h1>
+							<h2>Blog Details</h2>
 							<div class="page_link">
-								<a href="contact.html">Contact</a>
+								<a href="index.html">Home</a>
+								<a href="blog.html">Blog</a>
+								<a href="single-blog.html">Blog Details</a>
 							</div>
 						</div>
 					</div>
@@ -94,37 +115,94 @@
         </section>
         <!--================End Home Banner Area =================-->
         
-        <!--================Contact Area =================-->
-        <section class="contact_area p_120">
+        <!--================Blog Area =================-->
+        <section class="blog_area single-post-area p_120">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-mid-12">
-                        <div class="contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-home"></i>
-                                <h6>Bandung, West Java, Indonesia</h6>
-                                <p>Jl. Ganesha No. 10
-                                <br>CAS Building, 6th Floor</p>
+                    <div class="col-lg-12 posts-list">
+                        <div class="single-post row">
+                            <div class="col-lg-12">
+                                <div class="feature-img">
+                                    <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+                                </div>									
                             </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+62-22-2511576</a></h6>
-                                <p>Mon to Fri 7am to 5 pm</p>
+                            <div class="col-lg-3  col-md-3">
+                                <div class="blog_info text-right">
+                                    <div class="post_tag">
+                                        <a href="#">Food,</a>
+                                        <a class="active" href="#">Technology,</a>
+                                        <a href="#">Politics,</a>
+                                        <a href="#">Lifestyle</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-envelope"></i>
-                                <h6><a href="#">antontj@itb.ac.id</a></h6>
-                                <p>Send us your query anytime!</p>
+                            <div class="col-lg-9 col-md-9 blog_details">
+                                <h2>Astronomy Binoculars A Great Alternative</h2>
+                                <p class="excert">
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                                </p>
+                                <p>
+                                    Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
+                                </p>
+                                <p>
+                                    Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
+                                </p>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="quotes">
+                                    MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.										
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="img/blog/post-img1.jpg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="img-fluid" src="img/blog/post-img2.jpg" alt="">
+                                    </div>	
+                                    <div class="col-lg-12 mt-25">
+                                        <p>
+                                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.
+                                        </p>
+                                        <p>
+                                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.
+                                        </p>											
+                                    </div>									
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8 col-mid-12">
-                        <img src="assets/images/logoCL2.png" style="width:40%">
+                        <div class="navigation-area">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
+                                    <div class="thumb">
+                                        <a href="#"><img class="img-fluid" src="img/blog/prev.jpg" alt=""></a>
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="#"><span class="lnr text-white lnr-arrow-left"></span></a>
+                                    </div>
+                                    <div class="detials">
+                                        <p>Prev Post</p>
+                                        <a href="#"><h4>Space The Final Frontier</h4></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 nav-right flex-row d-flex justify-content-end align-items-center">
+                                    <div class="detials">
+                                        <p>Next Post</p>
+                                        <a href="#"><h4>Telescopes 101</h4></a>
+                                    </div>
+                                    <div class="arrow">
+                                        <a href="#"><span class="lnr text-white lnr-arrow-right"></span></a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="#"><img class="img-fluid" src="img/blog/next.jpg" alt=""></a>
+                                    </div>										
+                                </div>									
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================Contact Area =================-->
+        <!--================Blog Area =================-->
         
         <!--================Footer Area =================-->
         <footer class="footer_area p_120">
@@ -157,8 +235,7 @@
                 </div>
             </div>
         </footer>
-        <!--================End Footer Area =================--> 
-        
+        <!--================End Footer Area =================-->             
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -170,19 +247,34 @@
         <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
         <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
         <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
         <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <!-- contact js -->
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/contact.js"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
+        <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 10000); // Change image every 2 seconds
+                }
+        </script>
+        <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
     </body>
 </html>
