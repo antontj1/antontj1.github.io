@@ -1,6 +1,24 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <style>
+            .zc-body {
+            background: #ecf2f6;
+            }
+
+            .chart--container {
+            height: 100%;
+            width: 100%;
+            min-height: 830px;
+            }
+
+            .zc-ref {
+            display: none;
+            }
+        </style>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,23 +36,24 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
     <body>
         
         <!--================Header Menu Area =================-->
         <header class="header_area">
             <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html" style="width:13%"><img src="assets/images/publication/logoCL3small.png" alt="" width="100%"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container box_1620">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="index.html" style="width:13%"><img src="assets/images/publication/logoCL3small.png" alt="" width="100%"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                             <ul class="nav navbar-nav menu_nav ml-auto">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="dashboard.html">Stats</a></li>
@@ -65,14 +84,14 @@
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item"><a class="nav-link" href="about.html">Bio</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
                                     </ul>
                                 </li> 
                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                             </ul>
                         </div> 
-					</div>
-            	</nav>
+                    </div>
+                </nav>
             </div>
         </header>
         <!--================Header Menu Area =================-->
@@ -83,9 +102,8 @@
             	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
 					<div class="blog_b_text text-center">
-						<h1>Welcome to CosmoLens</h1>
-						<p>A Discussion Space for Exploring Beyond the Horizon</p>
-						<!-- <a class="white_bg_btn" href="#">View More</a> -->
+						<h2>Treading <br/> The Long Path Uphill</h2>
+						<p>Every aspirational experience has a moment in its existence.</p>
 					</div>
 				</div>
             </div>
@@ -93,25 +111,67 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Blog Area =================-->
-        <section class="blog_categorie_area">
+        <section class="blog_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="blog_left_sidebar">
+                            <article class="row blog_item">
+                                <div class="col-md-12">
+                                    <div class="blog_info text-left">
+                                        <div class="post_tag">
+                                            <a class="active" href="#">Sharing,</a>
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog_post">
+                                        <img src="assets/images/ishida24.png" alt="" style="width:30%" class="center">
+                                        <div class="blog_details">
+                                            <a href="#"><h2>Astronomy Binoculars A Great Alternative</h2></a>
+                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
+                                            <!-- <a href="single-blog.html" class="white_bg_btn">View More</a>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- <article class="row blog_item">
+                                <div class="col-md-12">
+                                    <div class="blog_info text-left">
+                                        <div class="post_tag">
+                                            <a href="#">Food,</a>
+                                            <a class="active" href="#">Technology,</a>
+                                            <a href="#">Politics,</a>
+                                            <a href="#">Lifestyle</a>
+                                        </div>
+                                    </div>
+                                    <div class="blog_post">
+                                        <img src="assets/images/ishida24.png" alt="" style="width:30%" class="center">
+                                        <div class="blog_details">
+                                            <a href="single-blog.html"><h2>Astronomy Binoculars A Great Alternative</h2></a>
+                                            <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
+                                            <a href="single-blog.html" class="white_bg_btn">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article> -->
                             <nav class="blog-pagination justify-content-center d-flex">
 		                        <ul class="pagination">
 		                            <li class="page-item">
-		                                <a href="index2021.html" class="page-link" aria-label="Previous">
+		                                <a href="#" class="page-link" aria-label="Previous">
 		                                    <span aria-hidden="true">
 		                                        <span class="lnr lnr-chevron-left"></span>
 		                                    </span>
 		                                </a>
 		                            </li>
-                                    <li class="page-item"><a href="index.html" class="page-link">2024</a></li>
-                                    <li class="page-item"><a href="index2023.html" class="page-link">2023</a></li>
-		                            <li class="page-item"><a href="index2022.html" class="page-link">2022</a></li>
-		                            <li class="page-item"><a href="index2021.html" class="page-link">2021</a></li>
-		                            <li class="page-item active"><a href="index2020.html" class="page-link">2020</a></li>
+		                            <li class="page-item active"><a href="blog.html" class="page-link">01</a></li>
+		                            <li class="page-item "><a href="blog.html" class="page-link">02</a></li>
+		                            <li class="page-item">
+		                                <a href="blog.html" class="page-link" aria-label="Next">
+		                                    <span aria-hidden="true">
+		                                        <span class="lnr lnr-chevron-right"></span>
+		                                    </span>
+		                                </a>
+		                            </li>
 		                        </ul>
 		                    </nav>
                         </div>
@@ -134,7 +194,7 @@
                             <br>CAS Building, 6th Floor
                             <br>Bandung, West Java
                             <br>Indonesia 40132</p>
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->Copyright &copy;<script>document.write(new Date().getFullYear());</script> Anton T. Jaelani | This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </aside>
                     </div>
                     <div class="col-lg-6 col-sm-6">
@@ -152,7 +212,7 @@
                 </div>
             </div>
         </footer>
-        <!--================End Footer Area =================-->           
+        <!--================End Footer Area =================-->             
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -171,5 +231,27 @@
         <script src="vendors/counter-up/jquery.counterup.min.js"></script>
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 10000); // Change image every 2 seconds
+                }
+        </script>
+        <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
     </body>
 </html>
